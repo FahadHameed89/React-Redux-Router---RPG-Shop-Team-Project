@@ -5,124 +5,128 @@
  *
  * If you add any paths, make sure they are relative to the 'src' directory. Eg: a test image stored in images would be
  * 'imgs/my-test-image.png'
+ *    id: WEP001 / ARM001 / CON001 / ART001
+ *    type: equipment | utility
+ *    role: warrior | rogue | mage | cleric | any
+ *    category: weapon | armor | consumable | artifact 
+ *    price: <int> , Commons are 50~200, Uncommon from 250~400, Rare from 500~750, Exotic/Legendary from 900+
+ *    name: 
+ *    image:    
+ *    quote:
+ *    description:
+ *    rarity: common (green) | uncommon (blue) | rare (purple) | legendary (orange) 
+ *    stats: {
+                Health Points (HP) common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
+                Magic Points (MP) common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
+                Attack (ATK):     common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
+                Defense (DEF): 
+                Magic Attack (MATK):
+                Magic Defense (MDEF):
+                Speed (SPD):
+                Evasion (EVA):
+                Accuracy (ACC):
+                Critical (CRT): common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
+              }
+ *
+ *
+ *    id: ART001,
+ *    type: equipment, 
+ *    role: any,
+ *    category: artifact, 
+ *    price: 125, 
+ *    name: Brave Ring,
+ *    image: "",   
+ *    quote: "",
+ *    description: "", 
+*    rarity: common (green) | uncommon (blue) | rare (purple) | legendary (orange), 
+ *    stats: {
+                Health Points (HP): +10,
+                Magic Points (MP): 0,
+                Attack (ATK): 0,
+                Defense (DEF): 0,
+                Magic Attack (MATK): 0,
+                Magic Defense (MDEF): 0,
+                Speed (SPD): 0,
+                Evasion (EVA): -5,
+                Accuracy (ACC): +15,
+                Critical (CRT): +5,
+              }
+ *
  */
 
 [
   {
-    "type": "equipment",
-    "category": "ranged",
-    "slot": "two-handed",
-    "name": "Quick Bow",
-    "image": "imgs/bows/quick-bow.png", // Can also be left as an empty string ("") and filled in later.
-    "stats": {
-      "DMG":   0,
+    "id": "",         // WEP001 / ARM001 / CON001 / ART001
+    "type": "",       // equipment / utility
+    "role": "",       // warrior / rogue / mage / cleric / any
+    "category": "",   // weapon / armor / consumable / artifact
+    "price": 100,     // just a number! 
+    "name": "",       // a name
+    "image": "",      // Images saved to src, maybe save local for now and compress before adding
+    "quote": "",      // a witty quote
+    "description": "",  // describes the effects of the item if it has no stats.
+    "rarity": "",       // commmon / uncommon / rare / legendary
+    "stats": {      
+      "HP":    0,        
+      "MP":    0,
+      "ATK":   0,
       "DEF":   0,
+      "MATK":  0,
+      "MDEF":  0,
+      "SPD":   0,
       "EVA":   0,
-      "MDEF":  0
-    },
-    "quote": "",
-    // Unfortunately there is no easy way to have multi-line strings in JSON.
-    // The best tactic is to just keep it all on one line
-    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+      "ACC":   0,
+      "CRT":   0
+    }
   },
 
   {
-    "type": "equipment",
-    "category": "melee",
-    "slot": "one-handed",
-    "name": "Buckler",
-    "image": "",
-    "stats": {
-      "DMG":   0,
+    "id": "ART001",             // WEP001 / ARM001 / CON001 / ART001
+    "type": "equipment",       // equipment / utility
+    "role": "any",             // warrior / rogue / mage / cleric / any
+    "category": "artifact",   // weapon / armor / consumable / artifact
+    "price": 300,                // just a number! 
+    "name": "Brave Ring",       // a name
+    "image": "",                   // Images saved to src, maybe save local for now and compress before adding
+    "quote": "Makes you brave, but bravery isn't always the smartest thing in battle",      // a witty quote
+    "description": "Dramatically enhances combat abilities but makes you blind to incoming threats",  // describes the effects of the item if it has no stats.
+    "rarity": "uncommon",       // commmon / uncommon / rare / legendary
+    "stats": {      
+      "HP":    0,        
+      "MP":    0,
+      "ATK":   "+10",
       "DEF":   0,
+      "MATK":  0,
+      "MDEF":  0,
+      "SPD":   "+5",
+      "EVA":   "-5",
+      "ACC":   "+10",
+      "CRT":   "+5"
+    }
+  },
+
+  {
+    "id": "CON001",             // WEP001 / ARM001 / CON001 / ART001
+    "type": "utility",       // equipment / utility
+    "role": "any",             // warrior / rogue / mage / cleric / any
+    "category": "consumable",   // weapon / armor / consumable / artifact
+    "price": 120,                // just a number! 
+    "name": "Health Potion",       // a name
+    "image": "",                   // Images saved to src, maybe save local for now and compress before adding
+    "quote": "Never leave home without one",      // a witty quote
+    "description": "Restores 30% of your maximum HP over 6 seconds.",  // describes the effects of the item if it has no stats.
+    "rarity": "common",       // commmon / uncommon / rare / legendary
+    "stats": {      
+      "HP":    "30%",        
+      "MP":    0,
+      "ATK":   0,
+      "DEF":   0,
+      "MATK":  0,
+      "MDEF":  0,
+      "SPD":   0,
       "EVA":   0,
-      "MDEF":  0
-    },
-    "quote": "",
-    "description": ""
-  },
-
-  {
-    "type": "utility",
-    "category": "potion",
-    "name": "Health Potion",
-    "image": "",
-    "effects": [
-      "Restores 25% of your Max HP"
-    ],
-    "quote": "It's nothing fancy. Tea leaves and red wine mostly.",
-    "description": ""
-  },
-
-  {
-    "type": "utility",
-    "category": "potion",
-    "name": "Mana Potion",
-    "image": "",
-    "effects": [
-      "Gain 2MP"
-    ],
-    "quote": "Note: Consume Responsibly - Limit 3 bottles per day. Not recommended for children, pregnant women, or people sensitive to caffiene.",
-    "description": ""
-  },
-
-  {
-    "type": "utility",
-    "category": "potion",
-    "name": "Armor Potion",
-    "image": "I won't bore you with the details on why we spent as much time as we did perfecting the flavour of this citrus flavoured potion, but you'll be glad we did.",
-    "effects": [
-      "Gain 15 Block"
-    ],
-    "quote": "",
-    "description": ""
-  },
-  {
-    "type": "utility",
-    "category": "potion",
-    "name": "Fire Potion",
-    "image": "",
-    "effects": [
-      "Deal 10 Damage to all enemies"
-    ],
-    "quote": "If you look closely, you'll see that this 'potion' is actually just a fire ball contained within a bulb of glass.",
-    "description": ""
-  },
-
-  {
-    "type": "utility",
-    "category": "potion",
-    "name": "Lightning Potion",
-    "image": "",
-    "effects": [
-      "Deals 25 Damage to a single target"
-    ],
-    "quote": "Warning: Hazardous voltage inside. Can shock, burn, or cause death.",
-    "description": ""
-  },
-
-  {
-    "type": "utility",
-    "category": "potion",
-    "name": "Ice Potion",
-    "image": "",
-    "effects": [
-      "Gain 5 Block at the start of your turn"
-    ],
-    "quote": "Drinking this potion will cause ice crystals to form on the surface of your skin, protecting you from attacks. No it's not uncomfortable, why do you ask?",
-    "description": ""
-  },
-
-  {
-    "type": "utility",
-    "category": "potion",
-    "name": "Poison Potion",
-    "image": "",
-    "effects": [
-      "Apply 10 Poison to a single target"
-    ],
-    "quote": "This potion smells like rotten eggs and methane, which was intentionally added so that consumers don't accidentally drink this potent toxin.",
-    "description": ""
-  }
+      "ACC":   0,
+      "CRT":   0
+    }
 
 ]
