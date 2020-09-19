@@ -48,9 +48,81 @@
     "name": "Health Potion",
     "image": "",
     "effects": [
-      "Restores 50 HP"
+      "Restores 25% of your Max HP"
+    ],
+    "quote": "It's nothing fancy. Tea leaves and red wine mostly.",
+    "description": ""
+  },
+
+  {
+    "type": "utility",
+    "category": "potion",
+    "name": "Mana Potion",
+    "image": "",
+    "effects": [
+      "Gain 2MP"
+    ],
+    "quote": "Note: Consume Responsibly - Limit 3 bottles per day. Not recommended for children, pregnant women, or people sensitive to caffiene.",
+    "description": ""
+  },
+
+  {
+    "type": "utility",
+    "category": "potion",
+    "name": "Armor Potion",
+    "image": "I won't bore you with the details on why we spent as much time as we did perfecting the flavour of this citrus flavoured potion, but you'll be glad we did.",
+    "effects": [
+      "Gain 15 Block"
     ],
     "quote": "",
     "description": ""
+  },
+  {
+    "type": "utility",
+    "category": "potion",
+    "name": "Fire Potion",
+    "image": "",
+    "effects": [
+      "Deal 10 Damage to all enemies"
+    ],
+    "quote": "If you look closely, you'll see that this 'potion' is actually just a fire ball contained within a bulb of glass.",
+    "description": ""
+  },
+
+  {
+    "type": "utility",
+    "category": "potion",
+    "name": "Lightning Potion",
+    "image": "",
+    "effects": [
+      "Deals 25 Damage to a single target"
+    ],
+    "quote": "Warning: Hazardous voltage inside. Can shock, burn, or cause death.",
+    "description": ""
+  },
+
+  {
+    "type": "utility",
+    "category": "potion",
+    "name": "Ice Potion",
+    "image": "",
+    "effects": [
+      "Gain 5 Block at the start of your turn"
+    ],
+    "quote": "Drinking this potion will cause ice crystals to form on the surface of your skin, protecting you from attacks. No it's not uncomfortable, why do you ask?",
+    "description": ""
+  },
+
+  {
+    "type": "utility",
+    "category": "potion",
+    "name": "Poison Potion",
+    "image": "",
+    "effects": [
+      "Apply 10 Poison to a single target"
+    ],
+    "quote": "This potion smells like rotten eggs and methane, which was intentionally added so that consumers don't accidentally drink this potent toxin.",
+    "description": ""
   }
+
 ]
