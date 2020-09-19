@@ -5,7 +5,7 @@
  *
  * If you add any paths, make sure they are relative to the 'src' directory. Eg: a test image stored in images would be
  * 'imgs/my-test-image.png'
- *    id: WEP001 / ARM001 / CON001 / ART001
+ *    id: WEP001 / ARM001 / CON001 / ART001 // DO NOT ENTER IDS YET UNTIL WE DECIDE ON HOW WE WANT TO DO THIS !!
  *    type: equipment | utility
  *    role: warrior | rogue | mage | cleric | any
  *    category: weapon | armor | consumable | artifact 
