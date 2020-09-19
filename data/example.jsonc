@@ -1,0 +1,56 @@
+/**
+ * Below is a set of example items that will be added into our product dataset. Couple things to note, your
+ * files should be named with the '.json' file extension not '.jsonc', jsonc is reserved for json files with comments.
+ * Regular json files should not have comments.
+ *
+ * If you add any paths, make sure they are relative to the 'src' directory. Eg: a test image stored in images would be
+ * 'imgs/my-test-image.png'
+ */
+
+[
+  {
+    "type": "equipment",
+    "category": "ranged",
+    "slot": "two-handed",
+    "name": "Quick Bow",
+    "image": "imgs/bows/quick-bow.png", // Can also be left as an empty string ("") and filled in later.
+    "stats": {
+      "DMG":   0,
+      "DEF":   0,
+      "EVA":   0,
+      "MDEF":  0
+    },
+    "quote": "",
+    // Unfortunately there is no easy way to have multi-line strings in JSON.
+    // The best tactic is to just keep it all on one line
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+  },
+
+  {
+    "type": "equipment",
+    "category": "melee",
+    "slot": "one-handed",
+    "name": "Buckler",
+    "image": "",
+    "stats": {
+      "DMG":   0,
+      "DEF":   0,
+      "EVA":   0,
+      "MDEF":  0
+    },
+    "quote": "",
+    "description": ""
+  },
+
+  {
+    "type": "utility",
+    "category": "potion",
+    "name": "Health Potion",
+    "image": "",
+    "effects": [
+      "Restores 50 HP"
+    ],
+    "quote": "",
+    "description": ""
+  }
+]
