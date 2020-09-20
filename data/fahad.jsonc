@@ -518,9 +518,9 @@
         "role": "any",   
         "category": "artifact",   
         "price": 125,  
-        "name": "Heart Ring",   
+        "name": "Heart Necklace",   
         "image": "",     
-        "quote": "This ring radiates a soft pink aura, and feels warm to the touch.",     
+        "quote": "This necklace radiates a soft pink aura, and feels warm to the touch.",     
         "effect": "At the end of combat, restore 10HP",  
         "description": [
           "Paragragh a",
@@ -548,7 +548,7 @@
         "price": 150,  
         "name": "Sharp Ring",   
         "image": "",     
-        "quote": "A silver ring adorned with mysterious runes. The runes light up when the wearer feels threatened.",     
+        "quote": "A silver ring adorned with mysterious runes written in a forgotten language. The runes light up when the wearer feels threatened.",     
         "effect": "Your first attack of each combat deals 10 additional damage.",  
         "description": [
           "Paragragh a",
@@ -603,9 +603,9 @@
         "role": "any",   
         "category": "artifact",   
         "price": 200,  
-        "name": "Stealth Ring",   
+        "name": "Stealth Stone",   
         "image": "",     
-        "quote": "A beautiful stone ring that shrouds the user in shadows when it senses danger.",     
+        "quote": "A beautiful purple stone that shrouds the user in shadows.",     
         "effect": "Gain 1 Stealth at the start of each combat.",  
         "description": [
           "Paragragh a",
