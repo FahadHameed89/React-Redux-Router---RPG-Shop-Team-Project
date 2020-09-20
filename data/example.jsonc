@@ -132,16 +132,16 @@
 
 /*---- WARRIOR SECTION ----*/
   {
-    "id": "",         // WEP001 / ARM001 / CON001 / ART001
-    "type": "equipment",       // equipment / utility
-    "role": "warrior",       // warrior / rogue / mage / cleric / any
-    "category": "weapon",   // weapon / armor / consumable / artifact
-    "price": 250,     // just a number! 
-    "name": "Round Shield of the Bear",       // a name
-    "image": "",      // Images saved to src, maybe save local for now and compress before adding
-    "quote": "",      // a witty quote
+    "id": "",
+    "type": "equipment",
+    "role": "warrior",     
+    "category": "weapon",  
+    "price": 250,    
+    "name": "Round Shield of the Bear",
+    "image": "",     
+    "quote": "",   
     "description": "Don't be fooled... this shield is light-weight but maintains its hardended and tough blocking capabilities. Ducking, dodging, or evading you won't have to worry about your stamina.",  // describes the effects of the item if it has no stats.
-    "rarity": "common",       // commmon / uncommon / rare / legendary
+    "rarity": "common",  
     "stats": {      
       "HP":    "+10",        
       "MP":    0,
@@ -157,16 +157,16 @@
   },
 
   {
-    "id": "",         // WEP001 / ARM001 / CON001 / ART001
-    "type": "equipment",       // equipment / utility
-    "role": "warrior",       // warrior / rogue / mage / cleric / any
-    "category": "weapon",   // weapon / armor / consumable / artifact
-    "price": 300,     // just a number! 
-    "name": "Swift Morning Star of the Badger",       // a name
-    "image": "",      // Images saved to src, maybe save local for now and compress before adding
-    "quote": "Oranges or foes... you will beat them into a pulp",      // a witty quote
-    "description": "Send quick and powerful blows into your enemy.",  // describes the effects of the item if it has no stats.
-    "rarity": "uncommon",       // commmon / uncommon / rare / legendary
+    "id": "",  
+    "type": "equipment",
+    "role": "warrior",    
+    "category": "weapon", 
+    "price": 300,     
+    "name": "Swift Morning Star of the Badger", 
+    "image": "",
+    "quote": "Oranges or foes... you will beat them into a pulp",
+    "description": "Send quick and powerful blows into your enemy.",
+    "rarity": "uncommon",
     "stats": {      
       "HP":    0,        
       "MP":    0,
@@ -182,16 +182,16 @@
   },
 
   {
-    "id": "",         // WEP001 / ARM001 / CON001 / ART001
-    "type": "equipment",       // equipment / utility
-    "role": "warrior",       // warrior / rogue / mage / cleric / any
-    "category": "armour",   // weapon / armor / consumable / artifact
-    "price": 750,     // just a number! 
-    "name": "Heavy Chestplate of the Mountain",       // a name
-    "image": "",      // Images saved to src, maybe save local for now and compress before adding
-    "quote": "You may not be able to throw a punch, but you can sure take one",      // a witty quote
-    "description": "",  // describes the effects of the item if it has no stats.
-    "rarity": "rare",       // commmon / uncommon / rare / legendary
+    "id": "",
+    "type": "equipment",
+    "role": "warrior",
+    "category": "armour",
+    "price": 750,
+    "name": "Heavy Chestplate of the Mountain",
+    "image": "",
+    "quote": "You may not be able to throw a punch, but you can sure take one",
+    "description": "",
+    "rarity": "rare",
     "stats": {      
       "HP":    "+10",        
       "MP":    0,
@@ -207,16 +207,16 @@
   },
 
   {
-    "id": "",         // WEP001 / ARM001 / CON001 / ART001
-    "type": "equipment",       // equipment / utility
-    "role": "warrior",       // warrior / rogue / mage / cleric / any
-    "category": "weapon",   // weapon / armor / consumable / artifact
-    "price": 1500,     // just a number! 
-    "name": "Alkaizer's Zweihander of the Damned",       // a name
-    "image": "",      // Images saved to src, maybe save local for now and compress before adding
-    "quote": "RUN...",      // a witty quote
-    "description": "Fahad, I hope you have some previous description for a badass weapon!",  // describes the effects of the item if it has no stats.
-    "rarity": "legendary",       // commmon / uncommon / rare / legendary
+    "id": "",
+    "type": "equipment",
+    "role": "warrior",
+    "category": "weapon",
+    "price": 1500,
+    "name": "Alkaizer's Zweihander of the Damned",
+    "image": "",
+    "quote": "RUN...",
+    "description": "Fahad, I hope you have some previous description for a badass weapon!",
+    "rarity": "legendary",
     "stats": {      
       "HP":    0,        
       "MP":    0,
@@ -229,10 +229,5 @@
       "ACC":   0,
       "CRT":   "+15"
     }
-  }
-
-
-
-
-  
+  }  
 ]

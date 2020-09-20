@@ -1,0 +1,101 @@
+[
+    {
+        "id": "",
+        "type": "equipment",
+        "role": "warrior",     
+        "category": "weapon",  
+        "price": 250,    
+        "name": "Round Shield of the Bear",
+        "image": "",     
+        "quote": "",   
+        "description": "Don't be fooled... this shield is light-weight but maintains its hardended and tough blocking capabilities. Ducking, dodging, or evading you won't have to worry about your stamina.",
+        "rarity": "common",  
+        "stats": {      
+            "HP":    10,        
+            "MP":    0,
+            "ATK":   0,
+            "DEF":   10,
+            "MATK":  0,
+            "MDEF":  0,
+            "SPD":   -5,
+            "EVA":   0,
+            "ACC":   0,
+            "CRT":   0
+        }
+    },
+
+        {
+        "id": "",  
+        "type": "equipment",
+        "role": "warrior",    
+        "category": "weapon", 
+        "price": 300,     
+        "name": "Swift Morning Star of the Badger", 
+        "image": "",
+        "quote": "Oranges or foes... you will beat them into a pulp",
+        "description": "Send quick and powerful blows into your enemy.",
+        "rarity": "uncommon",
+        "stats": {      
+            "HP":    0,        
+            "MP":    0,
+            "ATK":   7,
+            "DEF":   0,
+            "MATK":  0,
+            "MDEF":  0,
+            "SPD":   9,
+            "EVA":   0,
+            "ACC":   0,
+            "CRT":   2
+        }
+    },
+
+        {
+        "id": "",
+        "type": "equipment",
+        "role": "warrior",
+        "category": "armour",
+        "price": 750,
+        "name": "Heavy Chestplate of the Mountain",
+        "image": "",
+        "quote": "You may not be able to throw a punch, but you can sure take one",
+        "description": "",
+        "rarity": "rare",
+        "stats": {      
+            "HP":    10,        
+            "MP":    0,
+            "ATK":   0,
+            "DEF":   13,
+            "MATK":  0,
+            "MDEF":  0,
+            "SPD":   -10,
+            "EVA":   0,
+            "ACC":   0,
+            "CRT":   0
+        }
+    },
+
+        {
+        "id": "",
+        "type": "equipment",
+        "role": "warrior",
+        "category": "weapon",
+        "price": 1500,
+        "name": "Alkaizer's Zweihander of the Damned",
+        "image": "",
+        "quote": "RUN...",
+        "description": "Tempered by the malice of countless malevolent beings it has slained, this famed weapon of Alkaizer strikes fear into the very soul of its foes." ,
+        "rarity": "legendary",
+        "stats": {      
+            "HP":    0,        
+            "MP":    0,
+            "ATK":   50,
+            "DEF":   0,
+            "MATK":  0,
+            "MDEF":  0,
+            "SPD":   -10,
+            "EVA":   0,
+            "ACC":   0,
+            "CRT":   15
+        }
+    }  
+]
