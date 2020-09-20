@@ -50,16 +50,16 @@
         ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -78,16 +78,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -106,16 +106,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
   
@@ -135,16 +135,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -163,16 +163,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -191,16 +191,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -219,16 +219,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -247,16 +247,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -275,16 +275,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -303,16 +303,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -331,16 +331,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
   
@@ -360,16 +360,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -388,16 +388,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -416,16 +416,16 @@
          ],  
         "rarity": "Rare",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -444,16 +444,16 @@
          ],  
         "rarity": "Rare",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -472,16 +472,16 @@
          ],  
         "rarity": "Rare",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -490,26 +490,26 @@
         "role": "any",   
         "category": "consumable",   
         "price": 750,  
-        "name": "Elixir",   
+        "name": "Vampiric Potion",   
         "image": "",     
-        "quote": "A healer in a bottle!",     
-        "effect": "Immediately restores all lost HP.",  
+        "quote": "Tastes awful at first, but you'll come to crave it...",     
+        "effect": "Restores 1HP whenever you attack an enemy for the duration of combat.",  
         "description": [
           "Paragragh a",
           "Paragragh b"
          ],  
         "rarity": "Rare",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -528,16 +528,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -556,16 +556,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -584,16 +584,16 @@
          ],  
         "rarity": "Common",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
   
@@ -613,16 +613,16 @@
          ],  
         "rarity": "Common",  
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -642,16 +642,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -671,16 +671,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -700,16 +700,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -729,16 +729,16 @@
          ],  
         "rarity": "Rare",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -758,16 +758,16 @@
          ],  
         "rarity": "Rare",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -787,16 +787,16 @@
          ],  
         "rarity": "Rare",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -816,16 +816,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "",
-          "SPD":   "+15",
-          "EVA":   "+10",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  0,
+          "SPD":   15,
+          "EVA":   10,
+          "ACC":   0,
+          "CRT":   0
         }
       },
       {
@@ -844,16 +844,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "+10",
-          "SPD":   "",
-          "EVA":   "+15",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  10,
+          "SPD":   0,
+          "EVA":   15,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -873,16 +873,16 @@
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "",
-          "MDEF":  "+10",
-          "SPD":   "",
-          "EVA":   "+15",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    0,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  0,
+          "MDEF":  10,
+          "SPD":   0,
+          "EVA":   15,
+          "ACC":   0,
+          "CRT":   0
         }
       },
 
@@ -895,23 +895,23 @@
         "name": "Fairy Staff",   
         "image": "",     
         "quote": "This weapon is not designed for combat. Often gifted to children to teach them the fundamentals of magic.",     
-        "effect": "The only spell this staff is capable of casting is 'Summon Fairy', which is not really that useful since fairies are pacifist by nature.",  
+        "effect": "Unlocks the 'Summon Fairy' spell",  
         "description": [
           "Paragragh a",
           "Paragragh b"
          ],  
         "rarity": "Uncommon",    
         "stats": {      
-          "HP":    "",        
-          "MP":    "+10",
-          "ATK":   "",
-          "DEF":   "",
-          "MATK":  "+15",
-          "MDEF":  "",
-          "SPD":   "",
-          "EVA":   "",
-          "ACC":   "",
-          "CRT":   ""
+          "HP":    0,        
+          "MP":    10,
+          "ATK":   0,
+          "DEF":   0,
+          "MATK":  15,
+          "MDEF":  5,
+          "SPD":   0,
+          "EVA":   0,
+          "ACC":   0,
+          "CRT":   0
         }
       }
 
