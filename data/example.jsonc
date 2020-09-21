@@ -8,22 +8,22 @@
  *    id: DO NOT ENTER IDS YET UNTIL WE DECIDE ON HOW WE WANT TO DO THIS !!
  *    type: equipment | utility
  *    role: warrior | rogue | mage | cleric | any
- *    category: weapon | armor | consumable | artifact 
+ *    category: weapon | armor | consumable | artifact
  *    price: <int> , Commons are 50~200, Uncommon from 250~400, Rare from 500~750, Exotic/Legendary from 900+
  *    name:   Name of your item, feel free to do a simple name like 'Shield' or something complex like "Vampiric Kite Shield of Infinity"
  *    image:    source image 'imgs/my-test-image.png'
- *    quote:    A short piece of text that will appear directly under the item. 
+ *    quote:    A short piece of text that will appear directly under the item.
  *    effect:   Describes the effects of the item in a single line (or multiple lines if you want multiple effects, format as an array in that case)
- *    description: [    Any additional content you want to add to the item. Split the paragraphs into different array items. 
+ *    description: [    Any additional content you want to add to the item. Split the paragraphs into different array items.
  *      "Paragragh a",
  *      "Paragrah b"
- *     ],               
- *    rarity: common (green) | uncommon (blue) | rare (purple) | legendary (orange) 
+ *     ],
+ *    rarity: common (green) | uncommon (blue) | rare (purple) | legendary (orange)
  *    stats: {
                 Health Points (HP) common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
                 Magic Points (MP) common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
                 Attack (ATK):     common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
-                Defense (DEF): 
+                Defense (DEF):
                 Magic Attack (MATK):
                 Magic Defense (MDEF):
                 Speed (SPD):
@@ -31,26 +31,26 @@
                 Accuracy (ACC):
                 Critical (CRT): common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100
               }
- 
+
  */
  [
   {
-      "id": "", 
+      "id": "",
       "type": "utility",
-      "role": "any",   
-      "category": "consumable",   
-      "price": 50,  
-      "name": "Health Potion",   
-      "image": "",     
-      "quote": "Tastes like strawberries!",     
+      "role": "any",
+      "category": "consumable",
+      "price": 50,
+      "name": "Health Potion",
+      "image": "",
+      "quote": "Tastes like strawberries!",
       "effect": "Restores 25% of your Maximum HP. ",
       "description": [
        "Paragragh a",
        "Paragragh b"
-      ],  
-      "rarity": "Common",    
-      "stats": {      
-        "HP":    0,        
+      ],
+      "rarity": "Common",
+      "stats": {
+        "HP":    0,
         "MP":    0,
         "ATK":   0,
         "DEF":   0,
@@ -64,22 +64,22 @@
     },
 
   {
-    "id": "",             
-    "type": "equipment",   
-    "role": "any",    
-    "category": "artifact", 
-    "price": 300,             
-    "name": "Brave Ring",      
-    "image": "",             
-    "quote": "Makes you brave, but bravery isn't always the smartest thing in battle",    
-    "effect": "Dramatically enhances combat abilities but makes you blind to incoming threats",  
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 300,
+    "name": "Brave Ring",
+    "image": "",
+    "quote": "Makes you brave, but bravery isn't always the smartest thing in battle",
+    "effect": "Dramatically enhances combat abilities but makes you blind to incoming threats",
     "description": [
       "Paragragh a",
       "Paragragh b"
-     ],  
-    "rarity": "uncommon",    
-    "stats": {      
-      "HP":    0,        
+     ],
+    "rarity": "uncommon",
+    "stats": {
+      "HP":    0,
       "MP":    0,
       "ATK":   10,
       "DEF":   0,
@@ -94,21 +94,21 @@
 
   {
     "id": "",
-    "type": "utility",  
+    "type": "utility",
     "role": "any",
-    "category": "consumable", 
-    "price": 120,      
-    "name": "Health Potion",   
-    "image": "",           
-    "quote": "Never leave home without one",     
-    "effect": "Restores 30% of your maximum HP over 6 seconds.",  
+    "category": "consumable",
+    "price": 120,
+    "name": "Health Potion",
+    "image": "",
+    "quote": "Never leave home without one",
+    "effect": "Restores 30% of your maximum HP over 6 seconds.",
     "description": [
       "Paragragh a",
       "Paragragh b"
-     ],  
-    "rarity": "common",     
-    "stats": {      
-      "HP":    0,        
+     ],
+    "rarity": "common",
+    "stats": {
+      "HP":    0,
       "MP":    0,
       "ATK":   0,
       "DEF":   0,
