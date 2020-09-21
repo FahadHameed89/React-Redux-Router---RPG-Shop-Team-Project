@@ -11,7 +11,7 @@ export default () => {
                           .then(res => res.text())
                           .then(res => JSON.parse(res));
 
-  const fetchSignin = fetch('/data/signin.json')
+  const fetchClans = fetch('/data/clans.json')
                         .then(res => res.text())
                         .then(res => JSON.parse(res));
 
@@ -51,17 +51,17 @@ export default () => {
   }
 
   return Promise
-    .all([fetchEquipment, fetchUtilities, fetchSignin])
+    .all([fetchEquipment, fetchUtilities, fetchClans])
     .then(rawData => {
       let products = {};
-      let signIn = {};
+      let clans = {};
 
       products = mapProducts(products, rawData[0]);
       products = mapProducts(products, rawData[1]);
-      signIn = mapSignin(signIn, rawData[2]);
+      clans = mapSignin(clans, rawData[2]);
 
       return {
-        clans: signIn,
+        clans: clans,
         products: products
       }
     })
