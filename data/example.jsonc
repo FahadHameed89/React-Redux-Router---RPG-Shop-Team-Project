@@ -64,19 +64,23 @@
     "name": "",       // a name
     "image": "",      // Images saved to src, maybe save local for now and compress before adding
     "quote": "",      // a witty quote
-    "description": "",  // describes the effects of the item if it has no stats.
+    "effect":"",
+    "description": [
+       "Paragragh a",
+      "Paragrah b"
+     ],
     "rarity": "",       // common (green) | uncommon (blue) | rare (purple) | legendary (orange)
     "stats": {      
       "HP":    "0",     //common 1~10  / uncommon 11~25 / rare 26~50, legendary from 51~100   
-      "MP":    "0",
-      "ATK":   "0",
-      "DEF":   "0",
-      "MATK":  "0",
-      "MDEF":  "0",
-      "SPD":   "0",
-      "EVA":   "0",
-      "ACC":   "0",
-      "CRT":   "0"
+      "MP":    0,
+      "ATK":   0,
+      "DEF":   0,
+      "MATK":  0,
+      "MDEF":  0,
+      "SPD":   0,
+      "EVA":   0,
+      "ACC":   0,
+      "CRT":   0
     }
   },
 { 
