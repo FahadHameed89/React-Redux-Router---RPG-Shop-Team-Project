@@ -1,0 +1,26 @@
+[
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "warrior",
+    "category": "weapon",
+    "price": 250,
+    "name": "Round Shield of the Bear",
+    "image": "",
+    "quote": "Ducking, dodging, or evading you won't have to worry about your stamina.",
+    "description": ["A light-weight shield that maintains its hardended and tough blocking capabilities."],
+    "rarity": "common",
+    "stats": {
+        "HP":    10,
+        "MP":    19,
+        "ATK":   42,
+        "DEF":   10,
+        "MATK":  75,
+        "MDEF":  23,
+        "SPD":   18,
+        "EVA":   5,
+        "ACC":   80,
+        "CRT":   5
+    }
+  }
+]
