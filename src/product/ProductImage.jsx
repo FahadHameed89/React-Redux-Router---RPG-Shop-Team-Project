@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../img/alchemy-ring.svg';
+import image from '../img/health-potion.svg';
 import rarity from '../img/rarity-uncommon.svg';
 
 
