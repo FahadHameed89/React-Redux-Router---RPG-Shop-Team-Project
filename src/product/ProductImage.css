@@ -1,0 +1,24 @@
+.wrapper {
+/* position: relative; */
+max-width: 600px;
+    }
+
+/* .product-image {
+    position: absolute;
+    top: 0;
+}
+
+.product-rarity {
+position: absolute;
+top: 0;
+left: 50%;
+} */
+
+.wrapper img {
+    width: 100%;
+}
+
+.product-rarity {
+    max-width: 170px;
+    margin: 0 auto;
+}

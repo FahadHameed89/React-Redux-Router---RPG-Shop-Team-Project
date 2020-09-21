@@ -1,25 +1,24 @@
 import React from 'react';
-import image from '../img/health-potion.svg';
-import rarity from '../img/rarity-uncommon.svg';
+import image from '../img/king-breaker-bow.svg';
+import rarityImg from '../img/rarity-uncommon.svg';
+import './ProductImage.css'
 
-
-function ProductImage() {
+export default ( props ) => {
+    const rarity = props.rarity;
+    const imgPath = props.path;
     console.log(image);
     return (
-        <>
+    <>
         <div className="wrapper">
-            <div style={{ maxWidth: 250 }} className="product-image">
+            
+            <div className="product-image">
+            
+                <div className="product-rarity">
+                    <img src={rarityImg} alt="Rarity"/>
+                </div>
                 <img src={image} alt="Product"/>
             </div>
-
-            <div style={{ maxWidth: 250 }} className="product-rarity">
-                <img src={rarity} alt="Rarity"/>
-            </div>
         </div>
-          </>  
-        
+    </>          
     );
 }
-
-export default ProductImage;
-
