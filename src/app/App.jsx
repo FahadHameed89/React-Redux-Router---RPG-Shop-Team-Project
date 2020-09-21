@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import "./app.css";
 
+import Header from './Header';
 import ProductList from '../product/ProductList';
 import Product from '../product/Product';
 import SignIn from '../signIn/SignIn';
@@ -14,6 +15,7 @@ import SignIn from '../signIn/SignIn';
 export default () => {
   return(
     <Router>
+      <Header />
       <nav>
         <ul>
           <li><Link to="/">SignIn</Link></li>
