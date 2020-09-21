@@ -1,0 +1,276 @@
+[
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 50,
+    "name": "Health Potion",
+    "image": "",
+    "quote": "Tastes like strawberries!",
+    "effect": "Restores 25% of your Maximum HP. ",
+    "description": [
+     "Paragragh a",
+     "Paragragh a"
+    ],
+    "rarity": "Common"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 75,
+    "name": "Armor Potion",
+    "image": "",
+    "quote": "I won't bore you with how we managed to make this potion taste like oranges, you'll thank us later.",
+    "effect": "Gain 15 Armor. Armor is depleted before HP.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Common"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 100,
+    "name": "Mana Potion",
+    "image": "",
+    "quote": "This potion tastes like cloves and salt water. Despite the horrid taste it leaves the user feeling focussed and attentive.",
+    "effect": "Gain 2MP. MP is used to perform Actions.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Common"
+  },
+
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 125,
+    "name": "Strength Potion",
+    "image": "",
+    "quote": "This cherry flavoured potion glows with a faint red hue, and is said to enhance muscle and bone density in those who drink it regularly.",
+    "effect": "Temporarily increases ATK and DEF by 5.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Common"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 125,
+    "name": "Dexterity Potion",
+    "image": "",
+    "quote": "This lime flavoured potion glows with a faint green hue, and is said to enhance vision, hearing, and reflex speed in those who drink it regularly.",
+    "effect": "Temporarily increases SPD, EVA, and ACC by 5.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Common"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 150,
+    "name": "Spirit Potion",
+    "image": "",
+    "quote": "This berry flavoured potion glows with a faint purple hue, and is said to enhance memory, tighten attention, and enhance cognitive functions in those that drink it regularly.",
+    "effect": "Temporarily increases MATK and MDEF by 5.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Common"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 175,
+    "name": "Corrosive Potion",
+    "image": "",
+    "quote": "This dark green flask contains a potent venom designed to burn through metal plating",
+    "effect": "Cut a target's DEF in half for the duration of combat.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Common"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 200,
+    "name": "Fear Potion",
+    "image": "",
+    "quote": "This dark red flask contains a curious mixture of exotic plants that will cause irrational panic and fear in those who smell it",
+    "effect": "Cut a target's ATK in half for the duration of combat",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Common"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 250,
+    "name": "Ethereal Potion",
+    "image": "",
+    "quote": "Who needs defensive abilities when you can BECOME A GHOST!",
+    "effect": "Become ethereal for a short amount of time, gaining immunity from physical (but not magical) attacks",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 275,
+    "name": "Immunity Potion",
+    "image": "",
+    "quote": "We've developed a potion that prevents people from getting sick. Now we have to convince people to actually use it.",
+    "effect": "Gain 2 stacks of Immunity, which prevent debuffs. ",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 300,
+    "name": "Angelic Potion",
+    "image": "",
+    "quote": "This bright silver potion is adorned with a pair of decorative wings, and tastes like sugar water.",
+    "effect": "Restores 100% of your Max HP over 1 minute.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Uncommon"
+  },
+
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 325,
+    "name": "Rose Potion",
+    "image": "",
+    "quote": "I once saw a human drink one of these things and his skin erupted in sharp thorns. Strangely, it didn't seem to slow him down. In fact, he seemed to grow more confident in becoming a human porcupine...",
+    "effect": "Gain 10 stacks of Thorns. Retaliate whenever you are attacked, and lose 1 stack of thorns for each time you are struck.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 350,
+    "name": "Bottled Fairy",
+    "image": "",
+    "quote": "We keep them in bottles because they talk too much. And no, fairies don't sacrifice themselves to heal you. That's just an urban legend.",
+    "effect": "Whenever you would die, restore 50% of your Max HP and discard this potion. ",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Uncommon"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 500,
+    "name": "Chaos Potion",
+    "image": "",
+    "quote": "This peculiar potion causes both clarity and confusion, albeit randomly.",
+    "effect": "Randomizes the MP cost of all abilities (Range 0 ~ 3) for the rest of combat.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Rare"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 750,
+    "name": "Mithril Potion",
+    "image": "",
+    "quote": "This exotic potion is made from rare elements and herbs, and is known to be notoriously difficult to concoct.",
+    "effect": "Reduces the MP cost of all abilities by 1 for the rest of combat.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Rare"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 750,
+    "name": "Elixir",
+    "image": "",
+    "quote": "A miracle in a bottle!",
+    "effect": "Immediately restores all lost HP.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Rare"
+  },
+  {
+    "id": "",
+    "type": "utility",
+    "role": "any",
+    "category": "consumable",
+    "price": 750,
+    "name": "Vampiric Potion",
+    "image": "",
+    "quote": "Tastes awful at first, but you'll come to crave it...",
+    "effect": "Restores 1HP whenever you attack an enemy for the duration of combat.",
+    "description": [
+      "Paragragh a",
+      "Paragragh b"
+     ],
+    "rarity": "Rare"
+  }
+]
