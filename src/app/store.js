@@ -2,15 +2,15 @@ import { createStore } from 'redux';
 import rootReducer from './reducers';
 
 export default () => {
-  const fetchEquipment = fetch('data/equipment.json')
+  const fetchEquipment = fetch('/data/equipment.json')
                           .then(res => res.text())
                           .then(res => JSON.parse(res));
 
-  const fetchUtilities = fetch('data/utilities.json')
+  const fetchUtilities = fetch('/data/utilities.json')
                           .then(res => res.text())
                           .then(res => JSON.parse(res));
 
-  const fetchSignin = fetch('data/signin.json')
+  const fetchSignin = fetch('/data/signin.json')
                         .then(res => res.text())
                         .then(res => JSON.parse(res));
 
