@@ -26,6 +26,7 @@ function Description() {
     {
         return (
             <div class="item-description">
+                <h3>Description</h3>
                 {description.map((description, index) => {
                     return (
                     <p key={index}>{description}</p> 
@@ -37,6 +38,7 @@ function Description() {
 
     return (
         <div class="item-description">
+            <h3>Description</h3>
             <p>{description}</p>
         </div>
     )
