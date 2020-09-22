@@ -21,39 +21,6 @@ for (let i = 0; i < y; i++) {
 console.log("This is member:  " + membersList[0][i]);
 }*/
 
-/*  try{
-
-}
-catch(err)
-{
-
-}*/
-
-/*Aaron Barthel2:58 PM
-<div class="inputGroup">
-  <label ...></label>
-  <input ... />
-</div>
-<div class="inputGroup">
-  <label ...></label>
-  <input ... />
-
-  <p>My Error</p>
-</div> */
-
-/*
-
-{
-  TheAbsoluteZeros: {
-    "clan": "TheAbsoluteZeros",
-        "members": [
-          "Danish",
-          "Fahad",
-          "Irwin",
-          "Aaron"
-        ]
-  }
-}  */
 
 /*if(clans[USERINPUT] === undefined) {
   // NO USER
@@ -62,24 +29,72 @@ catch(err)
 
 /***const singleClan = clans["TheAbsoluteZeros"];
 const membersList = singleClan.members; */
-/*
-{
-  TheAbsoluteZeros: {
-    "clan": "TheAbsoluteZeros",
-        "members": [
-          "Danish",
-          "Fahad",
-          "Irwin",
-          "Aaron"
-        ]
-  },
 
-  Clan2: {
-    "clan": "Clan2",
-      "members": [
-        "Shawna",
-      ]
-  }
-} 
+
+
+//console.log(clanData["the absolute zero"].clan); // access clan2
+
+//console.log(clanData["clan1"].clan);
+
+/*
+
+const clanData = useSelector(state=>state.clans);   // grab clan and memebr data from the store
+
+  const clanList = Object.keys(clanData);    // grab clan names
+
+   const membersList = Object.entries(clanData)[0];   //clanData.clan not working
+ 
+    const  [clan1 , mem1 ]= Object.entries(clanData)[0];
+
+    console.log("clan 1 is " + clanList[0] +  "  ---- clan 2 is :" + clanList[1]);
+
+     
+   console.log(mem1.members ); //  found individual members array 
+
+   const membersArray =  mem1.members;
+   console.log(membersArray[1] );
+
+ 
+   const dash = dasherize("The yello Baloon is goof");
+   console.log("The yello Baloon is goof  // becomes ;;" + dash);
+
+  */
+
+
+    
+   
+  
+
+    /*console.log(Object.keys(clanData)[1]);
+    console.log(Object.keys(clanData)[0]);
+    console.log(Object.keys(clanData));*/
+
+
+
+
+    /*const clansList = [
+  "mercury",
+  "venus",
+  "earth",
+  "mars",
+  "jupiter",
+  "saturn",
+  "neptune",
+];
+
+/* Array membersList structure is
+ *   membersList[clanIndex][memberIndex]
+ */
+/*
+const membersList = [
+  ["Bagel34", "Martin", "red"], // clan [0]
+  ["Alger", "Mary", "Mary2", "yellow"],
+  ["Pixy", "Foxy56", "blue"],
+  ["dandy1", "voila", "purple", "green"],
+
+];
 */
 
+  /* Reaver:[ "Bagel34", "Martin","red" ],
+  Concordia: ["Alger", "Mary", "Mary2","yellow"],    
+  Mercury: ["Pixy", "Foxy56","blue"]*/
