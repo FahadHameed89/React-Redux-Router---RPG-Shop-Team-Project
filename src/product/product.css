@@ -1,0 +1,20 @@
+.product-stats {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.product-stat {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.stat-hp {
+  color: #ED7AA1;
+}
+
+.stat-hp .stat-bar-filled {
+  background-color: #ED7AA1;
+  color: #FFF;
+}
