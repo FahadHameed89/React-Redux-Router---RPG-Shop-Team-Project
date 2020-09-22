@@ -54,17 +54,16 @@ const counterReducer = (state = 0, action) => {
 
     return (
         <>
-      <div className="Counter">
+    <div className="Counter">
       <h1>Counter {counter}</h1>
-      <button onClick={() => dispatch(increment(7))}>+7</button>
-      <button onClick={() => dispatch(increment(1))}>+1</button>
-      <button onClick={() => dispatch(decrement(1))}>-1</button>
-      <button onClick={() => dispatch(decrement(5))}>-5</button>
-
-
-
+        <button onClick={() => dispatch(increment(7))}>+7</button>
+        <button onClick={() => dispatch(increment(1))}>+1</button>
+        <button onClick={() => dispatch(decrement(1))}>-1</button>
+        <button onClick={() => dispatch(decrement(5))}>-5</button>
     </div>
+
       <p>Price Element</p>
+      
       <button>Add To Cart</button> 
       </>
     );
