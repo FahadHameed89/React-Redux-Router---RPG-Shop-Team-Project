@@ -24,7 +24,6 @@ function Statistics()
                             <p className="hp-amount" key={index} style={{width:`${statDetail.stats.HP}%`}}>
                                 {statDetail.stats.HP} 
                             </p>
-                
                         )
                     })}
                 </div> 
@@ -32,15 +31,17 @@ function Statistics()
         </section>
 
         <section className="statistics">
-            <p>magic points (mp): </p>
-            <div className="full-bar">
-                {StatInfo.map((statDetail, index) => {
-                    return (
-                        <p className="mp-amount" key={index} style={{width:`${statDetail.stats.MP}%`}}>
-                            {statDetail.stats.MP} 
-                        </p>
-                    )
-                })} 
+            <div className="content-wrapper">
+                <p>magic points (mp): </p>
+                <div className="full-bar">
+                    {StatInfo.map((statDetail, index) => {
+                        return (
+                            <p className="mp-amount" key={index} style={{width:`${statDetail.stats.MP}%`}}>
+                                {statDetail.stats.MP} 
+                            </p>
+                        )
+                    })}
+                </div> 
             </div>
         </section>
 

@@ -29,8 +29,13 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 }
-.statistics p {
+.content-wrapper {
     text-transform: uppercase;
+    color: #000000;
+}
+
+.statistics > p {
+	color: #000000;
 }
 
 .full-bar{
