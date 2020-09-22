@@ -19,27 +19,27 @@ import { useSelector } from 'react-redux';
 function Description() {
     const description = useSelector(state => state.products["round-shieldofthe-bear"].description);
 
+    // use: "sun-cloak" if it has more than one description
+    // use: "round-shieldofthe-bear" if only one entry
+    
+    if (description.constructor === Array)
+    {
+        return (
+            <div class="item-description">
+                {description.map((description, index) => {
+                    return (
+                    <p key={index}>{description}</p> 
+                    );
+                })}
+            </div>
+        );
+    }
+
     return (
-        <>
-        <h3>Description</h3>
-        <p>{description}</p>
-        </>
-    );
+        <div class="item-description">
+            <p>{description}</p>
+        </div>
+    )
 } 
-
-// return (
-//     <div class="product-stats">
-//       {stats.map((equipdesc, index) => {
-//         return (
-//          <p>{equipdesc}</p> 
-//         );
-//       })}
-//     </div>
-//   );
-
-// check description if pure string or array
-// if pure string return <p>
-// if array do above
-
 export default Description;
 
