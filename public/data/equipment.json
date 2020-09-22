@@ -1150,5 +1150,34 @@
       "ACC": 65,
       "CRT": 85
     }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "weapon",
+    "price": 1130,
+    "name": "King Breaker Bow",
+    "image": "king-breaker-bow.svg",
+    "quote": "Contrary to popular belief, I know exactly what I’m doing.",
+    "effect":"",
+    "description": [
+      "\"King Breaker\" was the label given to those who first rose to betray the King. While their efforts were made in the best interest of the people, most king breakers were hunted down and eliminated, their bows taken as trophies.",
+      "In a ironic twist of fate, the very weapons once used in an effort to assassinate the King are now prized possessions for Royal Guards—not only for their storied history, but for the chance to get their hands on fully functional Magic weaponry."
+    ],
+    "rarity": "legendary",
+    "stats": {
+      "HP": 90,
+      "MP": 0,
+      "ATK": 65,
+      "DEF": 95,
+      "MATK": 0,
+      "MDEF": 0,
+      "SPD": -55,
+      "EVA": 0,
+      "ACC": 65,
+      "CRT": 85
+    }
   }
 ]
