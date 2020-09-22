@@ -2,10 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStoreAsync from './app/store';
-
 import App from './app/App';
 import './index.css';
-import ProductImage from './product/ProductImage';
 
 
 // Citation:
