@@ -6,8 +6,24 @@ import configureStoreAsync from './app/store';
 import App from './app/App';
 import './index.css';
 
-import Statistics from './components/stats';
-import './components/stats.css';
+// import Statistics from './components/stats';
+// import './components/stats.css';
+
+import ProductStats from './product/ProductStats';
+import './product/product.css';
+
+const testStats = {
+  "HP":    40,
+  "MP":    20,
+  "ATK":   42,
+  "DEF":   25,
+  "MATK":  69,
+  "MDEF":  37,
+  "SPD":   14,
+  "EVA":   95,
+  "ACC":   80,
+  "CRT":   65
+};
 
 // Citation:
 // https://stackoverflow.com/questions/37393176/redux-loading-initial-state-asynchronously
@@ -23,7 +39,7 @@ configureStoreAsync()
     ReactDOM.render(
       <React.StrictMode>
         <Provider store={store}>
-        <Statistics />
+        <ProductStats stats={testStats} />
         <App />
         </Provider>
       </React.StrictMode>,
