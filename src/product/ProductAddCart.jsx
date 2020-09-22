@@ -16,12 +16,57 @@
 
  */
 
+ /**IMPORTS */
  import React from 'react';
+ import {useSelector, useDispatch} from 'react-redux';
 
- export default () => {
+ /**ACTIONS */
+ export const increment = (number) => {
+    return {
+        type: 'INCREMENT',
+        payload: number
+    };
+};
+export const decrement = (number) => {
+    return {
+        type: 'DECREMENT',
+        payload: number
+    };
+};
+
+ /**REDUCERS */
+const counterReducer = (state = 0, action) => {
+    switch(action.type){
+        case "INCREMENT":
+            return state + action.payload;
+        case "DECREMENT":
+            return state - action.payload;
+        default: 
+            return state;
+    }
+}
+
+ 
+ export default ( props ) => {
+
+    const counter = useSelector(state => state.counterReducer);
+    const dispatch = useDispatch();
 
     return (
-      <p>I am the ProductAddCart component</p>
+        <>
+      <div className="Counter">
+      <h1>Counter {counter}</h1>
+      <button onClick={() => dispatch(increment(7))}>+7</button>
+      <button onClick={() => dispatch(increment(1))}>+1</button>
+      <button onClick={() => dispatch(decrement(1))}>-1</button>
+      <button onClick={() => dispatch(decrement(5))}>-5</button>
+
+
+
+    </div>
+      <p>Price Element</p>
+      <button>Add To Cart</button> 
+      </>
     );
   }
   
