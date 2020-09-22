@@ -5,7 +5,6 @@ import './ProductImage.css'
 export default ( props ) => {
     const rarity = props.rarity;
     const imgPath = props.path;
-    console.log(image);
     return (
     <>
         <div className="wrapper">
@@ -13,7 +12,7 @@ export default ( props ) => {
             <div className="product-image">
 
                 <div className="product-rare">
-                  <p>RARE</p>  
+                    <p>{rarity}</p>  
                 </div>
 
                 <img src={image} alt="Product"/>
