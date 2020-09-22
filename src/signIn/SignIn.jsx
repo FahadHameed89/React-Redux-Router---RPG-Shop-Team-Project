@@ -67,7 +67,7 @@ export default (props) => {
           <input
             type="text"
             id="user-name"
-            autoComplete="off"
+            autoComplete="off"          // !!!probably better idea to remove it  before final submit
             placeholder="Your Name"
             onChange={(e) => {
               getUserName(e.target.value);
@@ -78,11 +78,12 @@ export default (props) => {
           <p>{errorMessageUser}</p>
         </div>
 
-        <div className="userGroup">
+        <div className="clanGroup">
+        <label htmlFor="clan-name" />
           <input
             type="text"
             id="clan-name"
-            autoComplete="off"
+            autoComplete="off"            // !!!probably better idea to remove it  at the end
             placeholder="Your Clan"
             onChange={(e) => {
               getUserClan(e.target.value);
