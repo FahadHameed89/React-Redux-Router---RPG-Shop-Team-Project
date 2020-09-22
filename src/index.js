@@ -12,6 +12,8 @@ import './index.css';
 import ProductStats from './product/ProductStats';
 import './product/product.css';
 
+import Description from './product/ProductCard';
+
 const testStats = {
   "HP":    40,
   "MP":    20,
@@ -40,6 +42,7 @@ configureStoreAsync()
       <React.StrictMode>
         <Provider store={store}>
         <ProductStats stats={testStats} />
+        <Description />
         <App />
         </Provider>
       </React.StrictMode>,

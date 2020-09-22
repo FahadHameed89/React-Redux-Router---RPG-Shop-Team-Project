@@ -3,14 +3,14 @@
   margin: 0 auto;
 }
 
-.full-bar {
+/* .full-bar {
   background-color: #d8d8d8;
   height: 21px;
   width: 300px;
-}
+} */
 
 .product-stat {
-  display: inline;
+  display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-bottom: 2px;
