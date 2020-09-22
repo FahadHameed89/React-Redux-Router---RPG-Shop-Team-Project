@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../img/king-breaker-bow.svg';
+import image from '../img/angelic-potion.svg';
 import './ProductImage.css'
 
 export default ( props ) => {
