@@ -16,6 +16,11 @@ export default ( props ) => {
                 <div className="product-rarity">
                     <img src={rarityImg} alt="Rarity"/>
                 </div>
+
+                <div className="product-rare">
+                  <p>UNCOMMON</p>  
+                </div>
+
                 <img src={image} alt="Product"/>
             </div>
         </div>
