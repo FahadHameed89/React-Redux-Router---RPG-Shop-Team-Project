@@ -3,6 +3,8 @@ import './css/product-stats.css';
 
 
 export default (props) => {
+  const className = props.className || '';
+
   //
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
   //
@@ -24,7 +26,7 @@ export default (props) => {
     "SPD": "Speed (SPD)",
     "EVA": "Evasion (EVA)",
     "ACC": "Accuracy (ACC)",
-    "CRT": "Critical Hit Chance (CRT)",
+    "CRT": "Critical (CRT)",
   }
 
   const statClassMap = {
@@ -40,16 +42,31 @@ export default (props) => {
     "CRT":  "stat-crt",
   }
 
+  // We need to rework this again, it needs to handle when it gets small
+  // and when it grows while keeping good spacing. I took about a 1hr crack
+  // at it and couldn't get anything I liked so I'm moving on for now.
+  // I think css grid is actually going to be the winner here.
+  // break each of stat pieces into a grid then change the based on
+  // screen size. I try again after.
+  // - Aaron
+
+  if(stats.length === 0) {
+    // Don't display an empty stat block.
+    return (null);
+  }
+
   return (
-    <div className="product-stats">
+    <div className={`product-stats ${className}`}>
+      <h3>Stats</h3>
       {stats.map(([statName, statValue], index) => {
         return (
           <div key={index} className={`${statClassMap[statName]} product-stat`}>
-            <p>{ statMap[statName] }</p>
+            <p className="product-stat__name">{ statMap[statName] }</p>
+
             <div className="full-bar">
-              <p className="stat-bar-filled" style={{width:`${statValue}%`}}>
+              <span className="stat-bar-filled" style={{width:`${statValue}%`}}>
                   {statValue}
-              </p>
+              </span>
             </div>
           </div>
         );

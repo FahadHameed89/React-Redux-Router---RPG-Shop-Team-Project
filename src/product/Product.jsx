@@ -12,7 +12,7 @@ export default () => {
   const product = useSelector(state => state.products[id])
 
   return (
-    <main className="product-detail">
+    <main className="product-detail container">
       <ProductImage rarity={product.rarity} path={product.image} />
       <p>Add To Cart Component</p>
 
@@ -28,10 +28,7 @@ export default () => {
       <div className="flex-row">
         <ProductDescription className="w-50" description={product.description} />
 
-        <div className="w-50">
-          <h3>Stats</h3>
-          <ProductStats stats={product.stats} />
-        </div>
+        <ProductStats className="w-50" stats={product.stats} />
       </div>
     </main>
   );

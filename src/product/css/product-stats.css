@@ -2,14 +2,31 @@
 
 .product-stats {
   max-width: 550px;
-  margin: 0 auto;
 }
 
 .product-stat {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 2px;
+  align-items: center;
+}
+
+.product-stat__name {
+  width: 175px;
+}
+
+.full-bar {
+  width: 20rem;
+  background-color: #2D2032;
+}
+
+.full-bar span{
+  display: block;
+}
+
+.stat-bar-filled {
+  text-align: center;
 }
 
 .stat-hp {
