@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector ,connect} from "react-redux";
+import userSignIn from './logInAction';
 import dasherize from "../common/dasherize";
+import "./SignIn.css"
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 //https://dmitripavlutin.com/access-object-keys-values-entries/
 
-export default (props) => {
+function LogIn(props) {
  
   let memberPresent = false;
 
@@ -27,7 +29,10 @@ export default (props) => {
     }  
     if (memberPresent) // go to next page if member is in dataset
     {
-      window.location.href="../product/ProductList.jsx"
+      const a = {clan:userClan,member:userName}
+      console.log(a);
+      props.dispatch(userSignIn(a));
+     // window.location.href="../product/ProductList.jsx"
     }
 
     /*error check the clan availability and empty field
@@ -83,13 +88,14 @@ export default (props) => {
             id="user-name"
             autoComplete="off" // !!!probably better idea to remove it  before final submit
             placeholder="Your Name"
+            autoFocus
             onChange={(e) => {
               getUserName(e.target.value);
               getErrorMessageUser(""); // clear error fields
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-          <p>{errorMessageUser}</p>
+             <p>{errorMessageUser}</p>
         </div>
 
         <div className="clanGroup">
@@ -112,4 +118,7 @@ export default (props) => {
       </form>
     </>
   );
-};
+}
+
+//export default LogIn;
+export default connect((state) => {return { someResult: state };})(LogIn);
