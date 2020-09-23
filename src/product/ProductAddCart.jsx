@@ -16,56 +16,54 @@
 
  */
 
- /**IMPORTS */
- import React, { useState } from 'react';
+/**IMPORTS */
+import React, { useState } from "react";
+import "./css/product-addcart.css";
 
- export default (props) => {   
-   const productPrice = 100;                 // <-- This is the default product price, which will be CHANGED based on props.price.
-  const [count, setCount] = useState(1);    // <-- This needs to START at 1, and not go any lower..
-  const [price, setPrice] = useState(100);  // <--- This is a placeholder price value to be changed based on item props.
+export default (props) => {
+  const productPrice = 100; // <-- This is the default product price, which will be CHANGED based on props.price.
+  const [count, setCount] = useState(1); // <-- This needs to START at 1, and not go any lower..
+  const [price, setPrice] = useState(100); // <--- This is a placeholder price value to be changed based on item props.
 
   const update = (action) => {
-     
-   let newCount = 0;
-   let newPrice = 0;
+    let newCount = 0;
+    let newPrice = 0;
 
-   // console.log(newCount);
-   // console.log(newPrice);
+    // console.log(newCount);
+    // console.log(newPrice);
 
-      switch(action)
-      {
-         case '+':
-            newCount = count + 1;
-            newPrice = newCount * productPrice;
-            break;
-         case '-':
-            newCount = count - 1;
-            newPrice = newCount * productPrice;
-         break;
-      }
+    switch (action) {
+      case "+":
+        newCount = count + 1;
+        newPrice = newCount * productPrice;
+        break;
+      case "-":
+        newCount = count - 1;
+        newPrice = newCount * productPrice;
+        break;
+    }
 
-      setCount(newCount);
-      setPrice(newPrice)
-  }
+    setCount(newCount);
+    setPrice(newPrice);
+  };
 
-   return (
-     <div className="wrapper">
-        
+  return (
+    <div>
+      <div className="wrapper">
         <div className="counter">
-         <button onClick={() => update('+') }> + </button>
-         <p>{count}</p>
-         <button onClick={() => update('-')}> - </button>
-        </div> 
-        
+          <button className="upTick" onClick={() => update("+")}> + </button>
+          <p className="countDisplay">{count}</p>
+          <button className="downTick" onClick={() => update("-")}> - </button>
+        </div>
+
         <div className="price">
-         <p>Gold {price}</p>
-        </div> 
-        
+          <p>Gold {price}</p>
+        </div>
+
         <div className="addToCart">
-         <button> Add to Cart </button>
-        </div> 
-     
-     </div>
-     
-   );
- }
+          <button> Add to Cart </button>
+        </div>
+      </div>
+    </div>
+  );
+};

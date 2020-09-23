@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .counter {
+    flex: 0 0 33%;
+  }
+
+  .price {
+    flex: 0 0 33%;
+  }
+
+  .addToCart {
+    flex: 0 0 33%;
+  }
+
+/*Set CSS for the Counter element*/
+
+.counter {
+    display: flex;
+  }
+
