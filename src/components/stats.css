@@ -29,8 +29,13 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 }
-.statistics p {
+.content-wrapper {
     text-transform: uppercase;
+    color: #000000;
+}
+
+.statistics > p {
+	color: #000000;
 }
 
 .full-bar{
@@ -39,7 +44,7 @@ float: right;
 
 .full-bar {
 	background-color: #d8d8d8;
-	position: relative;
+	
 	/* margin: 15px 0; */
 	height: 15px;
     width: 300px;
