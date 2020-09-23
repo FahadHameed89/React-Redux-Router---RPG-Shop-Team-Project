@@ -27,6 +27,10 @@ const testStats = {
   "CRT":   65
 };
 
+const testDescription =  
+'A light-weight shield that maintains its hardended and tough blocking capabilities.'
+//['A', 'B']
+
 // Citation:
 // https://stackoverflow.com/questions/37393176/redux-loading-initial-state-asynchronously
 //
@@ -42,7 +46,7 @@ configureStoreAsync()
       <React.StrictMode>
         <Provider store={store}>
         <ProductStats stats={testStats} />
-        <Description />
+        <Description description={testDescription} />
         <App />
         </Provider>
       </React.StrictMode>,

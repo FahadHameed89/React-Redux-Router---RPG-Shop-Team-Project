@@ -16,11 +16,14 @@ import { useSelector } from 'react-redux';
  * 
  */
 
-function Description() {
-    const description = useSelector(state => state.products["round-shieldofthe-bear"].description);
+function Description(props) {
+    const description = props.description;
+    // const description = useSelector(state => state.products["round-shieldofthe-bear"].description);
 
     // use: "sun-cloak" if it has more than one description
     // use: "round-shieldofthe-bear" if only one entry
+
+    //
     
     if (description.constructor === Array)
     {
