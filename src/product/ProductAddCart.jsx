@@ -51,9 +51,9 @@ export default (props) => {
     <div>
       <div className="wrapper">
         <div className="counter">
-          <button className="upTick" onClick={() => update("+")}> + </button>
-          <p className="countDisplay">{count}</p>
           <button className="downTick" onClick={() => update("-")}> - </button>
+          <p className="countDisplay">{count}</p>
+          <button className="upTick" onClick={() => update("+")}> + </button>
         </div>
 
         <div className="price">

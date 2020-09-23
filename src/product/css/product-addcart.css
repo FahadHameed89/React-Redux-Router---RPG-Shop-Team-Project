@@ -21,11 +21,32 @@
     display: flex;
   }
 
-/*Set CSS colors*/
+/*Set CSS colors for Add To Cart Button*/
 
 .addToCart button {
     background: rgb(70,186,202);
     background: linear-gradient(170deg, rgba(70,186,202,1) 0%, rgba(49,130,217,1) 25%, rgba(61,67,199,1) 81%);
-    color: white;
+    color: #FFFFFF;
     border-radius: 12px;
+}
+
+/*Sete CSS colors for Counter*/
+
+.downTick {
+    color: #FFFFFF;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.upTick {
+    color: #FFFFFF;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.counter button {
+    background-color: #000000;    
+    border: 0px;
+}
+
+.counter p {
+    background-color: #000000;
 }
