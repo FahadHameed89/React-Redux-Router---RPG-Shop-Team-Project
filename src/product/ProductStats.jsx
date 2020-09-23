@@ -1,5 +1,5 @@
 import React from 'react';
-import './product.css';
+import './css/product-stats.css';
 
 
 export default (props) => {
@@ -41,7 +41,7 @@ export default (props) => {
   }
 
   return (
-    <div class="product-stats">
+    <div className="product-stats">
       {stats.map(([statName, statValue], index) => {
         return (
           <div key={index} className={`${statClassMap[statName]} product-stat`}>

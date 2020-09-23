@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.product-detail h3 {
+  font-weight: var(--font-black);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
 .product__name {
   margin-top: 12px;
   margin-bottom: 4px;
@@ -35,40 +41,10 @@
   line-height: 1.625rem;
 }
 
-.product-image {
-  max-width: 500px;
-  border: 0px solid;
-  background-color: #FFFFFF;
-  border-radius: 9px;
-}
 
-.product-image img {
-  display: block;
-  margin: 0 auto;
 
-  width: 100%;
-}
-
-.product-rarity {
-  height: 40px;
-  max-width: 170px;
-  border-radius: 0px 0px 6px 6px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.product-rarity p {
-  text-align: center;
-  padding-top: 8px;
-}
-
-.legendary .product-rarity {
-  background-color: #C521D3;
-  color: white;
-}
-
-.legendary.product-image {
-  border-color: #C521D3;
+.product__description p {
+  margin-bottom: 16px;
 }
 
 .flex-row {
@@ -79,113 +55,4 @@
 
 .w-50 {
   width: 50%;
-}
-
-
-.product-stats {
-  max-width: 550px;
-  margin: 0 auto;
-}
-
-/* .full-bar {
-  background-color: #d8d8d8;
-  height: 21px;
-  width: 300px;
-} */
-
-.product-stat {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  margin-bottom: 2px;
-}
-
-.stat-hp {
-  color: #ED7AA1;
-}
-
-.stat-hp .stat-bar-filled {
-  background-color: #ED7AA1;
-  color: #FFF;
-}
-
-.stat-mp {
-  color: #7C99FF;
-}
-
-.stat-mp .stat-bar-filled {
-  background-color: #7C99FF;
-  color: #FFF;
-}
-
-.stat-atk {
-  color: #EA685B;
-}
-
-.stat-atk .stat-bar-filled {
-  background-color: #EA685B;
-  color: #FFF;
-}
-
-.stat-def {
-  color: #73CBF1;
-}
-
-.stat-def .stat-bar-filled {
-  background-color: #73CBF1;
-  color: #FFF;
-}
-
-.stat-matk {
-  color: #45D0B2;
-}
-
-.stat-matk .stat-bar-filled {
-  background-color: #45D0B2;
-  color: #FFF;
-}
-
-.stat-mdef {
-  color: #45D0B2;
-}
-
-.stat-mdef .stat-bar-filled {
-  background-color: #45D0B2;
-  color: #FFF;
-}
-
-.stat-spd {
-  color: #E7B946;
-}
-
-.stat-spd .stat-bar-filled {
-  background-color: #E7B946;
-  color: #FFF;
-}
-
-.stat-eva {
-  color: #F18A50;
-}
-
-.stat-eva .stat-bar-filled {
-  background-color: #F18A50;
-  color: #FFF;
-}
-
-.stat-acc {
-  color: #D594DB;
-}
-
-.stat-acc .stat-bar-filled {
-  background-color: #D594DB;
-  color: #FFF;
-}
-
-.stat-crt {
-  color: #EE6496;
-}
-
-.stat-crt .stat-bar-filled {
-  background-color: #EE6496;
-  color: #FFF;
 }

@@ -20,15 +20,8 @@ function Description(props) {
     const description = props.description;
     // const description = useSelector(state => state.products["round-shieldofthe-bear"].description);
 
-    // use: "sun-cloak" if it has more than one description
-    // use: "round-shieldofthe-bear" if only one entry
-
-    //
-
-    if (description.constructor === Array)
-    {
         return (
-            <div class="item-description">
+        <div className={`product__description ${className}`}>
                 <h3>Description</h3>
                 {description.map((description, index) => {
                     return (
