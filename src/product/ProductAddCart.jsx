@@ -20,7 +20,7 @@
  import React, { useState } from 'react';
 
  export default (props) => {   
-   const productPrice = 100;
+   const productPrice = 100;                 // <-- This is the default product price, which will be CHANGED based on props.price.
   const [count, setCount] = useState(1);    // <-- This needs to START at 1, and not go any lower..
   const [price, setPrice] = useState(100);  // <--- This is a placeholder price value to be changed based on item props.
 
