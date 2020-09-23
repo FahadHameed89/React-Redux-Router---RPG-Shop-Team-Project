@@ -8,8 +8,6 @@ form{
   
 }
 
-
-
 input[type='text']{
 background: #201A27;
 border: 1px solid #413A4A;
@@ -31,7 +29,7 @@ color: #FAF9FD;
 }
 
 #user-name{
-    background-image:url('user-name.svg');
+    background-image:url('/imgs/signIn/user-name.svg');
     background-position: left;
     background-repeat: no-repeat;
     padding-left: 40px;
@@ -39,7 +37,7 @@ color: #FAF9FD;
 }
 
 #clan-name{
-    background-image:url('clan-name.svg');
+    background-image:url('/imgs/signIn/clan-name.svg');
     background-position: left;
     background-repeat: no-repeat;
     padding-left: 40px;
@@ -64,7 +62,6 @@ color: #FFFFFF;
 align-self: flex-end;
     
 }
-
 
 
 input[type="submit"]:hover, input[type="text"]:hover { 

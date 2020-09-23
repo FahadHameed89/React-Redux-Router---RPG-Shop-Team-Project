@@ -1,4 +1,4 @@
-/* testing stuff out */
+/* !!! Danish  testing stuff out  ,, will delets afterwords */
 
 x= clansList.includes(userClan.toLowerCase());    // check clan avialabilty
 console.log("clan is available "+ x);

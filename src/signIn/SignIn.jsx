@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import { useSelector ,connect} from "react-redux";
-import userSignIn from './logInAction';
+import { useSelector, connect } from "react-redux";
+import userSignIn from "./logInAction";
 import dasherize from "../common/dasherize";
-import "./SignIn.css"
+import "./SignIn.css";
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 //https://dmitripavlutin.com/access-object-keys-values-entries/
 
 function LogIn(props) {
- 
   let memberPresent = false;
 
   const [userName, getUserName] = useState("");
@@ -26,17 +25,17 @@ function LogIn(props) {
 
     if (clanIndex > -1) {
       memberPresent = confirmMember(clanIndex); // if clan exists call this function to check if user name is correct
-    }  
-    if (memberPresent) // go to next page if member is in dataset
-    {
-      const a = {clan:userClan,member:userName}
+    }
+    if (memberPresent) {
+      // go to next page if member is in dataset
+      const a = { clan: userClan, member: userName };
       console.log(a);
       props.dispatch(userSignIn(a));
-     // window.location.href="../product/ProductList.jsx"
+      // window.location.href="../product/ProductList.jsx"
     }
 
-    /*error check the clan availability and empty field
-     * return the clan index
+    /*----------------------------------error check the clan availability and empty field
+     * return the clan index--------------------------------------------------------------
      */
     function confirmClan() {
       let clanIndex;
@@ -55,7 +54,7 @@ function LogIn(props) {
       return clanIndex;
     } /// end confirmClan fn
 
-    /*error check the member availability and empty field */
+    /*-----------------------error check the member availability and empty field--------------------------- */
     function confirmMember(clanIndex) {
       let memberValid = false;
       const [clansL, clanMembers] = Object.entries(clanData)[clanIndex];
@@ -63,15 +62,14 @@ function LogIn(props) {
 
       try {
         const memberFound = memberList.includes(userName); //  find if member exits
- 
+
         if (userName === "") {
           throw "Please enter your user name ";
         } else if (!memberFound) {
           throw "This username does not exist";
         }
         memberValid = true;
-      }
-      catch (error) {
+      } catch (error) {
         getErrorMessageUser(error);
       }
       return memberValid;
@@ -95,7 +93,7 @@ function LogIn(props) {
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-             <p>{errorMessageUser}</p>
+          <p>{errorMessageUser}</p>
         </div>
 
         <div className="clanGroup">
@@ -121,4 +119,6 @@ function LogIn(props) {
 }
 
 //export default LogIn;
-export default connect((state) => {return { someResult: state };})(LogIn);
+export default connect((state) => {
+  return { someResult: state };
+})(LogIn);
