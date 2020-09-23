@@ -1,29 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import configureStoreAsync from './app/store';
+import App from './app/App';
 import './index.css';
 
-import Statistics from './components/stats';
-import './components/stats.css';
 
-import ProductStats from './product/ProductStats';
+// Citation:
+// https://stackoverflow.com/questions/37393176/redux-loading-initial-state-asynchronously
+//
+// The example given in the above link gave me the initial structure and idea for loading
+// our json data asyncronously which forced us to delay the creation of our store objects
+// which forced the delay of creating our react render hook.
+//
+configureStoreAsync()
+  .then(res => {
+    const store = res;
 
-const testStats = {
-  "HP":    10,
-  "MP":    0,
-  "ATK":   42,
-  "DEF":   0,
-  "MATK":  0,
-  "MDEF":  0,
-  "SPD":   0,
-  "EVA":   0,
-  "ACC":   80,
-  "CRT":   5
-};
-
-ReactDOM.render(
-  <React.StrictMode>
-    {/* <Statistics /> */}
-    <ProductStats stats={testStats} />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    ReactDOM.render(
+      <React.StrictMode>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
+  })
