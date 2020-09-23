@@ -3,6 +3,11 @@ import './css/product-stats.css';
 
 
 export default (props) => {
+  if(!props.stats || props.stats.length === 0) {
+    // Don't display an empty stat block.
+    return (null);
+  }
+
   const className = props.className || '';
 
   //
@@ -49,11 +54,6 @@ export default (props) => {
   // break each of stat pieces into a grid then change the based on
   // screen size. I try again after.
   // - Aaron
-
-  if(stats.length === 0) {
-    // Don't display an empty stat block.
-    return (null);
-  }
 
   return (
     <div className={`product-stats ${className}`}>
