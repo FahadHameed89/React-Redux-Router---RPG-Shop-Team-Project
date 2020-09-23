@@ -4,7 +4,8 @@ import { useSelector } from 'react-redux';
 
 import "./css/product.css"
 import ProductImage from './ProductImage';
-import ProductStat from './ProductStat';
+import ProductStats from './ProductStats';
+import ProductDescription from './ProductDescription';
 
 export default () => {
   const { id } = useParams();
@@ -25,11 +26,11 @@ export default () => {
       </div>
 
       <div className="flex-row">
-        <div className="w-50">
-          <h3>Description</h3>
-        </div>
+        <ProductDescription className="w-50" description={product.description} />
+
         <div className="w-50">
           <h3>Stats</h3>
+          <ProductStats stats={product.stats} />
         </div>
       </div>
     </main>
