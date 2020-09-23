@@ -20,13 +20,52 @@
  import React, { useState } from 'react';
 
  export default (props) => {   
-  const [count, setCount] = useState(0);
-   // Declare a new state variable, which we'll call "count"  const [count, setCount] = useState(0);
+   const productPrice = 100;
+  const [count, setCount] = useState(1);    // <-- This needs to START at 1, and not go any lower..
+  const [price, setPrice] = useState(100);  // <--- This is a placeholder price value to be changed based on item props.
+
+  const update = (action) => {
+     
+   let newCount = 0;
+   let newPrice = 0;
+
+   // console.log(newCount);
+   // console.log(newPrice);
+
+      switch(action)
+      {
+         case '+':
+            newCount = count + 1;
+            newPrice = newCount * productPrice;
+            break;
+         case '-':
+            newCount = count - 1;
+            newPrice = newCount * productPrice;
+         break;
+      }
+
+      setCount(newCount);
+      setPrice(newPrice)
+  }
+
    return (
-     <div>
-       <button onClick={() => setCount(count + 1)}> + </button>
-       <p>{count}</p>
-       <button onClick={() => setCount(count - 1)}> - </button>
+     <div className="wrapper">
+        
+        <div className="counter">
+         <button onClick={() => update('+') }> + </button>
+         <p>{count}</p>
+         <button onClick={() => update('-')}> - </button>
+        </div> 
+        
+        <div className="price">
+         <p>Gold {price}</p>
+        </div> 
+        
+        <div className="addToCart">
+         <button> Add to Cart </button>
+        </div> 
+     
      </div>
+     
    );
  }
