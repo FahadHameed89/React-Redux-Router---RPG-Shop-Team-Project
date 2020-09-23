@@ -1,0 +1,30 @@
+/**{outline: 1px solid #FF0000}
+*/
+
+.svg-filter-button{
+    width: 7%;
+}
+
+.out-circle{
+
+    stroke: #070608;
+    stroke-width: 1px;
+    fill: #443648;
+   box-shadow: 0px 4px 14px #fff;
+ 
+}
+.in-circle{
+
+    fill: #57455D;
+}
+.up-triangle{
+
+   
+    fill: #443648;
+ 
+
+}
+
+.svg-filter-button:hover .up-triangle,.svg-filter-button:hover .out-circle{
+    fill:#a17e25;
+}
