@@ -61,7 +61,7 @@ export default (props) => {
         </div>
 
         <div className="addToCart">
-          <button> Add to Cart </button>
+          <button> ADD TO CART </button>
         </div>
       </div>
     </div>

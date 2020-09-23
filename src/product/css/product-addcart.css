@@ -21,3 +21,11 @@
     display: flex;
   }
 
+/*Set CSS colors*/
+
+.addToCart button {
+    background: rgb(70,186,202);
+    background: linear-gradient(170deg, rgba(70,186,202,1) 0%, rgba(49,130,217,1) 25%, rgba(61,67,199,1) 81%);
+    color: white;
+    border-radius: 12px;
+}
