@@ -29,9 +29,9 @@ function LogIn(props) {
     if (memberPresent) {
       // go to next page if member is in dataset
       const a = { clan: userClan, member: userName };
-      console.log(a);
+     
       props.dispatch(userSignIn(a));
-      // window.location.href="../product/ProductList.jsx"
+      window.location.href="../product/ProductList.jsx"
     }
 
     /*----------------------------------error check the clan availability and empty field
@@ -84,7 +84,7 @@ function LogIn(props) {
           <input
             type="text"
             id="user-name"
-            autoComplete="off" // !!!probably better idea to remove it  before final submit
+            autoComplete="off"
             placeholder="Your Name"
             autoFocus
             onChange={(e) => {
@@ -101,7 +101,7 @@ function LogIn(props) {
           <input
             type="text"
             id="clan-name"
-            autoComplete="off" // !!!probably better idea to remove it  at the end
+            autoComplete="off" 
             placeholder="Your Clan"
             onChange={(e) => {
               getUserClan(dasherize(e.target.value)); // grabbing user given clan field and dasherize it
