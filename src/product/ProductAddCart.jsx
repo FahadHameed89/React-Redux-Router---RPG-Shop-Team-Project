@@ -19,6 +19,8 @@
 /**IMPORTS */
 import React, { useState } from "react";
 import "./css/product-addcart.css";
+/* import goldIcon from '../../public/data/imgs/gold.svg';  <-- COMPILE ERROR, CANNOT IMPORT FROM OUTSIDE src/
+ */
 
 export default (props) => {
   const productPrice = 100; // <-- This is the default product price, which will be CHANGED based on props.price.
@@ -57,6 +59,7 @@ export default (props) => {
         </div>
 
         <div className="price">
+          {/* <img src={goldIcon} /> **PLACEHOLDER FOR WHEN I FIGURE OUT THE IMPORT  */}  
           <p>Gold {price}</p>
         </div>
 
