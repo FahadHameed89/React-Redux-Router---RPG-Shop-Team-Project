@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProductImage.css'
 
 export default ( props ) => {
     const rarity = props.rarity;
