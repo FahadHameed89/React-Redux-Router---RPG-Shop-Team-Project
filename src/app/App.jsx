@@ -2,33 +2,28 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom';
 
+import Header from './Header';
+import Masthead from './Masthead';
 import ProductList from '../product/ProductList';
 import Product from '../product/Product';
 import SignIn from '../signIn/SignIn';
+import AddCart from '../product/ProductAddCart';
+import ProductAddCart from '../product/ProductAddCart';
 
 import ProductCard from '../product/ProductCard'
 
 export default () => {
   return(
     <Router>
-      <nav>
-        <ul>
-          <li><Link to="/">SignIn</Link></li>
-          <li><Link to="/products">Products</Link></li>
-          <li><Link to="/card">card</Link></li>
-          <li><Link to="/products/king-breaker-bow">Kings Breaker Bow</Link></li>
-        </ul>
-      </nav>
-
+      <Header />
+      <Masthead />
       <Switch>
         <Route exact path="/" component={SignIn} />
         <Route exact path="/products" component={ProductList} />
-        <Route path="/products/:id" component={Product} />
-        <Route path="/card" component={ProductCard} />
+        <Route path="/products/:id" component={ProductAddCart} />
       </Switch>
     </Router>
   )

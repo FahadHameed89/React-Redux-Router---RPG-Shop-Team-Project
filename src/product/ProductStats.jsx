@@ -21,6 +21,19 @@ export default (props) => {
                   .entries(props.stats)
                   .filter(([_, value]) => value !== 0);
 
+  const iconMap = {
+    "HP": "heart.svg",
+    "MP": "magic.svg",
+    "ATK": "attack.svg",
+    "DEF": "defense.svg",
+    "MATK": "magic-attack.svg",
+    "MDEF": "magic-defense.svg",
+    "SPD": "speed.svg",
+    "EVA": "evasion.svg",
+    "ACC": "accuracy.svg",
+    "CRT": "critical.svg",
+  }
+
   const statMap = {
     "HP": "Health Points (HP)",
     "MP": "Magic Points (MP)",
@@ -47,21 +60,16 @@ export default (props) => {
     "CRT":  "stat-crt",
   }
 
-  // We need to rework this again, it needs to handle when it gets small
-  // and when it grows while keeping good spacing. I took about a 1hr crack
-  // at it and couldn't get anything I liked so I'm moving on for now.
-  // I think css grid is actually going to be the winner here.
-  // break each of stat pieces into a grid then change the based on
-  // screen size. I try again after.
-  // - Aaron
-
   return (
     <div className={`product-stats ${className}`}>
       <h3>Stats</h3>
       {stats.map(([statName, statValue], index) => {
         return (
           <div key={index} className={`${statClassMap[statName]} product-stat`}>
-            <p className="product-stat__name">{ statMap[statName] }</p>
+            <p className="product-stat__name">
+              <img src={`/imgs/stat-icons/${iconMap[statName]}`} />
+              { statMap[statName] }
+            </p>
 
             <div className="full-bar">
               <span className="stat-bar-filled" style={{width:`${statValue}%`}}>
