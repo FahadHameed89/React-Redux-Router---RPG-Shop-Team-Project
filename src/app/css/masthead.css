@@ -1,0 +1,35 @@
+.masthead {
+  min-height: 720px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position-x: -350px;
+}
+
+.masthead.masthead-products {
+  background-image: url('/imgs/masthead-products.png');
+}
+
+@media screen and (min-width: 590px) {
+  .masthead {
+    background-position-x: -300px;
+  }
+}
+
+
+@media screen and (min-width: 870px) {
+  .masthead {
+    background-position-x: -200px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .masthead {
+    background-position-x: -100px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .masthead {
+    background-position-x: 0;
+  }
+}

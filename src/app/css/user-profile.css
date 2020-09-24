@@ -1,0 +1,21 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown__menu {
+  position: absolute;
+  transform-origin: top right;
+  right: 0;
+
+  background-color: #FFF;
+  padding: 10px 8px;
+  margin-top: 6px;
+}
+
+.dropdown__closer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
