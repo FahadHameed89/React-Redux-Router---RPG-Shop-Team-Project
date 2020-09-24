@@ -13,6 +13,7 @@ export default () => {
           <li><Link to="/">SignIn</Link></li>
           <li><Link to="/products">Products</Link></li>
           <li><Link to="/products/king-breaker-bow">Kings Breaker Bow</Link></li>
+          <li><Link to="/checkout">Shopping Cart</Link></li>
         </ul>
       </nav>
     </div>

@@ -10,10 +10,7 @@ import Masthead from './Masthead';
 import ProductList from '../product/ProductList';
 import Product from '../product/Product';
 import SignIn from '../signIn/SignIn';
-import AddCart from '../product/ProductAddCart';
-import ProductAddCart from '../product/ProductAddCart';
-
-import ProductCard from '../product/ProductCard'
+import Cart from '../shoppingCart/ShoppingCart';
 
 export default () => {
   return(
@@ -23,7 +20,8 @@ export default () => {
       <Switch>
         <Route exact path="/" component={SignIn} />
         <Route exact path="/products" component={ProductList} />
-        <Route path="/products/:id" component={ProductAddCart} />
+        <Route path="/products/:id" component={Product} />
+        <Route path="/checkout" component={Cart} />
       </Switch>
     </Router>
   )
