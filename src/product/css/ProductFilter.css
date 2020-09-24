@@ -1,7 +1,4 @@
-.svg-filter-button,
-.product-filter-container {
-  outline: 1px solid #ff0000;
-}
+
 
 .product-filter-container {
   display: flex;
