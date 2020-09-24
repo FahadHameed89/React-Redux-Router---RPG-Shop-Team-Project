@@ -40,13 +40,31 @@
   min-width: 200px;
 }
 
+.product-card .item-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.product__cardlist {
+  height: 50px;
+  border-radius: 0px 0px 6px 6px;
+  text-align: center;
+  color: white;
+  background-color: #57455D;
+}
+
+.item-name p {
+  padding: 0px 10px;
+  /* text-transform: capitalize; */
+}
+
+
+
+/* .product__cardlist {
   float: left;
   width: 200px;
   height: 200px;
   object-fit: cover;
-}
+} */
 
 /* @media screen and (min-width: 800px) {
   .product-list {

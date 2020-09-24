@@ -21,7 +21,9 @@ export default (props) => {
             </div> */}
 
             <ProductImage path={product.image} rarity={product.rarity} />
-            <span>{product.name}</span>
+            <div class="item-name">
+              <p>{product.name}</p>
+            </div>
         </Link>
       </article>
     )
