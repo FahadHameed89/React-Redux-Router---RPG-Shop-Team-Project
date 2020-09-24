@@ -4,7 +4,7 @@ form{
     display:flex;
     flex-direction: column;
     max-width: fit-content;
-  
+
 }
 
 input[type='text']{
@@ -23,23 +23,24 @@ color: #FAF9FD;
 margin-top: 5%;
 
 
+  /*font-size: var(--text-base);*/
 }
 
 #user-name{
     background-image:url('/imgs/signIn/user-name.svg');
     background-position: left;
     background-repeat: no-repeat;
-    padding-left: 40px;  
-}
-
-#clan-name{
-    background-image:url('/imgs/signIn/clan-name.svg');
-    background-position: left;
-    background-repeat: no-repeat;
     padding-left: 40px;
 }
 
-input[type="submit"]{ 
+#clan-name {
+  background-image: url("/imgs/signIn/clan-name.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+input[type="submit"]{
 width: 180px;
 height: 60px;
 background: linear-gradient(180deg, #46BACA 0%, #3188D9 30.73%, #3D43C7 100%);
@@ -52,10 +53,10 @@ font-weight: 900;
 font-size: 20px;
 line-height: 23px;
 color: #FFFFFF;
-align-self: flex-end;    
+align-self: flex-end;
 }
 
-input[type="submit"]:hover, input[type="text"]:hover{ 
+input[type="submit"]:hover, input[type="text"]:hover{
     box-shadow: 0 0 7px 0 #2187D3;
     border: 3px solid #2187D3;
   }
@@ -73,8 +74,5 @@ color: #D05A69;
 *https://www.templatemonster.com/help/js-animated-how-to-change-the-placeholder-text-color-of-an-input.html     */
 
 #user-name::-webkit-input-placeholder {
-    color:#fff !important;
-    }
-
-  
-
+  color: #fff !important;
+}

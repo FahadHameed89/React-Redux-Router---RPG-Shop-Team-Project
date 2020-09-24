@@ -70,9 +70,6 @@ body {
 
   background-color: #2F273C;
   color: #FFF;
-
-  /* Pull the content away from the page edge */
-  padding: 16px;
 }
 
 code {
@@ -93,4 +90,6 @@ a:hover {
 .container {
   margin: 0 auto;
   max-width: 1280px;
+  /* Pull the content away from the page edge */
+  padding: 16px;
 }
