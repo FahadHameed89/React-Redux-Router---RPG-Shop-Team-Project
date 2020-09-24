@@ -5,7 +5,6 @@ import {
   Link,
   Switch
 } from 'react-router-dom';
-import "./app.css";
 
 import Header from './Header';
 import ProductList from '../product/ProductList';

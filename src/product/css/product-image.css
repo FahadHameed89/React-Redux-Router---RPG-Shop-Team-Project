@@ -1,0 +1,36 @@
+.product__image {
+  max-width: 500px;
+  border: 0px solid;
+  background-color: #FFFFFF;
+  border-radius: 9px;
+}
+
+.product__image img {
+  display: block;
+  margin: 0 auto;
+
+  width: 100%;
+}
+
+.product__image-rarity {
+  height: 40px;
+  max-width: 170px;
+  border-radius: 0px 0px 6px 6px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product__image-rarity p {
+  text-align: center;
+  padding-top: 8px;
+}
+
+
+.legendary .product__image-rarity {
+  background-color: #C521D3;
+  color: white;
+}
+
+.legendary.product__image {
+  border-color: #C521D3;
+}
