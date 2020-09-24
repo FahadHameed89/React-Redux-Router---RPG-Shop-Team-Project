@@ -1,0 +1,48 @@
+
+
+.product-filter-container {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+.svg-filter-button {
+  width: 100%;
+}
+
+.out-circle {
+  stroke: #070608;
+  stroke-width: 1px;
+  fill: #443648;
+}
+.in-circle {
+  fill: #57455d;
+}
+.up-triangle {
+  fill: #443648;
+}
+
+.product-filter-container:hover .up-triangle,
+.product-filter-container:hover .out-circle,
+.product-filter-container:hover image {
+  fill: #a17e25;
+}
+
+.witch-hat {
+  fill: #a17e25;
+}
+
+.filter-string {
+  font-size: var(--s-4);
+  text-align: center;
+  color: #fff;
+}
+
+.product-filter-container:hover .filter-string {
+  color: #a17e25;
+}
+
+.witch-hat:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+}
