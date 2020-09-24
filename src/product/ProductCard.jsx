@@ -19,7 +19,7 @@ export default () => {
                 <div className="product__image-rarity">
                     <p>{product.rarity}</p>
                 </div>
-                <img src={`/imgs/products/${product.image}`} alt="" />
+                <img className="product__cardlist" src={`/imgs/products/${product.image}`} alt="" />
             </div>
             <span>{product.name}</span>
         </Link>
