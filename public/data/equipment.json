@@ -395,8 +395,8 @@
     "price": 500,
     "name": "Sun Cloak",
     "image": "",
-    "quote": "Praise It.",
-    "effect": "Restores a small amount of HP over time as long as the user is exposed to sunlight.",
+    "quote": "Praise The Sun.",
+    "effect": "Gradually restores HP as long as the wearer is exposed to sunlight.",
     "description": [
       "This cloak is adorned with the Sun Singer's emblem, a bright yellow circle representing the sun. In addition to it's healing properties and magic resistance, wearing it might convince some people you are a member of the Sun Singers..."
      ],
