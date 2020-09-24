@@ -180,22 +180,22 @@
     "role": "warrior",
     "category": "armor",
     "price": 400,
-    "name": "Valorant Helm",
+    "name": "Knight's Helmet",
     "image": "",
-    "quote": "Realistically, the only part of your head that won't be protected will be the eye slits. And even then...They're tiny...",
-    "description": ["These helmets are worn by those who want to intimidate their opponents as well as protect themselves. Valorants are known for their shock and awe tactics, and a helmet designed to look like a dragon's head is no exception to that."],
+    "quote": "This one's in near perfect condition. Never mind the dent on the back side of the helm, I think it came like that...",
+    "description": ["A standard issue helmet worn by most knights. What it lacks in design and elegance, it makes up for in it's ability to almost fully mitigate impacts to the head."],
     "rarity": "uncommon",
     "stats": {
-        "HP":    7,
+        "HP":    5,
         "MP":    0,
         "ATK":   0,
-        "DEF":   17,
-        "MATK":  15,
-        "MDEF":  0,
-        "SPD":   7,
-        "EVA":   7,
+        "DEF":   20,
+        "MATK":  0,
+        "MDEF":  10,
+        "SPD":   0,
+        "EVA":   0,
         "ACC":   0,
-        "CRT":   5
+        "CRT":   0
     }
   },
 
@@ -207,25 +207,12 @@
     "price": 125,
     "name": "Heart Necklace",
     "image": "",
-    "quote": "This necklace radiates a soft pink aura, and feels warm to the touch.",
+    "quote": "This necklace is a rookie favorite, though I don't see many veterans wearing them. Do you think it's because of the heart shape?",
     "effect": "At the end of combat, restore 10HP",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A simple glass locket imbued with healing magic. It begins to glow when the wearer is in the presence of danger. While this artifact is quite common, many people swear by it's ability to sustain in oppresive conditions."
      ],
-    "rarity": "Common",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Common"
   },
 
   {
@@ -236,25 +223,12 @@
     "price": 150,
     "name": "Sharp Ring",
     "image": "",
-    "quote": "A silver ring adorned with mysterious runes written in a forgotten language. The runes light up when the wearer feels threatened.",
+    "quote": "We get these by the dozen you know. And before you ask, no you can't wear like ten of them and have the effect multiplied. Trust me, i've tried.",
     "effect": "Your first attack of each combat deals 10 additional damage.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A silver ring adorned with a series of sharp spikes. The ring begins to glow red when the wearer senses danger, and will enhance the user's first attack, be that a spell or a sword swing."
      ],
-    "rarity": "Common",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Common"
   },
 
   {
@@ -265,25 +239,12 @@
     "price": 175,
     "name": "Safety Ring",
     "image": "",
-    "quote": "A small ring with a bright orange gemstone embedded inside of it. You feel safer just by wearing it.",
+    "quote": "The gem inset is made of enchanted morganite, which is normally quite expensive, but this is one of the flawed gems. Oh well...",
     "effect": "Gain 10 Armor at the start of each combat.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A small ring with a bright orange gemstone embedded inside of it. You feel safer just by looking at it."
      ],
-    "rarity": "Common",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Common"
   },
 
   {
@@ -294,25 +255,12 @@
     "price": 200,
     "name": "Stealth Stone",
     "image": "",
-    "quote": "A beautiful purple stone that shrouds the user in shadows.",
+    "quote": "I've been told by many adventurers, knights, and wizards alike. Don't go to sleep with this thing in your pocket, trust me, it's better to just listen to me on this one.",
     "effect": "Gain 1 Stealth at the start of each combat.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A beautiful purple stone that whispers quietly to it's holder. Most whispers are warnings of impending danger, but some users have reported the stone speaking in a garbled, unexplained language."
      ],
-    "rarity": "Common",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Common"
   },
 
   {
@@ -323,25 +271,12 @@
     "price": 250,
     "name": "Radiant Ring",
     "image": "",
-    "quote": "A multi-coloured ring which alternates between red, blue, green, and yellow.",
+    "quote": "More MP, more actions per turn. Keep in mind this only works on your first turn, so...yeah...",
     "effect": "Start each combat with 1 additional MP.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A multi-coloured ring which alternates between the different colors of the rainbow depending on the time of day. "
      ],
-    "rarity": "Uncommon",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Uncommon"
   },
 
   {
@@ -352,25 +287,12 @@
     "price": 275,
     "name": "Mithril Ring",
     "image": "",
-    "quote": "A dark blue ring adorned with mysterious runes. The runes light up when it senses danger.",
+    "quote": "It doesn't look like much, but it's pretty useful, especially for those idiots who run around without a shield.",
     "effect": "If you end a turn without any Armor, gain 10 Armor.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A simple loop ring made of precious mithril. The normally dark blue metal begins to glow when the wearer is in the presence of immediate danger."
      ],
-    "rarity": "Uncommon",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Uncommon"
   },
 
   {
@@ -381,25 +303,12 @@
     "price": 300,
     "name": "Viper Ring",
     "image": "",
-    "quote": "A dark green ring adorned with etchings of snakes. The origins of this ring are shrouded in mystery.",
-    "effect": "Whenever you apply Poison to an enemy, apply 1 additional stack of Poison.",
+    "quote": "I hate this ring. That doesn't mean YOU won't like it though...! I think it's the eyes, I'd never put that thing on my hand!",
+    "effect": "Whenever you apply and amount of Poison to an enemy, apply 1 additional stack of Poison.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A dark green ring adorned with etchings of snakes. When the wearer applies poison to an enemy, the eyes of the snakes erupt in green flames. The origins of this ring are shrouded in mystery."
      ],
-    "rarity": "Uncommon",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Uncommon"
   },
 
   {
@@ -410,25 +319,12 @@
     "price": 500,
     "name": "Skull Ring",
     "image": "",
-    "quote": "A ring made in the shape of a skull. The origins of this ring are shrouded in mystery.",
-    "effect": "Whenever your HP drops below 50%, double your ATK for the rest of combat.",
+    "quote": "No they aren't human skulls! How would that even work? Why do I have to keep explaining this?!",
+    "effect": "Whenever your HP drops below 50%, double your ATK for the rest of combat. This effect can only occur once per combat.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A ring made in the shape of a skull. When the wearer is critically wounded, the eyes of the skull erupt in flames, and imbue the wearer with incredible strength. The origins of this ring are shrouded in mystery."
      ],
-    "rarity": "Rare",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Rare"
   },
 
   {
@@ -439,25 +335,12 @@
     "price": 750,
     "name": "Alchemy Ring",
     "image": "",
-    "quote": "A peculiar ring forged in the shape of a potion bottle. Said to be made by a legendary alchemist who could turn lead into gold.",
-    "effect": "Whenever you drink a potion, heal 10HP in addition to it's normal effect.",
+    "quote": "I get these rings from the Alchemist's Guild. I know the guildmaster, we go way back.",
+    "effect": "Whenever you drink a potion, heal 10HP in addition to its primary effect.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A peculiar ring forged in the shape of a potion bottle. Said to be made by a legendary alchemist who could turn lead into gold."
      ],
-    "rarity": "Rare",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Rare"
   },
 
   {
@@ -468,25 +351,12 @@
     "price": 800,
     "name": "Dragoon Ring",
     "image": "",
-    "quote": "A dark red ring adorned with etchings of dragons. The origins of this ring are shrouded in mystery.",
+    "quote": "Don't tell anyone i'm selling these, I could get in quite a bit of trouble with the dragoons if they found out about this...",
     "effect": "Whenever an enemy is defeated, gain 1MP",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A dark red ring adorned with etchings of a dragon. Whenever an enemy is defeated, the eyes of the dragon begin to glow red. The origins of this ring are shrouded in mystery."
      ],
-    "rarity": "Rare",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   0,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
+    "rarity": "Rare"
   },
 
   {
@@ -498,10 +368,9 @@
     "name": "Sprint Shoes",
     "image": "",
     "quote": "There's nothing magical about these shoes. They just make you run really, REALLY fast.",
-    "effect": "Dramatically increases the wearers speed and reflexes.",
+    "effect": "Slightly increases the wearers movement speed",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "A pair of lightweight shoes with no obvious magical traits or qualities."
      ],
     "rarity": "Uncommon",
     "stats": {
@@ -526,11 +395,10 @@
     "price": 500,
     "name": "Sun Cloak",
     "image": "",
-    "quote": "The sun singers made a whole assortment of fashionable gear. Not the strongest by any means, but definately the most stylish.",
+    "quote": "Praise It.",
     "effect": "Restores a small amount of HP over time as long as the user is exposed to sunlight.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This cloak is adorned with the Sun Singer's emblem, a bright yellow circle representing the sun. In addition to it's healing properties and magic resistance, wearing it might convince some people you are a member of the Sun Singers..."
      ],
     "rarity": "Uncommon",
     "stats": {
