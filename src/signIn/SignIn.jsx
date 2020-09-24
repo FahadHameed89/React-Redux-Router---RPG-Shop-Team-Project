@@ -93,7 +93,7 @@ function LogIn(props) {
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-          <p>{errorMessageUser}</p>
+          <p className="show-error-message">{errorMessageUser}</p>
         </div>
 
         <div className="clanGroup">
@@ -109,7 +109,7 @@ function LogIn(props) {
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-          <p>{errorMessageClan}</p>
+          <p className="show-error-message">{errorMessageClan}</p>
         </div>
 
         <input type="submit" value="Login" />
