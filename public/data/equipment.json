@@ -6,8 +6,8 @@
     "category": "weapon",
     "price": 250,
     "name": "Round Shield of the Bear",
-    "image": "",
-    "quote": "Shields are great when your getting shot at. This one is pretty good, though kind of low quality. Says 'of the Bear' on it, so it can't be TERRIBLE!",
+    "image": "warrior-round-shield-of-the-bear.png",
+    "quote": "I bought this shield from a guy named bear. It's surprisingly tough, even though it's made of cheap materials...!",
     "description": ["A light-weight shield with a surprising level of durability and toughness. It has what looks to be an imprint of a bear paw embedded into the center of the shield."],
     "rarity": "common",
     "stats": {
@@ -31,9 +31,9 @@
     "category": "weapon",
     "price": 300,
     "name": "Swift Morning Star of the Badger",
-    "image": "",
-    "quote": "No, a badger didn't make this weapon. A man NAMED Badger did, and he's quite good at what he does I might add.",
-    "description": ["This weapon gains a stack of Attack Speed whenever it strikes an enemy. Each stack of Attack Speed lasts 15 seconds, and is refreshed with each hit. It can become quite ridiculous."],
+    "image": "warrior-swift-morning-star-of-the-badger.png",
+    "quote": "So basically this thing gains stacking attack speed buffs every time you hit an enemy. It can become quite ridiculous...",
+    "description": ["This weapon gains a stack of Attack Speed whenever it strikes an enemy. Each stack of Attack Speed lasts 15 seconds, and is refreshed with each hit."],
     "rarity": "uncommon",
     "stats": {
         "HP":    0,
@@ -56,7 +56,7 @@
     "category": "weapon",
     "price": 1500,
     "name": "Alkaizer's Zweihander of the Damned",
-    "image": "",
+    "image": "warrior-alkaizers-zweihander-of-the-damned.png",
     "quote": "I really shouldn't be selling you this...I bought it from a guy who insisted it was cursed. But it doesn't look cursed to me!",
     "description": ["Tempered by the malice of countless malevolent beings it has slained, this famed weapon of Alkaizer strikes fear into the very souls of its foes." ],
     "rarity": "legendary",
@@ -81,7 +81,7 @@
     "category": "armor",
     "price": 125,
     "name": "Peacekeeper Plate Greaves",
-    "image": "",
+    "image": "warrior-peacekeeper-plate-greaves.png",
     "quote": "Standard equipment used by the Peacekeepers. Your not gonna ask me why I'm selling these are you? Wait a second..are you a cop?! 'Cause you gotta tell me if your a cop!",
     "description": ["Light weight iron plate greaves. Primarily used by knights who pledge themselves to the holy order known as the Peacekeepers. They have a reputation for providing excellent protection without compromising comfort or mobility."],
     "rarity": "common",
@@ -106,7 +106,7 @@
     "category": "armor",
     "price": 350,
     "name": "Oathsworn Plate Gauntlets",
-    "image": "",
+    "image": "warrior-oathsworn-plate-gauntlets.png",
     "quote": "Standard equipment used by the Peacekeepers. I bought these off a lady who said she was done with the order...but don't tell anyone I told you that, they're still quite popular around these parts...",
     "description": ["Strong and flexible plate gauntlets. No different than regular plate gauntlets, except for the inscription written by the original owner which states their Oath. This one says 'No Blood Without Cause'."],
     "rarity": "uncommon",
@@ -131,8 +131,8 @@
     "category": "armor",
     "price": 750,
     "name": "Heavy Chestplate of the Mountain",
-    "image": "",
-    "quote": "You may not be able to throw a punch, but you can sure take one",
+    "image": "warrior-heavy-chesplate-of-the-mountain.png",
+    "quote": "You may not be able to move very well, but good luck to any idiot who tries to attack you!",
     "description": ["This heavy iron chestpiece protects the wearer from arrows, sword strikes, and even some simple spells. It can only be worn by the strongest of warriors, due to it's prohibitive size and incredible bulk."],
     "rarity": "rare",
     "stats": {
@@ -156,7 +156,7 @@
     "category": "armor",
     "price": 475,
     "name": "Vanguard Steel Legplates",
-    "image": "",
+    "image": "warrior-vanguard-steel-legplates.png",
     "quote": "Zipper not included.",
     "description": ["A pair of legplates fashioned out of interlocking metal scales. They provide excellent protection without compromising mobility or flexiblity."],
     "rarity": "uncommon",
@@ -180,8 +180,8 @@
     "role": "warrior",
     "category": "armor",
     "price": 400,
-    "name": "Knight's Helmet",
-    "image": "",
+    "name": "Great Helm of Valor",
+    "image": "warrior-greathelm-of-valor.png",
     "quote": "This one's in near perfect condition. Never mind the dent on the back side of the helm, I think it came like that...",
     "description": ["A standard issue helmet worn by most knights. What it lacks in design and elegance, it makes up for in it's ability to almost fully mitigate impacts to the head."],
     "rarity": "uncommon",
@@ -190,7 +190,7 @@
         "MP":    0,
         "ATK":   0,
         "DEF":   20,
-        "MATK":  0,
+        "MATK":  10,
         "MDEF":  10,
         "SPD":   0,
         "EVA":   0,
@@ -206,7 +206,7 @@
     "category": "artifact",
     "price": 125,
     "name": "Heart Necklace",
-    "image": "",
+    "image": "heart-necklace.svg",
     "quote": "This necklace is a rookie favorite, though I don't see many veterans wearing them. Do you think it's because of the heart shape?",
     "effect": "At the end of combat, restore 10HP",
     "description": [
@@ -222,11 +222,11 @@
     "category": "artifact",
     "price": 150,
     "name": "Sharp Ring",
-    "image": "",
-    "quote": "We get these by the dozen you know. And before you ask, no you can't wear like ten of them and have the effect multiplied. Trust me, i've tried.",
+    "image": "sharp-ring.svg",
+    "quote": "We get these by the dozen... and before you ask, no you can't wear like ten of them and have the effect multiplied. Trust me, i've tried.",
     "effect": "Your first attack of each combat deals 10 additional damage.",
     "description": [
-      "A silver ring adorned with a series of sharp spikes. The ring begins to glow red when the wearer senses danger, and will enhance the user's first attack, be that a spell or a sword swing."
+      "A silver ring adorned with a series of sharp spikes. The ring begins to glow red when the wearer senses danger, and will enhance the user's first attack, be that a spell or a strike."
      ],
     "rarity": "Common"
   },
@@ -238,8 +238,8 @@
     "category": "artifact",
     "price": 175,
     "name": "Safety Ring",
-    "image": "",
-    "quote": "The gem inset is made of enchanted morganite, which is normally quite expensive, but this is one of the flawed gems. Oh well...",
+    "image": "safety-ring.svg",
+    "quote": "The gem inset is made of enchanted morganite, which is normally quite expensive, but this is one is flawed...",
     "effect": "Gain 10 Armor at the start of each combat.",
     "description": [
       "A small ring with a bright orange gemstone embedded inside of it. You feel safer just by looking at it."
@@ -254,11 +254,11 @@
     "category": "artifact",
     "price": 200,
     "name": "Stealth Stone",
-    "image": "",
-    "quote": "I've been told by many adventurers, knights, and wizards alike. Don't go to sleep with this thing in your pocket, trust me, it's better to just listen to me on this one.",
+    "image": "stealth-stone.svg",
+    "quote": "I've been told by many adventurers, knights, and wizards alike. Don't go to sleep with this thing in your pocket. Trust me, it's better to just listen to me on this one.",
     "effect": "Gain 1 Stealth at the start of each combat.",
     "description": [
-      "A beautiful purple stone that whispers quietly to it's holder. Most whispers are warnings of impending danger, but some users have reported the stone speaking in a garbled, unexplained language."
+      "A beautiful purple stone that whispers quietly to it's holder. Most whispers are warnings of impending danger, but some users have reported the stone speaking in a horrifying, unexplained language."
      ],
     "rarity": "Common"
   },
@@ -270,11 +270,11 @@
     "category": "artifact",
     "price": 250,
     "name": "Radiant Ring",
-    "image": "",
-    "quote": "More MP, more actions per turn. Keep in mind this only works on your first turn, so...yeah...",
+    "image": "radiant-ring.svg",
+    "quote": "More MP, more actions per turn. Keep in mind it only works on your first turn, so...make it count?",
     "effect": "Start each combat with 1 additional MP.",
     "description": [
-      "A multi-coloured ring which alternates between the different colors of the rainbow depending on the time of day. "
+      "A multi-coloured ring which alternates between the different colors of the rainbow depending on the time of day."
      ],
     "rarity": "Uncommon"
   },
