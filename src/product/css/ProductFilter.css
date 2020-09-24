@@ -1,8 +1,16 @@
-/**{outline: 1px solid #FF0000}
-*/
+.svg-filter-button, .product-filter-container{outline: 1px solid #FF0000}
+
+.product-filter-container{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    
+}
 
 .svg-filter-button{
-    width: 7%;
+   
+    width:100%
+  
 }
 
 .out-circle{
@@ -25,6 +33,26 @@
 
 }
 
-.svg-filter-button:hover .up-triangle,.svg-filter-button:hover .out-circle{
+.product-filter-container:hover .up-triangle,.product-filter-container:hover .out-circle,.product-filter-container:hover image{
     fill:#a17e25;
 }
+
+svg-filter-button:hover image{
+    background-image: url('/imgs/filter-icons/icon-bell-red.svg');
+}
+
+.witch-hat{
+    fill:#a17e25;
+}
+
+.filter-string{
+    font-size: var(--s-4);
+    text-align: center;
+ color: #fff;
+}
+
+.product-filter-container:hover .filter-string{
+    color: #a17e25;
+
+}
+
