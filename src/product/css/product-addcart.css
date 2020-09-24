@@ -1,0 +1,78 @@
+/* *{outline: 1px solid #FF0000} */
+
+.wrapper {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+
+  .price {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+
+/*Set CSS for the Counter element*/
+
+.counter {
+    display: flex;
+  }
+
+/*Set CSS colors for Add To Cart Button*/
+
+.addToCart {
+  background-color: #3D43C7;
+
+    color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addToCart img {
+  max-width: 18px;
+  padding: 5px;
+  align-items: center;
+
+}
+
+.addToCart button {
+  background-color: #3D43C7;
+  color: white;
+  border-radius: 0px 12px 12px 0px;
+  border: 0px;
+}
+
+/*Sete CSS colors for Counter*/
+
+.downTick {
+    color: #FFFFFF;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.upTick {
+    color: #FFFFFF;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.counter button {
+    background-color: #000000;    
+    border: 0px;
+}
+
+.counter p {
+    background-color: #000000;
+    padding: 5px;
+}
+
+.price img {
+  max-width: 18px;
+  padding: 5px;
+
+}
