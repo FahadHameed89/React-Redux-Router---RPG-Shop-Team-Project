@@ -2,11 +2,24 @@
   min-height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .main-header h1 {
   text-align: center;
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
+}
+
+
+.user-account {
+  width: 58px;
+  height: 58px;
+  background: #211B22;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
