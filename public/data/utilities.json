@@ -167,8 +167,8 @@
     "category": "consumable",
     "price": 300,
     "name": "Angelic Potion",
-    "image": "",
-    "quote": "This bright silver potion is adorned with a pair of decorative wings, and tastes like sugar water.",
+    "image": "angelic-potion.svg",
+    "quote": "This bright pink potion is adorned with a pair of decorative wings, and tastes like sugar water.",
     "effect": "Restores 100% of your Max HP over 1 minute.",
     "description": [
       "Paragragh a",
@@ -184,7 +184,7 @@
     "category": "consumable",
     "price": 325,
     "name": "Rose Potion",
-    "image": "",
+    "image": "rose-potion.svg",
     "quote": "I once saw a human drink one of these things and his skin erupted in sharp thorns. Strangely, it didn't seem to slow him down. In fact, he seemed to grow more confident in becoming a human porcupine...",
     "effect": "Gain 10 stacks of Thorns. Retaliate whenever you are attacked, and lose 1 stack of thorns for each time you are struck.",
     "description": [
