@@ -13,6 +13,8 @@ import SignIn from '../signIn/SignIn';
 import AddCart from '../product/ProductAddCart';
 import ProductAddCart from '../product/ProductAddCart';
 
+import ProductCard from '../product/ProductCard'
+
 export default () => {
   return(
     <Router>
