@@ -4,15 +4,18 @@
 
 #checkout-page {
   display: flex;
-  margin: 8%;
+  margin: 7%;
   flex-direction: column;
   width: fit-content;
+
+
+
 }
 
 /*--------- your cart heading--------*/
 
 #checkout-page h2{
-    margin-left: 30px;
+    margin-left: 11%;
     font-size: 30px;
     font-weight: bolder;
 }
@@ -25,13 +28,13 @@
   flex-wrap: wrap;
   align-items: center;
   border: 1px solid #fff;
-  margin: 20px;
-  padding: 20px;
+  margin: 2%;
+  padding: 2%;
 }
 
 #image-p {
   flex-basis: 50%;
-  margin-right: 5px;
+  margin-right: 6%;
 }
 #image-p {
   max-width: 120px;
@@ -48,32 +51,41 @@
 #price-p {
   flex-basis: 25%;
   text-align: center;
-  padding-right:3px;
+  padding-right: 2%;
   border-right: 1px dotted #fff;
+  margin-right:5%;
 }
 #quantity-p {
-  flex-basis: 22%;
+  flex-basis: 10%;
   margin-left: 3px;
   text-align: center;
 }
 
-/*remove quantity textbox*/
-#remove-p {
+/*remove button*/
+#remove-q #add-q{
   flex-basis: 10%;
   margin-left: 5px;
-  text-align: left;
+  text-align: right;
 }
-#remove-p input[type="textbox"]{
-  border-radius: 5px;
-  width:15px;
+#remove-q input[type="button"],
+#add-q input[type="button"]{
+  border-radius: 45%;
   background: #808080;
   color: #fff;
   border: none;
   outline: none;
-  text-align: center;
 }
 
-
+#remove-q input[type="button"]:hover,#add-q input[type="button"]:hover {
+  background: #201a27;
+  color: #fff;
+ 
+}
+#remove-q input[type="button"]:active,
+#add-q input[type="button"]:active {
+  background:#3188d9;
+  color: #fff; 
+}
 
 #name-p {
   flex-basis: 70%;
@@ -137,12 +149,36 @@
     }
 
 
+    @media screen and (min-width: 740px) {
+
+      #checkout-page {
+        margin-left: 15%;     
+      }
+      #image-p {
+        max-width: 150px;   
+      }
+      #name-p {
+
+        font-size: 20px;
+    
+        
+      }
+
+    }
+
     @media screen and (min-width: 1000px) {
 
       #checkout-page {
+        margin-left: 20%;     
+      }
+      #image-p {
+        max-width: 170px;   
+      }
+      #name-p {
 
-        margin-left: 20%;
-       
+        font-size: 20px;
+    
+        
       }
 
     }

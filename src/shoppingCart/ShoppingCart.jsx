@@ -4,27 +4,26 @@ import CartItem from "./ShoppingCartItem";
 import "./ShoppingCart.css";
 
 //https://www.robinwieruch.de/javascript-map-array
+//https://www.robinwieruch.de/react-remove-item-from-list
 
 export default () => {
-  const productsInCart1 = useSelector((state) => Object.values(state.cart));
+  const productsInCart = useSelector((state) => Object.values(state.cart));
   const allProducts = useSelector((state) => Object.values(state.products));
-
-  const [productsInCart, setProductsInCart] = React.useState(productsInCart1);
-
- // const [changeQuantity, getchangeQuantity] = useState(0);
 
   let subTotal = 0;
   let cartListArray=[];
+  const [cartItemsList, setCartItemsList] = useState(cartListArray);
 
-
-    for (const element of productsInCart)  {
+ 
+/*  rpopulate cartlist array because needed to get quantity of the items too */
+    for (const element of productsInCart)  {   
      const c = allProducts.find(xx => xx.id === element.productId);
       c["quantity"] = element.quantity; 
       subTotal = (c.price*c.quantity)+subTotal;
       cartListArray.push(c);
     }
+    
     console.log(cartListArray);
-
 
 
 
@@ -44,7 +43,7 @@ export default () => {
     console.log(id);
     const newList = cartListArray.filter((item) => item.id !== id);
  
-    setProductsInCart(newList);
+    setCartItemsList(newList);
   
   }//end checkout fn
 
@@ -53,7 +52,7 @@ export default () => {
 
     <h2>Your Cart</h2>
 
-      {cartListArray.map((cartItem)=>{
+      {cartItemsList.map((cartItem)=>{
           //  getchangeQuantity(cartItem.quantity)
 
            return(
@@ -61,10 +60,14 @@ export default () => {
           <ul className="products-listing">
           <li id="image-p"><img src={`/imgs/products/${cartItem.image}`} alt="" /></li>
           <li id="price-p">Unit Price: {cartItem.price}</li>
-          <li id="quantity-p">Quantity: </li>
-          <li id="remove-p">
-            <input type="textbox" value={cartItem.quantity}
-            ></input>
+          <li id="remove-q">
+            <input type="button" value="-" 
+            onClick={removeSingleItem}></input>
+          </li>
+          <li id="quantity-p"> {cartItem.quantity}</li>
+          <li id="add-q">
+            <input type="button" value="+" 
+            onClick={removeSingleItem}></input>
           </li>
           <li id="name-p">{cartItem.name}</li>
           
