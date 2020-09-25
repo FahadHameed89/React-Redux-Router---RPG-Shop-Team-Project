@@ -41,6 +41,8 @@ export const filterByRole = (role, products) => {
     case 'rogue':
       type = FILTER_ROGUE;
       break;
+    default:
+      type = '';
   }
 
   return {

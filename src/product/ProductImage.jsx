@@ -11,7 +11,7 @@ export default ( props ) => {
             <div className="product__image-rarity">
                 <p>{rarity}</p>
             </div>
-            <img src={imgPath} alt={`${name} product image`}/>
+            <img src={imgPath} alt={`${name}`}/>
         </div>
     );
 }

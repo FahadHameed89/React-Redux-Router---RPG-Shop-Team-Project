@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { filterByRole } from './filteredProductReducer';
@@ -27,11 +27,15 @@ export default () => {
     dispatch(filterByRole(filter, products))
   }
 
+  // We want this effect to only run once so that redux
+  // gets an initial set of products.
+  // There has to be a better way.
   useEffect(() => {
     if(filteredProducts.length === 0) {
       dispatch(filterByRole("warrior", products))
     }
-  }, [])
+     //Very strange, requirement just to stop an eslint warning
+  }, [dispatch, filteredProducts.length])
 
   return (
     <main className="products container">

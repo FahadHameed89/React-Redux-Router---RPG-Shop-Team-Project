@@ -44,9 +44,9 @@ function LogIn(props) {
         clanIndex = clanList.indexOf(userClan); // find clan index
 
         if (userClan === "") {
-          throw "Please enter The name Of your Clan";
+          throw new Error("Please enter The name Of your Clan");
         } else if (!clanFound) {
-          throw "This Clan does not exist";
+          throw new Error("This Clan does not exist");
         }
       } catch (error) {
         getErrorMessageClan(error);
@@ -57,16 +57,16 @@ function LogIn(props) {
     /*-----------------------error check the member availability and empty field--------------------------- */
     function confirmMember(clanIndex) {
       let memberValid = false;
-      const [clansL, clanMembers] = Object.entries(clanData)[clanIndex];
+      const [_, clanMembers] = Object.entries(clanData)[clanIndex];
       const memberList = clanMembers.members; //populate memberList with clan's members array
 
       try {
         const memberFound = memberList.includes(userName); //  find if member exits
 
         if (userName === "") {
-          throw "Please enter your user name ";
+          throw new Error("Please enter your user name ");
         } else if (!memberFound) {
-          throw "This username does not exist";
+          throw new Error("This username does not exist");
         }
         memberValid = true;
       } catch (error) {
