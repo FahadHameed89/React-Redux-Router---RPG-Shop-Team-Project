@@ -124,7 +124,7 @@ function LogIn(props) {
         <div class="signin__guard-container">
           <img src="/imgs/signin-boss.png" alt="A large orc figure guards the shop entrance."/>
         </div>
-        <p>Only clan members on the list can enter.</p>
+        <p className="bubble bubble-bottom-left">Only clan members on the list can enter.</p>
       </div>
     </main>
     </>
