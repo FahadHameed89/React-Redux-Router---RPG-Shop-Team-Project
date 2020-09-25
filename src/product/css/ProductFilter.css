@@ -42,6 +42,17 @@
   color: #a17e25;
 }
 
+.product-filter-container.active .filter-string {
+  color: #a17e25;
+}
+
+.product-filter-container.active .up-triangle,
+.product-filter-container.active .out-circle,
+.product-filter-container.active image {
+  fill: #a17e25;
+}
+
+
 .witch-hat:hover {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
     brightness(104%) contrast(97%);
