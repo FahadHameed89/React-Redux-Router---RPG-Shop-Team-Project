@@ -1,0 +1,25 @@
+.cart-icon__container {
+  position: relative;
+  padding: 6px;
+}
+
+.cart-icon__quantity {
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: 6px;
+
+  /* transform: rotate(45deg); */
+  padding: 3px 5px;
+
+  border: 2px solid #000;
+  border-radius: 6px;
+  color: #FFF;
+  background-color: #CA2533;
+}
+
+.cart-icon__quantity span {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-black);
+}
