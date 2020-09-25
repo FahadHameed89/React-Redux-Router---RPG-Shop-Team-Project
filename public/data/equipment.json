@@ -1,28 +1,5 @@
 [
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "warrior",
-    "category": "weapon",
-    "price": 250,
-    "name": "Round Shield of the Bear",
-    "image": "warrior-round-shield-of-the-bear.png",
-    "quote": "I bought this shield from a guy named bear. It's surprisingly tough, even though it's made of cheap materials...!",
-    "description": ["A light-weight shield with a surprising level of durability and toughness. It has what looks to be an imprint of a bear paw embedded into the center of the shield."],
-    "rarity": "common",
-    "stats": {
-        "HP":    25,
-        "MP":    0,
-        "ATK":   0,
-        "DEF":   30,
-        "MATK":  0,
-        "MDEF":  20,
-        "SPD":   0,
-        "EVA":   20,
-        "ACC":   0,
-        "CRT":   0
-    }
-  },
+
 
   {
     "id": "",
@@ -71,6 +48,31 @@
         "EVA":   0,
         "ACC":   85,
         "CRT":   35
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "warrior",
+    "category": "weapon",
+    "price": 250,
+    "name": "Round Shield of the Bear",
+    "image": "warrior-round-shield-of-the-bear.png",
+    "quote": "I bought this shield from a guy named bear. It's surprisingly tough, even though it's made of cheap materials...!",
+    "description": ["A light-weight shield with a surprising level of durability and toughness. It has what looks to be an imprint of a bear paw embedded into the center of the shield."],
+    "rarity": "common",
+    "stats": {
+        "HP":    25,
+        "MP":    0,
+        "ATK":   0,
+        "DEF":   30,
+        "MATK":  0,
+        "MDEF":  20,
+        "SPD":   0,
+        "EVA":   20,
+        "ACC":   0,
+        "CRT":   0
     }
   },
 
@@ -183,6 +185,7 @@
     "name": "Great Helm of Valor",
     "image": "warrior-greathelm-of-valor.png",
     "quote": "This one's in near perfect condition. Never mind the dent on the back side of the helm, I think it came like that...",
+    "effect":"Once per combat, prevents the first time the wearer would be hit by a Critical Hit.",
     "description": ["A standard issue helmet worn by most knights. What it lacks in design and elegance, it makes up for in it's ability to almost fully mitigate impacts to the head."],
     "rarity": "uncommon",
     "stats": {
@@ -198,6 +201,613 @@
         "CRT":   0
     }
   },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "warrior",
+    "category": "armor",
+    "price": 1130,
+    "name": "Blazing Chainmail",
+    "image": "blazing-chainmail.svg",
+    "quote": "Contrary to popular belief, I know exactly what I’m doing.",
+    "effect":"Illuminate the surrounding area, preventing enemies from entering Stealth.",
+    "description": ["This exotic armor is effectively a chainmail wreathed in eternal flames, which are harmless to the wearer. Any enemies who dare get close enough will be burned.", "With enough exposure and practice with this armor, the user may learn to activate and de-activate it's effect at will."],
+    "rarity": "legendary",
+    "stats": {
+      "HP": 80,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 50,
+      "MATK": 0,
+      "MDEF": 50,
+      "SPD": 0,
+      "EVA": 40,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "weapon",
+    "price": 500,
+    "name": "Fairy Staff",
+    "image": "fairy-staff.svg",
+    "quote": "I had one of these when I was a kid! Great fun, though kind of dangerous if you manage to get the fairies mad at you...",
+    "effect": "Unlocks the 'Summon Fairy' spell",
+    "description": [
+      "This weapon is not designed for combat. Often gifted to children to teach them the fundamentals of magic."
+     ],
+    "rarity": "Uncommon",
+    "stats": {
+      "HP":    0,
+      "MP":    0,
+      "ATK":   0,
+      "DEF":   0,
+      "MATK":  0,
+      "MDEF":  30,
+      "SPD":   30,
+      "EVA":   0,
+      "ACC":   0,
+      "CRT":   0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "weapon",
+    "price": 370,
+    "name": "Wind Reaper Mace",
+    "image": "wind-reaper-mace.svg",
+    "quote": "A cold wind blowing from the north made the trees rustle like living things -- George R.R. Martin --",
+    "effect": "Striking the ground with this weapon will unleash claws of lightning that seek out nearby enemies.",
+    "description": ["This mace is deadly in the hands of both a seasoned warrior, but it's true power shines when wielded by a mage. Made of an alloy of Cobalt and Mithril, this mace turns any magician into a dangerous close range threat."],
+    "rarity": "uncommon",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 35,
+      "DEF": 0,
+      "MATK": 65,
+      "MDEF": 0,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 85,
+      "CRT": 25
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "weapon",
+    "price": 680,
+    "name": "Staff of the Fallen Star",
+    "image": "staff-of-the-fallen-star.svg",
+    "quote": "Before you buy this, I should let you know it has this annoying little quality of slowly draining your life force. Not a deal breaker right?",
+    "effect": "While this staff is equipped, you lose 1HP at the start of your turn. Reduces the MP cost of all spells by 1.",
+    "description": ["Greed seethes from the tip of this wretched weapon, robbing its victims of life and coin. Echoing its former master's cruel intent, the weapon seems to constant taunt those wield it, nudging them towards violent confrontations."],
+    "rarity": "rare",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 0,
+      "MATK": 80,
+      "MDEF": 0,
+      "SPD": 55,
+      "EVA": 0,
+      "ACC": 80,
+      "CRT": 15
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "weapon",
+    "price": 1100,
+    "name": "Doom Scepter",
+    "image": "doom-scepter.svg",
+    "quote": "The maker of this staff was exiled to a tropical island, given a workshop, and told to make more.. He refused, and lived out his days in that tropical paradise. Lucky...!",
+    "effect": "Increases the potency of Fire and Ice spells by 30%.",
+    "description": ["An ancient legend of the makers describes the origin of this weapon thusly: A master smith, proud and vain, met a wanderer who posed him a wager. The wanderer claimed that none could forge a weapon that blended both the essence of fire and ice together in balance. Determined to win this challenge, the smith bent his considerable skills towards the crafting of the Doom Scepter.",
+      "This weapon stands as a testament to that legendary smith's skill, and as a trophy of his victory in the wanderer's wager."],
+    "rarity": "legendary",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 0,
+      "MATK": 95,
+      "MDEF": 0,
+      "SPD": 60,
+      "EVA": 0,
+      "ACC": 75,
+      "CRT": 15
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "armor",
+    "price": 125,
+    "name": "Chain Coat",
+    "image": "chain-coat.png",
+    "quote": "Stylish, but thick enough to catch a blade. I see a lot of Beastmen wearing these...don't they know where the fur comes from??",
+    "effect":"Prevents 'Frostbite' and reduces incoming Ice damage by 50%",
+    "description": ["A shirt of chainmail wrapped in a warm winter coat, this medium weight armor is designed to provide protection and warmth without being too heavy to wear. Very common and fashionable in northern settlements."],
+    "rarity": "common",
+    "stats": {
+      "HP": 25,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 20,
+      "MATK": 0,
+      "MDEF": 30,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "armor",
+    "price": 340,
+    "name": "Flaming Leather Boots",
+    "image": "flaming-leather-boot.png",
+    "quote": "These boots are hilarious. Most taverns won't even let you in if they see you wearing these!",
+    "effect":"Set Bonus: Gain +25 DEF when equipped alongside Flaming Pants.",
+    "description": ["Worn by a former master of trials, whose feet seemed to be quite small. Leaves a trail of burning embers that follow you wherever you walk."],
+    "rarity": "uncommon",
+    "stats": {
+      "HP": 20,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 0,
+      "MATK": 0,
+      "MDEF": 20,
+      "SPD": 25,
+      "EVA": 0,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "armor",
+    "price": 340,
+    "name": "Flaming Pants",
+    "image": "flaming-pants.svg",
+    "quote": "While not as notorious as the Flaming Boots, people may call you a liar when you wear these. I don't know why. It's just something i've been told.",
+    "effect":"Set Bonus: Gain +25 MDEF when equipped alongside Flaming Pants.",
+    "description": ["Worn by a former master of trials, these pants are lightweight. Increase speed stats."],
+    "rarity": "uncommon",
+    "stats": {
+      "HP": 20,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 20,
+      "MATK": 0,
+      "MDEF": 20,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "armor",
+    "price": 740,
+    "name": "Ox Horn Helmet",
+    "image": "ox-horn-helmet.svg",
+    "quote": "I've been told the Mage Guild is taking the Gunslingers more seriously, and this helmet is evidence of that. I guess even mages are scared of head shots?",
+    "effect":"Unlock the 'Head Butt' Skill.",
+    "description": ["A simple helmt made of enchanted Obsidian and accented with a pair of sharpened horns. Many modern magicians prefer this over the classic mage hat, which they believe paints them as a target."],
+    "rarity": "rare",
+    "stats": {
+      "HP": 40,
+      "MP": 0,
+      "ATK": 20,
+      "DEF": 40,
+      "MATK": 0,
+      "MDEF": 40,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 0,
+      "CRT": 15
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "armor",
+    "price": 600,
+    "name": "Spiked Shoulder Plate",
+    "image": "spiked-shoulder-plate.svg",
+    "quote": "This is another entry in our 'Battle Mage' set of armor. A really great piece of defensive equipment that might get your opponents to think twice before attacking you!",
+    "effect":"Start each combat with 3 stacks of Thorns. Each time you take damage, retaliate, and remove 1 stack of thorns.",
+    "description": ["A shoulder plate made for either shoulder, feating a trio of sharpened metal spikes. Can be used for either defensive or offensive purposes, but mostly offensive"],
+    "rarity": "rare",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 20,
+      "DEF": 20,
+      "MATK": 0,
+      "MDEF": 30,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 0,
+      "CRT": 15
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "armor",
+    "price": 625,
+    "name": "Bracelet of Dismay",
+    "image": "bracelet-of-dismay.svg",
+    "quote": "Whoever said that small things don't matter has never seen a match start a wildfire -- Beau Taplin",
+    "effect":"Your attacks can no longer miss, but you can no longer evade incoming attacks.",
+    "description": ["This bracelet gives the wearer a feeling of incredible focus and bravery. It also prevents them from feeling fear, making it almost impossible for them to safely dodge attacks."],
+    "rarity": "rare",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 0,
+      "MATK": 0,
+      "MDEF": 0,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 100,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "mage",
+    "category": "armor",
+    "price": 2200,
+    "name": "Tranquility Gauntlet",
+    "image": "tranquility-gauntlet.svg",
+    "quote": "Elysian Monks faced an impossible choice. Give up their home and their identity, or face off against an army of magicians. I think we all know how that one turned out.",
+    "effect":"While this Gauntlet is equipped, you can no longer become affected by the 'Fear' or 'Intimidation' status effects.",
+    "description": ["The Tranquility Gauntlet was made by Elysian Monks in their efforts to live a life of peace away from the constant clashing of nearby kingdoms. This gauntlet provides a balanced approach to combat, and immediately makes the wearer feel a deep sense of relaxation and tranquility, even in the heat of battle."],
+    "rarity": "legendary",
+    "stats": {
+      "HP": 80,
+      "MP": 0,
+      "ATK": 50,
+      "DEF": 0,
+      "MATK": 0,
+      "MDEF": 75,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 50,
+      "CRT": 40
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "weapon",
+    "price": 170,
+    "name": "Sacred Dagger",
+    "image": "sacred-dagger.svg",
+    "quote": "Sacred Dagger...kind of an oxymoron isn't it? Cut's through demonhide like it's butter.",
+    "effect": "This weapon ignores the DEF stat of Demon type enemies.",
+    "description": ["A finely crafted weapon, engraved with the holy symbol of a goddess of honor. A vital tool in any rogue's belt, especially against demonic enemies."],
+    "rarity": "common",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 40,
+      "DEF": 0,
+      "MATK": 0,
+      "MDEF": 0,
+      "SPD": 75,
+      "EVA": 0,
+      "ACC": 85,
+      "CRT": 10
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "weapon",
+    "price": 777,
+    "name": "Cursed Dagger",
+    "image": "cursed-backbiter-dagger.svg",
+    "quote": "It's a demon tooth sharpened to a blade point. Don't ask, don't tell. You didn't buy it from me.",
+    "effect":"Whenever you cast a Spell, take 1 unblockable HP damage.",
+    "description": ["Every strike by this weapon is accompanied by an eerie silence. On the hilt there is an inscription that reads, 'Give me your hand. Let me help you fill this world with blood'."],
+    "rarity": "uncommon",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 77,
+      "DEF": 0,
+      "MATK": 0,
+      "MDEF": 0,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 77,
+      "CRT": 77
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "weapon",
+    "price": 710,
+    "name": "Evil Dagger",
+    "image": "dagger-of-evils.svg",
+    "quote": "I know it's hard to say things are 'good' or 'evil', but this thing is definately evil...",
+    "effect":"While you hold this dagger, demons do not consider you a threat, and will talk to you as if you were one of them.",
+    "description": ["This masterwork dagger is said to have once belonged to a forgotten god of war.Enemies slain by this weapon are consumed by purple flames. It is said that this weapon has a mind of it's own, and will go out of it's way to put it's owner in dangerous situations."],
+    "rarity": "rare",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 45,
+      "DEF": 0,
+      "MATK": 0,
+      "MDEF": 0,
+      "SPD": 35,
+      "EVA": 0,
+      "ACC": 50,
+      "CRT": 40
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "weapon",
+    "price": 1030,
+    "name": "Thunderbolt Dagger",
+    "image": "thunderbolt-dagger.svg",
+    "quote": "Electricity is not a toy for children...It's a toy for adults!",
+    "effect":"Performing an attack with this weapon in your hand will consume all your remaining MP, and deal additional damage based on the amount of MP consumed.",
+    "description": ["In his seclusion, the Mad Smith crafted an arsenal in which to arm his creations. This dagger is but one of them. It's blade crackles with dormant energy, waiting for an enemy to get close enough to perform a deadly arc.",
+    "Foes slain by this weapon dissolve into shards of crystallized glass."],
+    "rarity": "legendary",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 70,
+      "DEF": 0,
+      "MATK": 25,
+      "MDEF": 0,
+      "SPD": 60,
+      "EVA": 0,
+      "ACC": 90,
+      "CRT": 25
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "weapon",
+    "price": 1750,
+    "name": "King Breaker Bow",
+    "image": "king-breaker-bow.svg",
+    "quote": "A reminder that while so few Breakers remain, His Majesty still stands.",
+    "effect":"While this weapon is equipped, you can see Stealthed enemies.",
+    "description": [
+      "\"King Breaker\" was the label given to those who first rose to betray the King. While their efforts were made in the best interest of the people, most king breakers were hunted down and eliminated, their bows taken as trophies.",
+      "In a ironic twist of fate, the very weapons once used in an effort to assassinate the King are now prized possessions for Royal Guards—not only for their storied history, but for the chance to get their hands on fully functional Magic weaponry."
+    ],
+    "rarity": "legendary",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 75,
+      "DEF": 0,
+      "MATK": 75,
+      "MDEF": 0,
+      "SPD": 55,
+      "EVA": 0,
+      "ACC": 90,
+      "CRT": 80
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "armor",
+    "price": 85,
+    "name": "Studded Leather Armor",
+    "image": "studded-leather-armor.svg",
+    "quote": "Good quality leather studded with iron. Nothing fancy, but does the job for a low price!",
+    "effect":"",
+    "description": ["Basic leather armor with metal studs for additional protection. Strong enough to slow down a sword, but not enough to stop an arrow, or a fire ball for that matter."],
+    "rarity": "common",
+    "stats": {
+      "HP": 20,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 20,
+      "MATK": 0,
+      "MDEF": 20,
+      "SPD": 0,
+      "EVA": 40,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "armor",
+    "price": 375,
+    "name": "Skyward Boots",
+    "image": "skyward-boots.svg",
+    "quote": "They don't let you fly... It's more like falling...with style!",
+    "effect":"Allows you to perform a 'Double Jump' when outside of combat.",
+    "description": ["These finely crafted boots feature a pair of wings on the heel which flap whenever you walk. If timed correctly, they can even propell you in the air."],
+    "rarity": "uncommon",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 15,
+      "MATK": 0,
+      "MDEF": 15,
+      "SPD": 25,
+      "EVA": 0,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "armor",
+    "price": 390,
+    "name": "Helmet of Shadrael",
+    "image": "helmet-of-shadrael.svg",
+    "quote": "I get these from an old friend of mine. Works out of the black market, hell of a guy. Don't borrow money from him though, or play poker with him...",
+    "effect":"Once per combat, prevent the next time you would lose HP.",
+    "description": ["This helmet gives its wearer the power of insight, giving them a strong feeling of what's about to happen. With enough practice and exposure to the helmet, the wearer can become more proficient with it's usage."],
+    "rarity": "uncommon",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 25,
+      "MATK": 0,
+      "MDEF": 25,
+      "SPD": 0,
+      "EVA": 20,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "armor",
+    "price": 705,
+    "name": "Gauntlet of Justice",
+    "image": "gauntlets-of-justice.svg",
+    "quote": "When the will defies fear, when duty throws the gauntlet down to fate, when honor scorns to compromise with death, that is heroism -- Robert Green Ingersoll",
+    "effect":"While this item is equipped, you can no longer Steal from enemies.",
+    "description": ["The gauntlet, despite it's almost mechanical appearance, feels as light as silk when worn."],
+    "rarity": "rare",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 20,
+      "DEF": 20,
+      "MATK": 0,
+      "MDEF": 0,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 30,
+      "CRT": 30
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "armor",
+    "price": 595,
+    "name": "Dragonscale Shoulder Plates",
+    "image": "devotion-shoulder-plate.svg",
+    "quote": "We get these specially made by Slayers. Good for lots of things, and makes you look more intimidating...!",
+    "effect":"At the start of combat, apply 1 stack of Fear to all enemies.",
+    "description": ["This ornate piece of armor is said to have been forged by a Dragon Slayer. There are a series of cut marks suggesting this armor has been used before."],
+    "rarity": "rare",
+    "stats": {
+      "HP": 40,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 30,
+      "MATK": 0,
+      "MDEF": 30,
+      "SPD": 0,
+      "EVA": 0,
+      "ACC": 0,
+      "CRT": 20
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "armor",
+    "price": 595,
+    "name": "Dragonscale Chaps",
+    "image": "devotion-chausses.svg",
+    "quote": "These are really popular right now. Mostly because they look good, but the stats are good too I guess.",
+    "effect":"While equipped, unlock the 'Dragon Dance' skill.",
+    "description": ["This ornate piece of armor is said to have been forged by a Dragon Slayer. It allows for extremely fast leg movements, and enables the wearer to perform a skill that greatly enhances ATK and SPD."],
+    "rarity": "rare",
+    "stats": {
+      "HP": 30,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 40,
+      "MATK": 0,
+      "MDEF": 30,
+      "SPD": 0,
+      "EVA": 30,
+      "ACC": 0,
+      "CRT": 0
+    }
+  },
+
+
 
   {
     "id": "",
@@ -349,9 +959,9 @@
     "role": "any",
     "category": "artifact",
     "price": 800,
-    "name": "Dragoon Ring",
+    "name": "Dragon Skull",
     "image": "dragoon-ring.svg",
-    "quote": "Don't tell anyone i'm selling these, I could get in quite a bit of trouble with the dragoons if they found out that i'm selling their signet rings...",
+    "quote": "Don't tell anyone i'm selling these, I could get in quite a bit of trouble with the dragoons if they found out that i'm selling what they consider holy relics...",
     "effect": "Whenever an enemy is defeated, gain 1MP",
     "description": [
       "A dark red ring adorned with etchings of a dragon. Whenever an enemy is defeated, the eyes of the dragon begin to glow red. The origins of this ring are shrouded in mystery."
@@ -441,610 +1051,8 @@
       "ACC":   0,
       "CRT":   0
     }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "weapon",
-    "price": 500,
-    "name": "Fairy Staff",
-    "image": "fairy-staff.svg",
-    "quote": "I had one of these when I was a kid! Great fun, though kind of dangerous if you manage to get the fairies mad at you...",
-    "effect": "Unlocks the 'Summon Fairy' spell",
-    "description": [
-      "This weapon is not designed for combat. Often gifted to children to teach them the fundamentals of magic."
-     ],
-    "rarity": "Uncommon",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  30,
-      "SPD":   30,
-      "EVA":   0,
-      "ACC":   0,
-      "CRT":   0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "weapon",
-    "price": 370,
-    "name": "Wind Reaper Mace",
-    "image": "wind-reaper-mace.png",
-    "quote": "A cold wind blowing from the north made the trees rustle like living things -- George R.R. Martin --",
-    "effect": "Striking the ground with this weapon will unleash claws of lightning that seek out nearby enemies.",
-    "description": ["This mace is deadly in the hands of both a seasoned warrior, but it's true power shines when wielded by a mage. Made of an alloy of Cobalt and Mithril, this mace turns any magician into a dangerous close range threat."],
-    "rarity": "uncommon",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 35,
-      "DEF": 0,
-      "MATK": 65,
-      "MDEF": 0,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 85,
-      "CRT": 25
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "weapon",
-    "price": 680,
-    "name": "Staff of the Fallen Star",
-    "image": "staff-of-the-fallen-star.png",
-    "quote": "Before you buy this, I should let you know it has this annoying little quality of slowly draining your life force. Not a deal breaker right?",
-    "effect": "While this staff is equipped, you lose 1HP at the start of your turn. Reduces the MP cost of all spells by 1.",
-    "description": ["Greed seethes from the tip of this wretched weapon, robbing its victims of life and coin. Echoing its former master's cruel intent, the weapon seems to constant taunt those wield it, nudging them towards violent confrontations."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 0,
-      "MATK": 80,
-      "MDEF": 0,
-      "SPD": 55,
-      "EVA": 0,
-      "ACC": 80,
-      "CRT": 15
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "weapon",
-    "price": 1100,
-    "name": "Doom Scepter",
-    "image": "scepter-of-doom.png",
-    "quote": "The maker of this staff was exiled to a tropical island, given a workshop, and told to make more.. He refused, and lived out his days in that tropical paradise. Lucky...!",
-    "effect": "Increases the potency of Fire and Ice spells by 30%.",
-    "description": ["An ancient legend of the makers describes the origin of this weapon thusly: A master smith, proud and vain, met a wanderer who posed him a wager. The wanderer claimed that none could forge a weapon that blended both the essence of fire and ice together in balance. Determined to win this challenge, the smith bent his considerable skills towards the crafting of the Doom Scepter.",
-      "This weapon stands as a testament to that legendary smith's skill, and as a trophy of his victory in the wanderer's wager."],
-    "rarity": "legendary",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 0,
-      "MATK": 95,
-      "MDEF": 0,
-      "SPD": 60,
-      "EVA": 0,
-      "ACC": 75,
-      "CRT": 15
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "armor",
-    "price": 125,
-    "name": "Chain Coat",
-    "image": "chain-coat.png",
-    "quote": "Stylish, but thick enough to catch a blade. I see a lot of Beastmen wearing these...don't they know where the fur comes from??",
-    "effect":"Prevents 'Frostbite' and reduces incoming Ice damage by 50%",
-    "description": ["A shirt of chainmail wrapped in a warm winter coat, this medium weight armor is designed to provide protection and warmth without being too heavy to wear. Very common and fashionable in northern settlements."],
-    "rarity": "common",
-    "stats": {
-      "HP": 25,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 20,
-      "MATK": 0,
-      "MDEF": 30,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "armor",
-    "price": 340,
-    "name": "Flaming Leather Boots",
-    "image": "flaming-leather-boots.png",
-    "quote": "These boots are hilarious. Most taverns won't even let you in if they see you wearing these!",
-    "effect":"Set Bonus: Gain +25 DEF when equipped alongside Flaming Pants.",
-    "description": ["Worn by a former master of trials, whose feet seemed to be quite small. Leaves a trail of burning embers that follow you wherever you walk."],
-    "rarity": "uncommon",
-    "stats": {
-      "HP": 20,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 0,
-      "MATK": 0,
-      "MDEF": 20,
-      "SPD": 25,
-      "EVA": 0,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "armor",
-    "price": 340,
-    "name": "Flaming Pants",
-    "image": "flaming-pants.svg",
-    "quote": "While not as notorious as the Flaming Boots, people may call you a liar when you wear these. I don't know why. It's just something i've been told.",
-    "effect":"Set Bonus: Gain +25 MDEF when equipped alongside Flaming Pants.",
-    "description": ["Worn by a former master of trials, these pants are lightweight. Increase speed stats."],
-    "rarity": "uncommon",
-    "stats": {
-      "HP": 20,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 20,
-      "MATK": 0,
-      "MDEF": 20,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "armor",
-    "price": 740,
-    "name": "Ox Horn Helmet",
-    "image": "ox-horn-helmet.png",
-    "quote": "I've been told the Mage Guild is taking the Gunslingers more seriously, and this helmet is evidence of that. I guess even mages are scared of head shots?",
-    "effect":"Unlock the 'Head Butt' Skill.",
-    "description": ["A simple helmt made of enchanted Obsidian and accented with a pair of sharpened horns. Many modern magicians prefer this over the classic mage hat, which they believe paints them as a target."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 40,
-      "MP": 0,
-      "ATK": 20,
-      "DEF": 40,
-      "MATK": 0,
-      "MDEF": 40,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 0,
-      "CRT": 15
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "armor",
-    "price": 600,
-    "name": "Spiked Shoulder Plate",
-    "image": "spiked-shoulder-plate.svg",
-    "quote": "This is another entry in our 'Battle Mage' set of armor. A really great piece of defensive equipment that might get your opponents to think twice before attacking you!",
-    "effect":"Start each combat with 3 stacks of Thorns. Each time you take damage, retaliate, and remove 1 stack of thorns.",
-    "description": ["A shoulder plate made for either shoulder, feating a trio of sharpened metal spikes. Can be used for either defensive or offensive purposes, but mostly offensive"],
-    "rarity": "rare",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 20,
-      "DEF": 20,
-      "MATK": 0,
-      "MDEF": 30,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 0,
-      "CRT": 15
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "armor",
-    "price": 625,
-    "name": "Bracelet of Dismay",
-    "image": "bracelet-of-dismay.svg",
-    "quote": "Whoever said that small things don't matter has never seen a match start a wildfire -- Beau Taplin",
-    "effect":"Your attacks can no longer miss, but you can no longer evade incoming attacks.",
-    "description": ["This bracelet gives the wearer a feeling of incredible focus and bravery. It also prevents them from feeling fear, making it almost impossible for them to safely dodge attacks."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 0,
-      "MATK": 0,
-      "MDEF": 0,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 100,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "mage",
-    "category": "armor",
-    "price": 2200,
-    "name": "Tranquility Gauntlet",
-    "image": "tranquility-gauntlets.png",
-    "quote": "Elysian Monks faced an impossible choice. Give up their home and their identity, or face off against an army of magicians. I think we all know how that one turned out.",
-    "effect":"While this Gauntlet is equipped, you can no longer become affected by the 'Fear' or 'Intimidation' status effects.",
-    "description": ["The Tranquility Gauntlet was made by Elysian Monks in their efforts to live a life of peace away from the constant clashing of nearby kingdoms. This gauntlet provides a balanced approach to combat, and immediately makes the wearer feel a deep sense of relaxation and tranquility, even in the heat of battle."],
-    "rarity": "legendary",
-    "stats": {
-      "HP": 80,
-      "MP": 0,
-      "ATK": 50,
-      "DEF": 0,
-      "MATK": 0,
-      "MDEF": 75,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 50,
-      "CRT": 40
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "weapon",
-    "price": 170,
-    "name": "Sacred Dagger",
-    "image": "sacred-dagger.png",
-    "quote": "Sacred Dagger...kind of an oxymoron isn't it? Cut's through demonhide like it's butter.",
-    "effect": "This weapon ignores the DEF stat of Demon type enemies.",
-    "description": ["A finely crafted weapon, engraved with the holy symbol of a goddess of honor. A vital tool in any rogue's belt, especially against demonic enemies."],
-    "rarity": "common",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 40,
-      "DEF": 0,
-      "MATK": 0,
-      "MDEF": 0,
-      "SPD": 75,
-      "EVA": 0,
-      "ACC": 85,
-      "CRT": 10
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "weapon",
-    "price": 777,
-    "name": "Cursed Backbiter Dagger",
-    "image": "cursed-backbiter-dagger.svg",
-    "quote": "It's a Backbiter tooth sharpened to a blade point. Don't ask, don't tell. You didn't buy it from me.",
-    "effect":"Whenever you cast a Spell, take 1 unblockable HP damage.",
-    "description": ["Every strike by this weapon is accompanied by an eerie silence. On the hilt there is an inscription that reads, 'Give me your hand. Let me help you fill this world with blood'."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 77,
-      "DEF": 0,
-      "MATK": 0,
-      "MDEF": 0,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 77,
-      "CRT": 77
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "weapon",
-    "price": 710,
-    "name": "Evil Dagger",
-    "image": "dagger-of-evils.svg",
-    "quote": "I know it's hard to say things are 'good' or 'evil', but this thing is definately evil...",
-    "effect":"While you hold this dagger, demons do not consider you a threat, and will talk to you as if you were one of them.",
-    "description": ["This masterwork dagger is said to have once belonged to a forgotten god of war.Enemies slain by this weapon are consumed by purple flames. It is said that this weapon has a mind of it's own, and will go out of it's way to put it's owner in dangerous situations."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 45,
-      "DEF": 0,
-      "MATK": 0,
-      "MDEF": 0,
-      "SPD": 35,
-      "EVA": 0,
-      "ACC": 50,
-      "CRT": 40
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "weapon",
-    "price": 1030,
-    "name": "Thunderbolt Dagger",
-    "image": "dagger-of-thunderbolts.svg",
-    "quote": "Electricity is not a toy for children...It's a toy for adults!",
-    "effect":"Performing an attack with this weapon in your hand will consume all your remaining MP, and deal additional damage based on the amount of MP consumed.",
-    "description": ["In his seclusion, the Mad Smith crafted an arsenal in which to arm his creations. This dagger is but one of them. It's blade crackles with dormant energy, waiting for an enemy to get close enough to perform a deadly arc.",
-    "Foes slain by this weapon dissolve into shards of crystallized glass."],
-    "rarity": "legendary",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 70,
-      "DEF": 0,
-      "MATK": 25,
-      "MDEF": 0,
-      "SPD": 60,
-      "EVA": 0,
-      "ACC": 90,
-      "CRT": 25
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "armor",
-    "price": 85,
-    "name": "Studded Leather Armor",
-    "image": "studded-leather.svg",
-    "quote": "Good quality leather studded with iron. Nothing fancy, but does the job for a low price!",
-    "effect":"",
-    "description": ["Basic leather armor with metal studs for additional protection. Strong enough to slow down a sword, but not enough to stop an arrow, or a fire ball for that matter."],
-    "rarity": "common",
-    "stats": {
-      "HP": 20,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 20,
-      "MATK": 0,
-      "MDEF": 20,
-      "SPD": 0,
-      "EVA": 40,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "armor",
-    "price": 375,
-    "name": "Skyward Boots",
-    "image": "skybiter-boots.svg",
-    "quote": "They don't let you fly... It's more like falling...with style!",
-    "effect":"Allows you to perform a 'Double Jump' when outside of combat.",
-    "description": ["These finely crafted boots feature a pair of wings on the heel which flap whenever you walk. If timed correctly, they can even propell you in the air."],
-    "rarity": "uncommon",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 15,
-      "MATK": 0,
-      "MDEF": 15,
-      "SPD": 25,
-      "EVA": 0,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "armor",
-    "price": 390,
-    "name": "Helmet of Shadrael",
-    "image": "helmet-of-shardael.svg",
-    "quote": "I get these from an old friend of mine. Works out of the black market, hell of a guy. Don't borrow money from him though, or play poker with him...",
-    "effect":"Once per combat, prevent the next time you would lose HP.",
-    "description": ["This helmet gives its wearer the power of insight, giving them a strong feeling of what's about to happen. With enough practice and exposure to the helmet, the wearer can become more proficient with it's usage."],
-    "rarity": "uncommon",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 25,
-      "MATK": 0,
-      "MDEF": 25,
-      "SPD": 0,
-      "EVA": 20,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "armor",
-    "price": 705,
-    "name": "Gauntlet of Justice",
-    "image": "gauntlets-of-justice.svg",
-    "quote": "When the will defies fear, when duty throws the gauntlet down to fate, when honor scorns to compromise with death, that is heroism -- Robert Green Ingersoll",
-    "effect":"While this item is equipped, you can no longer Steal from enemies.",
-    "description": ["The gauntlet, despite it's almost mechanical appearance, feels as light as silk when worn."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 20,
-      "DEF": 20,
-      "MATK": 0,
-      "MDEF": 0,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 30,
-      "CRT": 30
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "armor",
-    "price": 595,
-    "name": "Dragonscale Shoulder Plates",
-    "image": "devotion-shoulder-plate.svg",
-    "quote": "We get these specially made by Slayers. Good for lots of things, and makes you look more intimidating...!",
-    "effect":"At the start of combat, apply 1 stack of Fear to all enemies.",
-    "description": ["This ornate piece of armor is said to have been forged by a Dragon Slayer. There are a series of cut marks suggesting this armor has been used before."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 40,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 30,
-      "MATK": 0,
-      "MDEF": 30,
-      "SPD": 0,
-      "EVA": 0,
-      "ACC": 0,
-      "CRT": 20
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "armor",
-    "price": 595,
-    "name": "Dragonscale Chaps",
-    "image": "devotion-chausses.svg",
-    "quote": "These are really popular right now. Mostly because they look good, but the stats are good too I guess.",
-    "effect":"While equipped, unlock the 'Dragon Dance' skill.",
-    "description": ["This ornate piece of armor is said to have been forged by a Dragon Slayer. It allows for extremely fast leg movements, and enables the wearer to perform a skill that greatly enhances ATK and SPD."],
-    "rarity": "rare",
-    "stats": {
-      "HP": 30,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 40,
-      "MATK": 0,
-      "MDEF": 30,
-      "SPD": 0,
-      "EVA": 30,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "warrior",
-    "category": "armor",
-    "price": 1130,
-    "name": "Blazing Chainmail",
-    "image": "blazing-chainmail.svg",
-    "quote": "Contrary to popular belief, I know exactly what I’m doing.",
-    "effect":"Illuminate the surrounding area, preventing enemies from entering Stealth.",
-    "description": ["This exotic armor is effectively a chainmail wreathed in eternal flames, which are harmless to the wearer. Any enemies who dare get close enough will be burned.", "With enough exposure and practice with this armor, the user may learn to activate and de-activate it's effect at will."],
-    "rarity": "legendary",
-    "stats": {
-      "HP": 80,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 50,
-      "MATK": 0,
-      "MDEF": 50,
-      "SPD": 0,
-      "EVA": 40,
-      "ACC": 0,
-      "CRT": 0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "rogue",
-    "category": "weapon",
-    "price": 1750,
-    "name": "King Breaker Bow",
-    "image": "king-breaker-bow.svg",
-    "quote": "A reminder that while so few Breakers remain, His Majesty still stands.",
-    "effect":"While this weapon is equipped, you can see Stealthed enemies.",
-    "description": [
-      "\"King Breaker\" was the label given to those who first rose to betray the King. While their efforts were made in the best interest of the people, most king breakers were hunted down and eliminated, their bows taken as trophies.",
-      "In a ironic twist of fate, the very weapons once used in an effort to assassinate the King are now prized possessions for Royal Guards—not only for their storied history, but for the chance to get their hands on fully functional Magic weaponry."
-    ],
-    "rarity": "legendary",
-    "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 75,
-      "DEF": 0,
-      "MATK": 75,
-      "MDEF": 0,
-      "SPD": 55,
-      "EVA": 0,
-      "ACC": 90,
-      "CRT": 80
-    }
   }
+
+
+
 ]
