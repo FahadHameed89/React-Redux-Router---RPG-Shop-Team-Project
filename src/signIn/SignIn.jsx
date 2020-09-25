@@ -78,7 +78,12 @@ function LogIn(props) {
 
   return (
     <>
-      <form onSubmit={validateSignIn}>
+    <header class="container signin__header">
+      <img src="/imgs/shop-logo.png" alt=""/>
+    </header>
+
+    <main className="container signin__main">
+      <form className="signin__form" onSubmit={validateSignIn}>
         <div className="input-group">
           <label htmlFor="user-name" />
           <input
@@ -102,7 +107,7 @@ function LogIn(props) {
             type="text"
             id="clan-name"
             autoComplete="off"
-            placeholder="Your Clan"
+            placeholder="Clan Name"
             onChange={(e) => {
               getUserClan(dasherize(e.target.value)); // grabbing user given clan field and dasherize it
               getErrorMessageUser(""); // clear error fields
@@ -112,8 +117,16 @@ function LogIn(props) {
           <p className="show-error-message">{errorMessageClan}</p>
         </div>
 
-        <input type="submit" value="Login" />
+        <input type="submit" value="Enter Shop" />
       </form>
+
+      <div className="signin__guard">
+        <div class="signin__guard-container">
+          <img src="/imgs/signin-boss.png" alt="A large orc figure guards the shop entrance."/>
+        </div>
+        <p>Only clan members on the list can enter.</p>
+      </div>
+    </main>
     </>
   );
 }

@@ -1,30 +1,52 @@
-
-
-form{
-    display:flex;
-    flex-direction: column;
-    max-width: fit-content;
-
+.signin__form {
+  margin: 0 auto;
+  max-width: 360px;
 }
 
-input[type='text']{
-background: #201A27;
-border: 1px solid #413A4A;
-box-sizing: border-box;
-border-radius: 6px;
-width: 357px;
-height: 56px;
-font-weight: 900;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-color: #FAF9FD;
-/*font-size: var(--text-base);*/
-margin-top: 5%;
 
+input[type='text'] {
+  display: block;
+  box-sizing: border-box;
 
-  /*font-size: var(--text-base);*/
+  width: 100%;
+  height: 56px;
+  margin-top: 5%;
+
+  color: #FAF9FD;
+  background: #201A27;
+  border: 1px solid #413A4A;
+  border-radius: 6px;
+
+  font-weight: var(--font-black);
+  font-size: 16px;
+  line-height: 19px;
 }
+
+input[type="submit"]{
+  display: block;
+  box-sizing: border-box;
+
+  max-width: 180px;
+  height: 60px;
+  margin-top: 5%;
+  margin-left: auto;
+
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #46BACA 0%, #3188D9 30.73%, #3D43C7 100%);
+  border: 1px solid #211B22;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+input[type="submit"]:hover, input[type="text"]:hover{
+  box-shadow: 0 0 7px 0 #2187D3;
+  border: 3px solid #2187D3;
+}
+
 
 #user-name{
     background-image:url('/imgs/signIn/user-name.svg');
@@ -40,39 +62,77 @@ margin-top: 5%;
   padding-left: 40px;
 }
 
-input[type="submit"]{
-width: 180px;
-height: 60px;
-background: linear-gradient(180deg, #46BACA 0%, #3188D9 30.73%, #3D43C7 100%);
-border: 1px solid #211B22;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-margin-top: 5%;
-font-weight: 900;
-font-size: 20px;
-line-height: 23px;
-color: #FFFFFF;
-align-self: flex-end;
+
+.show-error-message {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 2%;
+  color: #D05A69;
 }
 
-input[type="submit"]:hover, input[type="text"]:hover{
-    box-shadow: 0 0 7px 0 #2187D3;
-    border: 3px solid #2187D3;
-  }
-
-.show-error-message{
-font-weight: 500;
-font-size: 16px;
-margin:2%;
-/* identical to box height */
-color: #D05A69;
-}
-
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_placeholder
-
-*https://www.templatemonster.com/help/js-animated-how-to-change-the-placeholder-text-color-of-an-input.html     */
+/**
+ * Citation:
+ * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_placeholder
+ * https://www.templatemonster.com/help/js-animated-how-to-change-the-placeholder-text-color-of-an-input.html
+ */
 
 #user-name::-webkit-input-placeholder {
   color: #fff !important;
+}
+
+
+.signin__header {
+  max-width: 400px;
+  margin-bottom: 60px;
+}
+
+.signin__header img {
+  display: block;
+  width: 100%;
+}
+
+
+.signin__main {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+
+.signin__guard {
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.signin__guard p{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  background: rgba(41, 32, 51, 0.79);
+  border-radius: 6px;
+  padding: 15px;;
+}
+
+
+.signin__guard-container {
+  height: 300px;
+  overflow: hidden;
+}
+
+.signin__guard img {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 800px) {
+  .signin__main {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .signin__guard-container {
+    height: auto;
+    overflow: hidden;
+  }
 }
