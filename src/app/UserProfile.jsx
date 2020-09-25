@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './css/user-profile.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+
 export default () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,7 +27,8 @@ export default () => {
 
       { isOpen &&
         <div className="dropdown__menu">
-          <button onClick={() => signout()}>Signout</button>
+          <button onClick={() => signout()}>Sign-out <FontAwesomeIcon icon={faSignOutAlt} />
+          </button>
         </div>
       }
 

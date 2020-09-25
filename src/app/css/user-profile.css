@@ -7,6 +7,8 @@
   transform-origin: top right;
   right: 0;
 
+  width: 100px;
+
   background-color: #FFF;
   padding: 10px 8px;
   margin-top: 6px;
@@ -18,4 +20,20 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.font-awesome {
+  color: black;
+  font-size: 16px;
+}
+
+button {
+  font-size: large;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+button:hover{
+  text-decoration: underline 2px;
 }
