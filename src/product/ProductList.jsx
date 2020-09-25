@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -7,19 +7,24 @@ import ProductCard from './ProductCard';
 
 import './css/product-list.css';
 
-export default function() {
+export default () => {
   const products = useSelector(state => Object.values(state.products));
   const [filteredProducts, setFilteredProducts] = useState(products);
+  const [filter, setFilter] = useState("warrior");
 
 
   const saleProduct = products[0];
   const discount = {price: 500, text: "50% off"}
 
-  const filterClicked = function(filter) {
-    console.log(filter + "hi");
-    // const newProducts = this.products.map(x => x.role === "warrior");
-    // this.setFilteredProducts(newProducts);
+  const filterClicked = (filter) => {
+    setFilter(filter);
   }
+
+  useEffect(() => {
+    const filtered = products.filter(x => x.role === filter || x.role === 'any');
+    setFilteredProducts(filtered);
+
+  }, [filter])
 
   return (
     <main className="products container">
@@ -32,8 +37,8 @@ export default function() {
 
       <div className="product-list">
         {
-          filteredProducts.map((product) => {
-            return <ProductCard product={product} />
+          filteredProducts.map((product, index) => {
+            return <ProductCard product={product} key={index}/>
           })
         }
       </div>
