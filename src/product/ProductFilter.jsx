@@ -15,14 +15,12 @@ function ProductFilter(props) {
   // const filter = "Wizards"; // props.filter here
 
   // on clicking the icon do this action and open the respective list
-  const SendParameters = () => {    
+  const SendParameters = () => {
     return { role: props.filter, active: true };
   };
 
-  clicked(filter);
-
   return (
-    <div className="product-filter-container" onClick={() => {clicked(filter)} }>
+    <div className="product-filter-container" onClick={() => { clicked(filter) } }>
       <svg
         className="svg-filter-button"
         viewBox="0 0 80 80"

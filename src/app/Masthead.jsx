@@ -7,7 +7,7 @@ import './css/masthead.css'
 
 export default () => {
   return (
-    <div class="masthead masthead-products container">
+    <div className="masthead masthead-products container">
       <nav>
         <ul>
           <li><Link to="/">SignIn</Link></li>

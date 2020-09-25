@@ -11,10 +11,10 @@ export default (props) => {
     const product = props.product
 
     return (
-      <article className="product-card" key={product.id}>
+      <article className="product-card">
         <Link to={`/products/${product.id}`}>
             <ProductImage path={product.image} rarity={product.rarity} name={product.name} />
-            <div class="item-name">
+            <div className="item-name">
               <p>{product.name}</p>
             </div>
         </Link>
