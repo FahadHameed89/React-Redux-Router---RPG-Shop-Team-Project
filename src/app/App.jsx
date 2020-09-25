@@ -2,6 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
+  Link,
   Switch
 } from 'react-router-dom';
 
@@ -16,11 +17,26 @@ export default () => {
   return(
     <Router>
       <Header />
-      <Masthead />
+
       <Switch>
         <Route exact path="/" component={SignIn} />
-        <Route exact path="/products" component={ProductList} />
-        <Route path="/products/:id" component={Product} />
+        <Route exact path="/products">
+          <Masthead className="masthead-products"/>
+          <ProductList />
+        </Route>
+
+        <Route path="/products/:id">
+          <Masthead className="masthead-product">
+            <nav className="shop-nav">
+              <Link to="/products">
+                <img src="/imgs/left-arrow.svg" alt="" role="presentation" />
+                Shop
+              </Link>
+            </nav>
+          </Masthead>
+          <Product/>
+        </Route>
+
         <Route path="/checkout" component={Cart} />
       </Switch>
     </Router>

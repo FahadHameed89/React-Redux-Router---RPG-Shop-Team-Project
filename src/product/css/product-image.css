@@ -13,18 +13,19 @@
 }
 
 .product__image-rarity {
-  height: 40px;
-  max-width: 170px;
-  border-radius: 0px 0px 6px 6px;
-  text-align: center;
   margin: 0 auto;
-}
+  height: 40px;
+  border-radius: 0px 0px 6px 6px;
+  max-width: 160px;
 
-.product__image-rarity p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-top: 8px;
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+  font-weight: var(--font-black);
 }
-
 
 .legendary .product__image-rarity {
   background-color: #C521D3;
@@ -61,8 +62,3 @@
 .common.product__image {
   border-color: #2F855A;
 }
-
-
-
-
-

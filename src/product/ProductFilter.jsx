@@ -9,20 +9,16 @@ function ProductFilter(props) {
   const filter = props.filter     || '';
   const clicked = props.clicked;
   const iconName = props.iconName || '';
+  const isActive = props.active && 'active';
 
-  const path = "/imgs/filter-icons/witch-hat.svg"; //props.path later on
-  const path1 = "/imgs/filter-icons/witch-hat-yellow.svg";
-  // const filter = "Wizards"; // props.filter here
+  // const path = "/imgs/filter-icons/witch-hat.svg"; //props.path later on
+  // const path1 = "/imgs/filter-icons/witch-hat-yellow.svg";
+  // // const filter = "Wizards"; // props.filter here
 
-  // on clicking the icon do this action and open the respective list
-  const SendParameters = () => {    
-    return { role: props.filter, active: true };
-  };
 
-  clicked(filter);
 
   return (
-    <div className="product-filter-container" onClick={() => {clicked(filter)} }>
+    <div className={`product-filter-container ${isActive}`} onClick={() => { clicked(filter) } }>
       <svg
         className="svg-filter-button"
         viewBox="0 0 80 80"
