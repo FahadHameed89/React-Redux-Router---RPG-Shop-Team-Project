@@ -4,16 +4,16 @@ import UserProfile from './UserProfile'
 import './css/header.css';
 
 export default () => {
-  const funds = useSelector (state => state.member.funds)
+  const credit = useSelector (state => state.member.funds)
 
   return (
     <header className="main-header container">
 
       <h1>Grimburg's Shop</h1>
 
-      <div className="total-funds">
+      <div className="total-credit">
           <img src='/imgs/gold.svg' /> 
-          <p>{funds}</p>
+          <p>{credit}</p>
         </div>
       <UserProfile />
     </header>

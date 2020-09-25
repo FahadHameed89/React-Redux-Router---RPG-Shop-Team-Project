@@ -24,7 +24,7 @@
   overflow: hidden;
 }
 
-.total-funds {
+.total-credit {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +38,7 @@
   border-radius: 999px; /*Should remain pill shape regardless of how big we set the height of the pill to.*/
 }
 
-.total-funds img{
+.total-credit img{
   padding-right: 15px;
 }
 
