@@ -1,67 +1,148 @@
-* {
+/* * {
   outline: 1px solid #ff0000;
-}
+} */
 
 #checkout-page {
   display: flex;
-  margin: 10%;
-
+  margin: 8%;
   flex-direction: column;
   width: fit-content;
-
 }
 
+/*--------- your cart heading--------*/
+
+#checkout-page h2{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+/*---------------Items Listing--------------*/
 .products-listing {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
+  border: 1px solid #fff;
+  margin: 20px;
+  padding: 20px;
 }
 
 #image-p {
   flex-basis: 50%;
+  margin-right: 5px;
 }
-#name-p {
-  flex-basis: 50%;
+#image-p {
+  max-width: 120px;
+  border: 0px solid;
+  background-color: #FFFFFF;
+  border-radius: 9px;
 }
 
-#quantity-p {
-  flex-basis: 40%;
+#image-p img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 #price-p {
-  flex-basis: 50%;
+  flex-basis: 25%;
+  text-align: center;
+  padding-right:3px;
+  border-right: 1px dotted #fff;
 }
+#quantity-p {
+  flex-basis: 22%;
+  margin-left: 3px;
+  text-align: center;
+}
+
+/*remove quantity textbox*/
 #remove-p {
   flex-basis: 10%;
+  margin-left: 5px;
+  text-align: left;
 }
-#empty {
-    flex-basis: 50%;
+#remove-p input[type="textbox"]{
+  border-radius: 5px;
+  width:15px;
+  background: #808080;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+
+
+#name-p {
+  flex-basis: 70%;
+  font-size: 18px;
+  padding-top:15px;
+  text-transform: capitalize;
+  font-weight: bolder;
+
   
-  }
+}
+
+/* Remove all button*/
 #remove-all {
-  flex-basis: 50%;
-
-
+  padding-top:15px;
+  flex-basis: 30%;
 }
 
+#remove-all input[type="button"]{
+  border-radius: 8px;
+  
+  background:#3188d9;
+  color: #fff;
+  border: none;
+  outline: none;
+}
 
-#sub-total{
+#remove-all input[type="button"]:hover {
+  
+  background: #808080;
+  color: #fff;
+ 
+}
+#remove-all input[type="button"]:active {
+  background: #201a27;
+  color: #fff; 
+}
+
+  /*-------- Subtotal Section -------*/
+  #sub-total{
     display: flex;
-margin-left: 0;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    }
 
-}
+    #sub-total :nth-child(1) {
+      font-size: 20px;
+      padding-right:15px;
+    }
+    
+    #sub-total input[type="text"]{
+      width: 150px;
+      padding:10px; 
+    }
+
+    /* ---------- Checkout button---------*/
+    #checkout-page input[type="submit"]{
+      margin-right: 30px;
+      width: 150px;     
+    }
 
 
-#image-p {
-    max-width: 150px;
-    border: 0px solid;
-    background-color: #FFFFFF;
-    border-radius: 9px;
-  }
-  
-  #image-p img {
-    display: block;
-    margin: 0 auto;
-  
-    width: 100%;
-  }
+    @media screen and (min-width: 1000px) {
+
+      #checkout-page {
+
+        margin-left: 20%;
+       
+      }
+
+    }
