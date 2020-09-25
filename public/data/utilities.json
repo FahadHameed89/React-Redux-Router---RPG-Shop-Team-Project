@@ -142,7 +142,7 @@
     "category": "consumable",
     "price": 275,
     "name": "Immunity Potion",
-    "image": "",
+    "image": "immunity-potion.svg",
     "quote": "We've developed a potion that prevents people from getting sick. Now we have to convince people to actually use it.",
     "effect": "Gain 2 stacks of Immunity, which prevent debuffs. ",
     "description": [
@@ -194,7 +194,7 @@
     "description": [
       "This wide rimmed glass bottle contains a small glowing fairy. It hovers harmlessly and offers advice to those nearby. Fairies will break out of their bottle if their owner is in critical danger, coming to their aid. Fairies often abandon their owners after this event, as healing an entire human takes up most of their magical energy."
      ],
-    "rarity": "Uncommon"
+    "rarity": "Rare"
   },
   {
     "id": "",
