@@ -5,12 +5,22 @@
   justify-content: space-between;
 }
 
-.main-header h1 {
-  text-align: center;
-  font-size: var(--text-3xl);
-  font-weight: var(--font-bold);
+
+.shop-sign {
+  position: relative;
+  max-width: 250px;
 }
 
+.shop-sign img {
+  display: block;
+  width: 100%;
+}
+
+.header-group {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
 
 .user-account {
   width: 58px;
@@ -28,10 +38,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   font-size: var(--text-2xl);
   font-weight: var(--font-bold);
-  
+
   height: 58px;
   width: 170px;
   background-color: #211B22;
@@ -41,7 +51,3 @@
 .total-credit img{
   padding-right: 15px;
 }
-
-
-
-

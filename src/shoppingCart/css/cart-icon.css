@@ -1,4 +1,5 @@
 .cart-icon__container {
+  width: min-content;
   position: relative;
   padding: 6px;
 }
