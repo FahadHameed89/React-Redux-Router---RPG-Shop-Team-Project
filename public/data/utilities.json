@@ -8,7 +8,7 @@
     "name": "Health Potion",
     "image": "health-potion.svg",
     "quote": "Tastes like strawberries! A favorite among rookies and veterans alike!",
-    "effect": "Restores 25% of your Maximum HP. ",
+    "effect": "Restores 25% of your Maximum HP.",
     "description": [
      "This strawberry flavoured potion glows with a faint pink hue, and is known for healing both minor and serious injuries. The process to make this potion is relatively simple, and thus it has become a symbol for alchemy shops and potion sellers everywhere."
     ],
