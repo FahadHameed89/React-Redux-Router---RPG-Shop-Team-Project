@@ -10,7 +10,7 @@ import './css/product-list.css';
 export default function() {
   const products = useSelector(state => Object.values(state.products));
   const [filteredProducts, setFilteredProducts] = useState(products);
-  
+
 
   const saleProduct = products[0];
   const discount = {price: 500, text: "50% off"}
@@ -23,7 +23,7 @@ export default function() {
 
   return (
     <main className="products container">
-      
+
       <div className="product-filters">
         <FilterButton filter="warrior" clicked={filterClicked} iconName="witch-hat.svg"/>
         <FilterButton filter="mage"    clicked={filterClicked} iconName="witch-hat.svg"/>
