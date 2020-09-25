@@ -1,28 +1,5 @@
 [
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "warrior",
-    "category": "weapon",
-    "price": 250,
-    "name": "Round Shield of the Bear",
-    "image": "warrior-round-shield-of-the-bear.png",
-    "quote": "I bought this shield from a guy named bear. It's surprisingly tough, even though it's made of cheap materials...!",
-    "description": ["A light-weight shield with a surprising level of durability and toughness. It has what looks to be an imprint of a bear paw embedded into the center of the shield."],
-    "rarity": "common",
-    "stats": {
-        "HP":    25,
-        "MP":    0,
-        "ATK":   0,
-        "DEF":   30,
-        "MATK":  0,
-        "MDEF":  20,
-        "SPD":   0,
-        "EVA":   20,
-        "ACC":   0,
-        "CRT":   0
-    }
-  },
+
 
   {
     "id": "",
@@ -71,6 +48,31 @@
         "EVA":   0,
         "ACC":   85,
         "CRT":   35
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "warrior",
+    "category": "weapon",
+    "price": 250,
+    "name": "Round Shield of the Bear",
+    "image": "warrior-round-shield-of-the-bear.png",
+    "quote": "I bought this shield from a guy named bear. It's surprisingly tough, even though it's made of cheap materials...!",
+    "description": ["A light-weight shield with a surprising level of durability and toughness. It has what looks to be an imprint of a bear paw embedded into the center of the shield."],
+    "rarity": "common",
+    "stats": {
+        "HP":    25,
+        "MP":    0,
+        "ATK":   0,
+        "DEF":   30,
+        "MATK":  0,
+        "MDEF":  20,
+        "SPD":   0,
+        "EVA":   20,
+        "ACC":   0,
+        "CRT":   0
     }
   },
 
@@ -202,251 +204,33 @@
   {
     "id": "",
     "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 125,
-    "name": "Heart Necklace",
-    "image": "heart-necklace.svg",
-    "quote": "This necklace is a rookie favorite, though I don't see many veterans wearing them. Do you think it's because of the heart shape?",
-    "effect": "At the end of combat, restore 10HP",
-    "description": [
-      "A simple glass locket imbued with healing magic. It begins to glow when the wearer is in the presence of danger. While this artifact is quite common, many people swear by it's ability to sustain in oppresive conditions."
-     ],
-    "rarity": "Common"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 150,
-    "name": "Sharp Ring",
-    "image": "sharp-ring.svg",
-    "quote": "We get these by the dozen... and before you ask, no you can't wear like ten of them and have the effect multiplied. Trust me, i've tried.",
-    "effect": "Your first attack of each combat deals 10 additional damage.",
-    "description": [
-      "A silver ring adorned with a series of sharp spikes. The ring begins to glow red when the wearer senses danger, and will enhance the user's first attack, be that a spell or a strike."
-     ],
-    "rarity": "Common"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 175,
-    "name": "Safety Ring",
-    "image": "safety-ring.svg",
-    "quote": "The gem inset is made of enchanted morganite, which is normally quite expensive, but this is one is flawed...",
-    "effect": "Gain 10 Armor at the start of each combat.",
-    "description": [
-      "A small ring with a bright orange gemstone embedded inside of it. You feel safer just by looking at it."
-     ],
-    "rarity": "Common"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 200,
-    "name": "Stealth Stone",
-    "image": "stealth-stone.svg",
-    "quote": "I've been told by many adventurers, knights, and wizards alike. Don't go to sleep with this thing in your pocket. Trust me, it's better to just listen to me on this one.",
-    "effect": "Gain 1 Stealth at the start of each combat.",
-    "description": [
-      "A beautiful purple stone that whispers quietly to it's holder. Most whispers are warnings of impending danger, but some users have reported the stone speaking in a horrifying, unexplained language."
-     ],
-    "rarity": "Common"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 250,
-    "name": "Radiant Ring",
-    "image": "radiant-ring.svg",
-    "quote": "More MP, more actions per turn. Keep in mind it only works on your first turn, so...make it count?",
-    "effect": "Start each combat with 1 additional MP.",
-    "description": [
-      "A multi-coloured ring which alternates between the different colors of the rainbow depending on the time of day."
-     ],
-    "rarity": "Uncommon"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 275,
-    "name": "Mithril Ring",
-    "image": "mithril-ring.svg",
-    "quote": "It doesn't look like much, but it's pretty useful, especially for those idiots who run around without a shield.",
-    "effect": "If you end a turn without any Armor, gain 10 Armor.",
-    "description": [
-      "A simple loop ring made of precious mithril. The normally dark blue metal begins to glow when the wearer is in the presence of immediate danger."
-     ],
-    "rarity": "Uncommon"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 300,
-    "name": "Viper Ring",
-    "image": "viper-ring.svg",
-    "quote": "I hate this ring. That doesn't mean YOU won't like it though...! I think it's the eyes, I'd never put that thing on my hand!",
-    "effect": "Whenever you apply any amount of Poison to an enemy, apply 1 additional stack of Poison.",
-    "description": [
-      "A dark green ring adorned with etchings of snakes. When the wearer applies poison to an enemy, the mouth of the snake opens, revealing a pair of glowing green fangs. The origins of this ring are shrouded in mystery."
-     ],
-    "rarity": "Uncommon"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 500,
-    "name": "Skull Ring",
-    "image": "skull-ring.svg",
-    "quote": "No they aren't human skulls! How would that even work? Why do I have to keep explaining this to everyone?!",
-    "effect": "Whenever your HP drops below 50%, double your ATK for the rest of combat. This effect can only occur once per combat.",
-    "description": [
-      "A ring made in the shape of a skull. When the wearer is critically wounded, the eyes of the skull erupt in flames, and imbue the wearer with incredible strength. The origins of this ring are shrouded in mystery."
-     ],
-    "rarity": "Rare"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 750,
-    "name": "Alchemy Ring",
-    "image": "alchemy-ring.svg",
-    "quote": "I get these rings from the Alchemist's Guild. I know the guildmaster, we go way back.",
-    "effect": "Whenever you drink a potion, heal 10HP in addition to its primary effect.",
-    "description": [
-      "A peculiar ring forged in the shape of a potion bottle. Said to be made by a legendary alchemist who could turn lead into gold."
-     ],
-    "rarity": "Rare"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "artifact",
-    "price": 800,
-    "name": "Dragoon Ring",
-    "image": "dragoon-ring.svg",
-    "quote": "Don't tell anyone i'm selling these, I could get in quite a bit of trouble with the dragoons if they found out that i'm selling their signet rings...",
-    "effect": "Whenever an enemy is defeated, gain 1MP",
-    "description": [
-      "A dark red ring adorned with etchings of a dragon. Whenever an enemy is defeated, the eyes of the dragon begin to glow red. The origins of this ring are shrouded in mystery."
-     ],
-    "rarity": "Rare"
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
+    "role": "warrior",
     "category": "armor",
-    "price": 500,
-    "name": "Sprint Shoes",
-    "image": "sprint-shoes.svg",
-    "quote": "There's nothing magical about these shoes. They just make you run really, REALLY fast.",
-    "effect": "Slightly increases the wearers movement speed",
-    "description": [
-      "A pair of lightweight shoes with no obvious magical traits or qualities."
-     ],
-    "rarity": "Uncommon",
+    "price": 1130,
+    "name": "Blazing Chainmail",
+    "image": "blazing-chainmail.svg",
+    "quote": "Contrary to popular belief, I know exactly what I’m doing.",
+    "effect":"Illuminate the surrounding area, preventing enemies from entering Stealth.",
+    "description": ["This exotic armor is effectively a chainmail wreathed in eternal flames, which are harmless to the wearer. Any enemies who dare get close enough will be burned.", "With enough exposure and practice with this armor, the user may learn to activate and de-activate it's effect at will."],
+    "rarity": "legendary",
     "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  0,
-      "SPD":   25,
-      "EVA":   20,
-      "ACC":   0,
-      "CRT":   0
+      "HP": 80,
+      "MP": 0,
+      "ATK": 0,
+      "DEF": 50,
+      "MATK": 0,
+      "MDEF": 50,
+      "SPD": 0,
+      "EVA": 40,
+      "ACC": 0,
+      "CRT": 0
     }
   },
 
   {
     "id": "",
     "type": "equipment",
-    "role": "any",
-    "category": "armor",
-    "price": 500,
-    "name": "Sun Cloak",
-    "image": "sun-cloak.svg",
-    "quote": "Praise The Sun.",
-    "effect": "Gradually restores HP as long as the wearer is exposed to sunlight.",
-    "description": [
-      "This cloak is adorned with the Sun Singer's emblem, a bright yellow circle representing the sun. In addition to it's healing properties and magic resistance, wearing it might convince some people you are a member of the Sun Singers..."
-     ],
-    "rarity": "Uncommon",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  40,
-      "SPD":   0,
-      "EVA":   25,
-      "ACC":   0,
-      "CRT":   0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
-    "category": "armor",
-    "price": 500,
-    "name": "Moon Cloak",
-    "image": "moon-cloak.svg",
-    "quote": "This cloak provides a high level of camoflague at night, but really makes you stick out during the day.",
-    "effect": "If exposed to moonlight, gain 1 additional MP at the start of every turn",
-    "description": [
-      "This cloak is adorned with the Moon Walker's emblem, a start blue crescent representing the moon. In addition to it's magical properties, wearing it might convince some people you are a member of the Moon Walkers..."
-     ],
-    "rarity": "Uncommon",
-    "stats": {
-      "HP":    0,
-      "MP":    0,
-      "ATK":   0,
-      "DEF":   0,
-      "MATK":  0,
-      "MDEF":  40,
-      "SPD":   0,
-      "EVA":   25,
-      "ACC":   0,
-      "CRT":   0
-    }
-  },
-
-  {
-    "id": "",
-    "type": "equipment",
-    "role": "any",
+    "role": "mage",
     "category": "weapon",
     "price": 500,
     "name": "Fairy Staff",
@@ -764,12 +548,12 @@
     "role": "rogue",
     "category": "weapon",
     "price": 777,
-    "name": "Cursed Backbiter Dagger",
+    "name": "Cursed Dagger",
     "image": "cursed-backbiter-dagger.svg",
-    "quote": "It's a Backbiter tooth sharpened to a blade point. Don't ask, don't tell. You didn't buy it from me.",
+    "quote": "It's a demon tooth sharpened to a blade point. Don't ask, don't tell. You didn't buy it from me.",
     "effect":"Whenever you cast a Spell, take 1 unblockable HP damage.",
     "description": ["Every strike by this weapon is accompanied by an eerie silence. On the hilt there is an inscription that reads, 'Give me your hand. Let me help you fill this world with blood'."],
-    "rarity": "rare",
+    "rarity": "uncommon",
     "stats": {
       "HP": 0,
       "MP": 0,
@@ -817,7 +601,7 @@
     "category": "weapon",
     "price": 1030,
     "name": "Thunderbolt Dagger",
-    "image": "dagger-of-thunderbolts.svg",
+    "image": "thunderbolt-dagger.svg",
     "quote": "Electricity is not a toy for children...It's a toy for adults!",
     "effect":"Performing an attack with this weapon in your hand will consume all your remaining MP, and deal additional damage based on the amount of MP consumed.",
     "description": ["In his seclusion, the Mad Smith crafted an arsenal in which to arm his creations. This dagger is but one of them. It's blade crackles with dormant energy, waiting for an enemy to get close enough to perform a deadly arc.",
@@ -834,6 +618,35 @@
       "EVA": 0,
       "ACC": 90,
       "CRT": 25
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "rogue",
+    "category": "weapon",
+    "price": 1750,
+    "name": "King Breaker Bow",
+    "image": "king-breaker-bow.svg",
+    "quote": "A reminder that while so few Breakers remain, His Majesty still stands.",
+    "effect":"While this weapon is equipped, you can see Stealthed enemies.",
+    "description": [
+      "\"King Breaker\" was the label given to those who first rose to betray the King. While their efforts were made in the best interest of the people, most king breakers were hunted down and eliminated, their bows taken as trophies.",
+      "In a ironic twist of fate, the very weapons once used in an effort to assassinate the King are now prized possessions for Royal Guards—not only for their storied history, but for the chance to get their hands on fully functional Magic weaponry."
+    ],
+    "rarity": "legendary",
+    "stats": {
+      "HP": 0,
+      "MP": 0,
+      "ATK": 75,
+      "DEF": 0,
+      "MATK": 75,
+      "MDEF": 0,
+      "SPD": 55,
+      "EVA": 0,
+      "ACC": 90,
+      "CRT": 80
     }
   },
 
@@ -993,58 +806,252 @@
     }
   },
 
+
+
   {
     "id": "",
     "type": "equipment",
-    "role": "warrior",
+    "role": "any",
+    "category": "artifact",
+    "price": 125,
+    "name": "Heart Necklace",
+    "image": "heart-necklace.svg",
+    "quote": "This necklace is a rookie favorite, though I don't see many veterans wearing them. Do you think it's because of the heart shape?",
+    "effect": "At the end of combat, restore 10HP",
+    "description": [
+      "A simple glass locket imbued with healing magic. It begins to glow when the wearer is in the presence of danger. While this artifact is quite common, many people swear by it's ability to sustain in oppresive conditions."
+     ],
+    "rarity": "Common"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 150,
+    "name": "Sharp Ring",
+    "image": "sharp-ring.svg",
+    "quote": "We get these by the dozen... and before you ask, no you can't wear like ten of them and have the effect multiplied. Trust me, i've tried.",
+    "effect": "Your first attack of each combat deals 10 additional damage.",
+    "description": [
+      "A silver ring adorned with a series of sharp spikes. The ring begins to glow red when the wearer senses danger, and will enhance the user's first attack, be that a spell or a strike."
+     ],
+    "rarity": "Common"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 175,
+    "name": "Safety Ring",
+    "image": "safety-ring.svg",
+    "quote": "The gem inset is made of enchanted morganite, which is normally quite expensive, but this is one is flawed...",
+    "effect": "Gain 10 Armor at the start of each combat.",
+    "description": [
+      "A small ring with a bright orange gemstone embedded inside of it. You feel safer just by looking at it."
+     ],
+    "rarity": "Common"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 200,
+    "name": "Stealth Stone",
+    "image": "stealth-stone.svg",
+    "quote": "I've been told by many adventurers, knights, and wizards alike. Don't go to sleep with this thing in your pocket. Trust me, it's better to just listen to me on this one.",
+    "effect": "Gain 1 Stealth at the start of each combat.",
+    "description": [
+      "A beautiful purple stone that whispers quietly to it's holder. Most whispers are warnings of impending danger, but some users have reported the stone speaking in a horrifying, unexplained language."
+     ],
+    "rarity": "Common"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 250,
+    "name": "Radiant Ring",
+    "image": "radiant-ring.svg",
+    "quote": "More MP, more actions per turn. Keep in mind it only works on your first turn, so...make it count?",
+    "effect": "Start each combat with 1 additional MP.",
+    "description": [
+      "A multi-coloured ring which alternates between the different colors of the rainbow depending on the time of day."
+     ],
+    "rarity": "Uncommon"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 275,
+    "name": "Mithril Ring",
+    "image": "mithril-ring.svg",
+    "quote": "It doesn't look like much, but it's pretty useful, especially for those idiots who run around without a shield.",
+    "effect": "If you end a turn without any Armor, gain 10 Armor.",
+    "description": [
+      "A simple loop ring made of precious mithril. The normally dark blue metal begins to glow when the wearer is in the presence of immediate danger."
+     ],
+    "rarity": "Uncommon"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 300,
+    "name": "Viper Ring",
+    "image": "viper-ring.svg",
+    "quote": "I hate this ring. That doesn't mean YOU won't like it though...! I think it's the eyes, I'd never put that thing on my hand!",
+    "effect": "Whenever you apply any amount of Poison to an enemy, apply 1 additional stack of Poison.",
+    "description": [
+      "A dark green ring adorned with etchings of snakes. When the wearer applies poison to an enemy, the mouth of the snake opens, revealing a pair of glowing green fangs. The origins of this ring are shrouded in mystery."
+     ],
+    "rarity": "Uncommon"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 500,
+    "name": "Skull Ring",
+    "image": "skull-ring.svg",
+    "quote": "No they aren't human skulls! How would that even work? Why do I have to keep explaining this to everyone?!",
+    "effect": "Whenever your HP drops below 50%, double your ATK for the rest of combat. This effect can only occur once per combat.",
+    "description": [
+      "A ring made in the shape of a skull. When the wearer is critically wounded, the eyes of the skull erupt in flames, and imbue the wearer with incredible strength. The origins of this ring are shrouded in mystery."
+     ],
+    "rarity": "Rare"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 750,
+    "name": "Alchemy Ring",
+    "image": "alchemy-ring.svg",
+    "quote": "I get these rings from the Alchemist's Guild. I know the guildmaster, we go way back.",
+    "effect": "Whenever you drink a potion, heal 10HP in addition to its primary effect.",
+    "description": [
+      "A peculiar ring forged in the shape of a potion bottle. Said to be made by a legendary alchemist who could turn lead into gold."
+     ],
+    "rarity": "Rare"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "artifact",
+    "price": 800,
+    "name": "Dragon Skull",
+    "image": "dragoon-ring.svg",
+    "quote": "Don't tell anyone i'm selling these, I could get in quite a bit of trouble with the dragoons if they found out that i'm selling what they consider holy relics...",
+    "effect": "Whenever an enemy is defeated, gain 1MP",
+    "description": [
+      "A dark red ring adorned with etchings of a dragon. Whenever an enemy is defeated, the eyes of the dragon begin to glow red. The origins of this ring are shrouded in mystery."
+     ],
+    "rarity": "Rare"
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
     "category": "armor",
-    "price": 1130,
-    "name": "Blazing Chainmail",
-    "image": "blazing-chainmail.svg",
-    "quote": "Contrary to popular belief, I know exactly what I’m doing.",
-    "effect":"Illuminate the surrounding area, preventing enemies from entering Stealth.",
-    "description": ["This exotic armor is effectively a chainmail wreathed in eternal flames, which are harmless to the wearer. Any enemies who dare get close enough will be burned.", "With enough exposure and practice with this armor, the user may learn to activate and de-activate it's effect at will."],
-    "rarity": "legendary",
+    "price": 500,
+    "name": "Sprint Shoes",
+    "image": "sprint-shoes.svg",
+    "quote": "There's nothing magical about these shoes. They just make you run really, REALLY fast.",
+    "effect": "Slightly increases the wearers movement speed",
+    "description": [
+      "A pair of lightweight shoes with no obvious magical traits or qualities."
+     ],
+    "rarity": "Uncommon",
     "stats": {
-      "HP": 80,
-      "MP": 0,
-      "ATK": 0,
-      "DEF": 50,
-      "MATK": 0,
-      "MDEF": 50,
-      "SPD": 0,
-      "EVA": 40,
-      "ACC": 0,
-      "CRT": 0
+      "HP":    0,
+      "MP":    0,
+      "ATK":   0,
+      "DEF":   0,
+      "MATK":  0,
+      "MDEF":  0,
+      "SPD":   25,
+      "EVA":   20,
+      "ACC":   0,
+      "CRT":   0
     }
   },
 
   {
     "id": "",
     "type": "equipment",
-    "role": "rogue",
-    "category": "weapon",
-    "price": 1750,
-    "name": "King Breaker Bow",
-    "image": "king-breaker-bow.svg",
-    "quote": "A reminder that while so few Breakers remain, His Majesty still stands.",
-    "effect":"While this weapon is equipped, you can see Stealthed enemies.",
+    "role": "any",
+    "category": "armor",
+    "price": 500,
+    "name": "Sun Cloak",
+    "image": "sun-cloak.svg",
+    "quote": "Praise The Sun.",
+    "effect": "Gradually restores HP as long as the wearer is exposed to sunlight.",
     "description": [
-      "\"King Breaker\" was the label given to those who first rose to betray the King. While their efforts were made in the best interest of the people, most king breakers were hunted down and eliminated, their bows taken as trophies.",
-      "In a ironic twist of fate, the very weapons once used in an effort to assassinate the King are now prized possessions for Royal Guards—not only for their storied history, but for the chance to get their hands on fully functional Magic weaponry."
-    ],
-    "rarity": "legendary",
+      "This cloak is adorned with the Sun Singer's emblem, a bright yellow circle representing the sun. In addition to it's healing properties and magic resistance, wearing it might convince some people you are a member of the Sun Singers..."
+     ],
+    "rarity": "Uncommon",
     "stats": {
-      "HP": 0,
-      "MP": 0,
-      "ATK": 75,
-      "DEF": 0,
-      "MATK": 75,
-      "MDEF": 0,
-      "SPD": 55,
-      "EVA": 0,
-      "ACC": 90,
-      "CRT": 80
+      "HP":    0,
+      "MP":    0,
+      "ATK":   0,
+      "DEF":   0,
+      "MATK":  0,
+      "MDEF":  40,
+      "SPD":   0,
+      "EVA":   25,
+      "ACC":   0,
+      "CRT":   0
+    }
+  },
+
+  {
+    "id": "",
+    "type": "equipment",
+    "role": "any",
+    "category": "armor",
+    "price": 500,
+    "name": "Moon Cloak",
+    "image": "moon-cloak.svg",
+    "quote": "This cloak provides a high level of camoflague at night, but really makes you stick out during the day.",
+    "effect": "If exposed to moonlight, gain 1 additional MP at the start of every turn",
+    "description": [
+      "This cloak is adorned with the Moon Walker's emblem, a start blue crescent representing the moon. In addition to it's magical properties, wearing it might convince some people you are a member of the Moon Walkers..."
+     ],
+    "rarity": "Uncommon",
+    "stats": {
+      "HP":    0,
+      "MP":    0,
+      "ATK":   0,
+      "DEF":   0,
+      "MATK":  0,
+      "MDEF":  40,
+      "SPD":   0,
+      "EVA":   25,
+      "ACC":   0,
+      "CRT":   0
     }
   }
+
+
+
 ]
