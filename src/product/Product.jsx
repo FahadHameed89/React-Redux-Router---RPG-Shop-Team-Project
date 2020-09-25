@@ -13,7 +13,10 @@ export default () => {
 
   return (
     <main className="product-detail container">
+      <div className="product-image-container">
       <ProductImage rarity={product.rarity} path={product.image} />
+      </div>
+
       <p>Add To Cart Component</p>
 
       <header>

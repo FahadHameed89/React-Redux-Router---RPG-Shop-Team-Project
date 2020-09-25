@@ -56,3 +56,13 @@
 .w-50 {
   width: 50%;
 }
+
+.product-image-container {
+  width: 200px;
+}
+
+@media screen and (min-width: 600px) {
+  .product-image-container {
+    min-width: 300px;
+  }
+}
