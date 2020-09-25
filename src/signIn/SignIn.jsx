@@ -17,6 +17,9 @@ function LogIn(props) {
 
   const clanData = useSelector((state) => state.clans); // grab clan and memebr data from the store
 
+  const bouncerPhrase = ["Clan members only...", "You on the list?", "No mask, no flask", "You got the coin?", "Beat it Tombdweller", "Get lost Sapblood", "Keep walking halfling", "Take a hike Ankle-biter"]
+  const randomBouncerPhrase = bouncerPhrase[Math.floor(Math.random() * bouncerPhrase.length)];
+
   const validateSignIn = (event) => {
     event.preventDefault();
 
@@ -124,7 +127,7 @@ function LogIn(props) {
         <div class="signin__guard-container">
           <img src="/imgs/signin-boss.png" alt="A large orc figure guards the shop entrance."/>
         </div>
-        <p>Only clan members on the list can enter.</p>
+          <p>{randomBouncerPhrase}</p>
       </div>
     </main>
     </>
