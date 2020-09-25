@@ -185,6 +185,7 @@
     "name": "Great Helm of Valor",
     "image": "warrior-greathelm-of-valor.png",
     "quote": "This one's in near perfect condition. Never mind the dent on the back side of the helm, I think it came like that...",
+    "effect":"Once per combat, prevents the first time the wearer would be hit by a Critical Hit.",
     "description": ["A standard issue helmet worn by most knights. What it lacks in design and elegance, it makes up for in it's ability to almost fully mitigate impacts to the head."],
     "rarity": "uncommon",
     "stats": {
