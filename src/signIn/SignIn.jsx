@@ -31,7 +31,7 @@ function LogIn(props) {
       const a = { clan: userClan, member: userName };
 
       props.dispatch(userSignIn(a));
-      window.location.href="../product/ProductList.jsx"
+      props.history.push("/products");
     }
 
     /*----------------------------------error check the clan availability and empty field
