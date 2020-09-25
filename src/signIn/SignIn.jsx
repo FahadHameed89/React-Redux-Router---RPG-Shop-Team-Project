@@ -29,7 +29,7 @@ function LogIn(props) {
     if (memberPresent) {
       // go to next page if member is in dataset
       const a = { clan: userClan, member: userName };
-     
+
       props.dispatch(userSignIn(a));
       window.location.href="../product/ProductList.jsx"
     }
@@ -79,7 +79,7 @@ function LogIn(props) {
   return (
     <>
       <form onSubmit={validateSignIn}>
-        <div className="userGroup">
+        <div className="input-group">
           <label htmlFor="user-name" />
           <input
             type="text"
@@ -93,15 +93,15 @@ function LogIn(props) {
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-          <p>{errorMessageUser}</p>
+          <p className="show-error-message">{errorMessageUser}</p>
         </div>
 
-        <div className="clanGroup">
+        <div className="input-group">
           <label htmlFor="clan-name" />
           <input
             type="text"
             id="clan-name"
-            autoComplete="off" 
+            autoComplete="off"
             placeholder="Your Clan"
             onChange={(e) => {
               getUserClan(dasherize(e.target.value)); // grabbing user given clan field and dasherize it
@@ -109,7 +109,7 @@ function LogIn(props) {
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-          <p>{errorMessageClan}</p>
+          <p className="show-error-message">{errorMessageClan}</p>
         </div>
 
         <input type="submit" value="Login" />

@@ -4,8 +4,7 @@ form{
     display:flex;
     flex-direction: column;
     max-width: fit-content;
-    padding: 2%;
-  
+
 }
 
 input[type='text']{
@@ -15,17 +14,16 @@ box-sizing: border-box;
 border-radius: 6px;
 width: 357px;
 height: 56px;
-
-font-style: normal;
 font-weight: 900;
-
 font-size: 16px;
 line-height: 19px;
 /* identical to box height */
 color: #FAF9FD;
-
 /*font-size: var(--text-base);*/
+margin-top: 5%;
 
+
+  /*font-size: var(--text-base);*/
 }
 
 #user-name{
@@ -33,17 +31,16 @@ color: #FAF9FD;
     background-position: left;
     background-repeat: no-repeat;
     padding-left: 40px;
-    
 }
 
-#clan-name{
-    background-image:url('/imgs/signIn/clan-name.svg');
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 40px;
+#clan-name {
+  background-image: url("/imgs/signIn/clan-name.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 40px;
 }
 
-input[type="submit"]{ 
+input[type="submit"]{
 width: 180px;
 height: 60px;
 background: linear-gradient(180deg, #46BACA 0%, #3188D9 30.73%, #3D43C7 100%);
@@ -51,30 +48,23 @@ border: 1px solid #211B22;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-
-font-style: normal;
+margin-top: 5%;
 font-weight: 900;
 font-size: 20px;
 line-height: 23px;
 color: #FFFFFF;
-
-
 align-self: flex-end;
-    
 }
 
-
-input[type="submit"]:hover, input[type="text"]:hover { 
+input[type="submit"]:hover, input[type="text"]:hover{
     box-shadow: 0 0 7px 0 #2187D3;
     border: 3px solid #2187D3;
   }
 
-p{
- 
-font-style: normal;
+.show-error-message{
 font-weight: 500;
 font-size: 16px;
-line-height: 19px;
+margin:2%;
 /* identical to box height */
 color: #D05A69;
 }
@@ -84,8 +74,5 @@ color: #D05A69;
 *https://www.templatemonster.com/help/js-animated-how-to-change-the-placeholder-text-color-of-an-input.html     */
 
 #user-name::-webkit-input-placeholder {
-    color:#fff !important;
-    }
-
-  
-
+  color: #fff !important;
+}
