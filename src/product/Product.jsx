@@ -6,6 +6,8 @@ import "./css/product.css"
 import ProductImage from './ProductImage';
 import ProductStats from './ProductStats';
 import ProductDescription from './ProductDescription';
+import ProductEffect from './ProductEffect';
+
 
 export default () => {
   const { id } = useParams();
@@ -30,6 +32,7 @@ export default () => {
 
       <div className="flex-row">
         <ProductDescription className="w-50" description={product.description} />
+        <ProductEffect className="w-50" effect={product.effect} />
 
         <ProductStats className="w-50" stats={product.stats} />
       </div>
