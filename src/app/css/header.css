@@ -23,3 +23,25 @@
   justify-content: center;
   overflow: hidden;
 }
+
+.total-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  
+  height: 58px;
+  width: 170px;
+  background-color: #211B22;
+  border-radius: 999px; /*Should remain pill shape regardless of how big we set the height of the pill to.*/
+}
+
+.total-credit img{
+  padding-right: 15px;
+}
+
+
+
+
