@@ -22,10 +22,10 @@
     "price": 75,
     "name": "Armor Potion",
     "image": "armor-potion.svg",
-    "quote": "I won't bore you with how I managed to make this potion taste like oranges, you'll thank me later.",
+    "quote": "I won't bore you with how I managed to make this potion taste like blueberries, you'll thank me later.",
     "effect": "Gain 15 Armor. Armor is depleted before HP.",
     "description": [
-      "This citrus flavoured potion glows with a faint orange hue, and is often consumed before major battles to give combatants a slight edge."
+      "This blueberry flavoured potion glows with a faint blue hue, and is often consumed before and during major battles to give combatants a slight defensive edge."
      ],
     "rarity": "Common"
   },
