@@ -1,7 +1,8 @@
 const ADD = 'shoppingCart/add'
 
 const initialState = [
-  { productId: "king-breaker-bow", quantity: 1 }
+  { productId: "king-breaker-bow", quantity: 8 },
+  { productId: "oxhornhelmet", quantity: 5 }
 ]
 
 export default (state=initialState, action) => {
