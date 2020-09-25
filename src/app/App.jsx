@@ -16,16 +16,18 @@ import Cart from '../shoppingCart/ShoppingCart';
 export default () => {
   return(
     <Router>
-      <Header />
+
 
       <Switch>
         <Route exact path="/" component={SignIn} />
         <Route exact path="/products">
+          <Header />
           <Masthead className="masthead-products"/>
           <ProductList />
         </Route>
 
         <Route path="/products/:id">
+          <Header />
           <Masthead className="masthead-product">
             <nav className="shop-nav">
               <Link to="/products">
