@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { filterByRole } from './filteredProductReducer';
+import { filterBy } from './filteredProductReducer';
 import FilterButton from './ProductFilter';
 import ProductCard from './ProductCard';
 
@@ -15,13 +15,15 @@ export default () => {
   const currentFilter = useSelector(state => state.filteredProducts.filter);
 
   const filterButtons = [
-    { filter: 'warrior', icon: 'witch-hat.svg' },
-    { filter: 'mage', icon: 'witch-hat.svg' },
-    { filter: 'rogue', icon: 'witch-hat.svg' },
+    { filter: 'warrior',  icon: 'witch-hat.svg' },
+    { filter: 'mage',     icon: 'witch-hat.svg' },
+    { filter: 'rogue',    icon: 'witch-hat.svg' },
+    { filter: 'trinkets', icon: 'witch-hat.svg' },
+    { filter: 'potions',  icon: 'witch-hat.svg' },
   ]
 
   const filterClicked = (filter) => {
-    dispatch(filterByRole(filter, products))
+    dispatch(filterBy(filter, products))
   }
 
   // We want this effect to only run once so that redux
@@ -29,7 +31,7 @@ export default () => {
   // There has to be a better way.
   useEffect(() => {
     if(filteredProducts.length === 0) {
-      dispatch(filterByRole("warrior", products))
+      dispatch(filterBy("warrior", products))
     }
      //Very strange, requirement just to stop an eslint warning
   }, [dispatch, filteredProducts.length])
