@@ -13,7 +13,7 @@ export default (state = [], action) => {
     case "REMOVE_ONE":
       const removeOneItem = state.map((cartItem)=>{
         if((cartItem.id === action.payload)&&(cartItem.quantity>0) ){
-            cartItem.quantity = cartItem.quantity-1 ;
+            cartItem.quantity -- ;
         }
         return cartItem;
      });
@@ -22,7 +22,7 @@ export default (state = [], action) => {
       case "ADD_ONE":
         const addOneItem = state.map((cartItem)=>{
           if(cartItem.id === action.payload ){
-              cartItem.quantity = cartItem.quantity+1; 
+              cartItem.quantity ++; 
           }
           return cartItem;
        });
@@ -33,8 +33,6 @@ export default (state = [], action) => {
       return state;
   }
 };
-
-
 
 //actions
 

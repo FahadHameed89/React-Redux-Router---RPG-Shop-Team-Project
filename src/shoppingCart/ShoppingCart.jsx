@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useSelector, connect, useReducer } from "react-redux";
-import { addToCart ,removeOne } from "./shoppingCartReducer";
-import { removeAll,addOne } from "./shoppingCartReducer";
+import { useSelector, connect } from "react-redux";
+import { addToCart, removeOne, removeAll, addOne } from "./shoppingCartReducer";
 import "./ShoppingCart.css";
 
 //https://www.robinwieruch.de/javascript-map-array
@@ -47,46 +46,25 @@ const initialState = [
 
 function ShoppingCart(props) {
   const productsInCart = useSelector((state) => Object.values(state.cart));
-  // const allProducts = useSelector((state) => Object.values(state.products));
 
   let subTotal = 0;
-  let cartListArray = [];
-  const [cartItemsList, setCartItemsList] = useState(cartListArray);
-
-  console.log(productsInCart);
 
   /*  calcualting subtotal*/
   for (const element of productsInCart) {
-    // const c = allProducts.find(xx => xx.id === element.productId);
     subTotal = element.price * element.quantity + subTotal;
   }
-  console.log(cartListArray);
 
   /* --------on button checkout populating my redux state --------- */
   const CheckOut = (event) => {
     event.preventDefault();
     props.dispatch(addToCart(initialState));
-    // props.dispatch({ type: "ADD", initialState })
   }; //end checkout fn
-
-  function removeSingleItem(id) {
-    console.log(id);
-    props.dispatch(removeOne(id));
-  } //end checkout fn
-
-  function addSingleItem(id) {
-    console.log(id);
-    props.dispatch(addOne(id));
-  } //end checkout fn
-
+  /* ---------- ---------------------------------------------------*/
 
   return (
     <div id="checkout-page">
-      <h2>Your Cart</h2>
-
+      <h2>Your Shopping Cart</h2>
       {productsInCart.map((cartItem) => {
-        //      getchangeQuantity(cartItem.quantity)
-
         return (
           <ul className="products-listing">
             <li id="image-p">
@@ -94,11 +72,19 @@ function ShoppingCart(props) {
             </li>
             <li id="price-p">Unit Price: {cartItem.price}</li>
             <li id="remove-q">
-              <input type="button" value="-" onClick={() => removeSingleItem(cartItem.id)}></input>
+              <input
+                type="button"
+                value="-"
+                onClick={() => props.dispatch(removeOne(cartItem.id))}
+              ></input>
             </li>
             <li id="quantity-p"> {cartItem.quantity}</li>
             <li id="add-q">
-              <input type="button" value="+" onClick={() => addSingleItem(cartItem.id)}></input>
+              <input
+                type="button"
+                value="+"
+                onClick={() => props.dispatch(addOne(cartItem.id))}
+              ></input>
             </li>
             <li id="name-p">{cartItem.name}</li>
 
@@ -106,7 +92,7 @@ function ShoppingCart(props) {
               <input
                 type="button"
                 value="Remove Item"
-                onClick={() => (props.dispatch(removeAll(cartItem.id)))}
+                onClick={() => props.dispatch(removeAll(cartItem.id))}
               ></input>
             </li>
           </ul>
@@ -116,7 +102,7 @@ function ShoppingCart(props) {
       <ul id="sub-total">
         <li>Subtotal:</li>
         <li>
-          <input type="text" value={`${subTotal} g`}></input>
+          <input type="text" value={`${subTotal} g`} readOnly></input>
         </li>
       </ul>
 
