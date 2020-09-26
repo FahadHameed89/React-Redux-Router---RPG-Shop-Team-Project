@@ -1,14 +1,14 @@
 import { combineReducers } from 'redux';
 import productReducer from '../product/productReducer';
 import filteredProductReducer from '../product/filteredProductReducer';
-import signInReducer from '../signIn/signInReducer';
-import logInReducer from '../signIn/loggedInReducer'
+import clansReducer from '../signIn/clansReducer';
+import accountReducer from '../signIn/accountReducer';
 import shoppingCartReducer from '../shoppingCart/shoppingCartReducer'
 
 export default combineReducers({
   products: productReducer,
   filteredProducts: filteredProductReducer,
-  clans: signInReducer,
-  member: logInReducer,
+  clans: clansReducer,
+  member: accountReducer,
   cart: shoppingCartReducer
 })

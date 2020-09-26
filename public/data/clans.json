@@ -2,28 +2,10 @@
   {
     "clan": "TheAbsoluteZeros",
     "members": [
-      "Danish",
-      "Fahad",
-      "Irwin",
-      "Aaron"
-    ]
-  },
-  {
-    "clan": "clan1",
-    "members": [
-      "Danish1",
-      "Fahad1",
-      "Irwin1",
-      "Aaron1"
-    ]
-  },
-  {
-    "clan": "clan2",
-    "members": [
-      "Danish2",
-      "Fahad2",
-      "Irwin2",
-      "Aaron2"
+      { "member": "Danish", "funds": 5000, "profileImg": "profile.svg"},
+      { "member": "Fahad",  "funds": 5000, "profileImg": "profile.svg"},
+      { "member": "Irwin",  "funds": 5000, "profileImg": "profile.svg"},
+      { "member": "Aaron",  "funds": 5000, "profileImg": "profile.svg"}
     ]
   }
 ]
