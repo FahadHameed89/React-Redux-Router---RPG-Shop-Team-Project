@@ -1,92 +1,185 @@
 import React, { useState } from "react";
-import { useSelector, connect } from "react-redux";
-import userSignIn from "./logInAction";
-import dasherize from "../common/dasherize";
+import { useSelector, useDispatch } from "react-redux";
+import comparableString from '../common/comparableString.js'
+
+import { signIn } from "./accountReducer";
+
 import "./SignIn.css";
 
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
-//https://dmitripavlutin.com/access-object-keys-values-entries/
+/**
+ * SPECIAL NOTICE:
+ *
+ * There is no actual security here and there are numerous ways to bypass
+ * this 'login' page. It's purely included in the project to simulate a type of
+ * restriction page while grabbing data from redux. In a real project an authorization
+ * token would be obtained from the remote backend where it would be used to authorize
+ * each and every server query then after.
+ */
 
-function LogIn(props) {
-  let memberPresent = false;
-
-  const [userName, getUserName] = useState("");
-  const [userClan, getUserClan] = useState("");
-  const [errorMessageUser, getErrorMessageUser] = useState("");
-  const [errorMessageClan, getErrorMessageClan] = useState("");
-
-  const clanData = useSelector((state) => state.clans); // grab clan and memebr data from the store
-
+export default (props) => {
+  const dispatch = useDispatch();
+  const [inputMemberName, setInputMemberName] = useState("");
+  const [inputClanName, setInputClanName] = useState("");
+  const [errorMessageUser, setMemberNameError] = useState("");
+  const [errorMessageClan, setClanNameError] = useState("");
+  
   const bouncerPhrase = ["Clan members only...", "You on the list?", "No mask, no flask", "You got the coin?", "Beat it Tombdweller", "Get lost Sapblood", "Keep on walking halfling", "Take a hike Ankle-biter"]
   const randomBouncerPhrase = bouncerPhrase[Math.floor(Math.random() * bouncerPhrase.length)];
 
-  const validateSignIn = (event) => {
+  const clanList = useSelector((state) => state.clans);
+
+
+  /**
+   * Finds a clan in our preloaded clan list.
+   *
+   * @param {string} clanName - The clan name to search for
+   * @returns {(null|object)} returns null or the clan object
+   */
+  function findClan(clanName) {
+    clanName = comparableString(clanName) || ''
+    return clanList.find(x => comparableString(x.clan) === clanName);
+  }
+
+  /**
+   * Finds a member profile in the given clan.
+   *
+   * @param {object} clan - clan object from our preloaded clan list.
+   * @param {string} memberName - A member name from that clan.
+   * @returns {(null|object)} returns null or the profile object
+   */
+  const findMember = (clan, memberName) => {
+    memberName = comparableString(memberName) || ''
+
+    return clan.members.find(
+      x => comparableString(x.member) === memberName
+    )
+  }
+
+  /**
+   * Clears all errors on the form.
+   */
+  const clearErrors = () => {
+    setMemberNameError("");
+    setClanNameError("");
+  }
+
+  /**
+   * Validates that the user gave us some kind of input
+   *
+   * @returns {boo]} True when input is valid otherwise false.
+   */
+  const validateUserInput = () => {
+    let result = true;
+    if(inputClanName.trim() === "") {
+      result = false;
+      setClanNameError("What clan are you from?");
+    }
+
+    if(inputMemberName.trim() === "") {
+      result = false;
+      setMemberNameError("What's your name?");
+    }
+
+    return result;
+  }
+
+  /**
+   * Determines if the user entered credentials are valid
+   *
+   * @returns {bool} True if credentials are valid otherwise false
+   *                 with error messages added to the appropriate message
+   *                 state.
+   */
+  const validateCredentials = () => {
+    const clan = findClan(inputClanName);
+
+    let result = true;
+    if(clan) {
+      const memberProfile = findMember(clan, inputMemberName);
+      if(memberProfile && memberProfile.member !== null) {
+        result = true;
+      } else {
+        result = false;
+        setMemberNameError("You're name is not in the list. Scram!");
+      }
+
+    } else {
+      result = false;
+      setClanNameError("Never heard of that clan before...");
+    }
+
+    return result;
+  }
+
+  /**
+   * Creates the account details needed to "sign-in" a user
+   * to the store.
+   *
+   * This function expects the credentials to have already been validated before
+   * being called.
+   *
+   * @param {string} clanName - The clan name.
+   * @param {string} memberName - Clan member name.
+   */
+  const createAccountSignin = (clanName, memberName) => {
+    // Note: This should probably be pulled out into some other file
+    //       closer to redux. However since we know the scope of this app
+    //       and this is the only place that will be setting logged in profiles
+    //       it's probably safe to leave this here.
+
+    const clan = findClan(clanName);
+    const memberProfile = findMember(clan, memberName);
+
+    return { clanId: clan.clanId, clan: clan.clan, ...memberProfile }
+  }
+  
+  /**
+   * Validates the inputed user credentials and
+   * if the user can "sign-in", create the account object
+   * then redirect to the sites main page.
+   *
+   * @param {Event} event Data from the onSumbitEvent
+   */
+  const onSumbit = (event) => {
     event.preventDefault();
 
-    const clanList = Object.keys(clanData); // grab clan names that are in array foramt
-    const clanIndex = confirmClan(); // call function to check name of the clan
+    clearErrors();
 
-    if (clanIndex > -1) {
-      memberPresent = confirmMember(clanIndex); // if clan exists call this function to check if user name is correct
-    }
-    if (memberPresent) {
-      // go to next page if member is in dataset
-      const a = { clan: userClan, member: userName };
+    const isUserInputValid = validateUserInput();
+    const isCredentialsValid = validateCredentials();
+    const canSignIn = isUserInputValid && isCredentialsValid;
 
-      props.dispatch(userSignIn(a));
+    if(canSignIn) {
+      const account = createAccountSignin(inputClanName, inputMemberName);
+
+      // Sign in and transfer us to products
+      dispatch(signIn(account));
       props.history.push("/products");
     }
 
-    /*----------------------------------error check the clan availability and empty field
-     * return the clan index--------------------------------------------------------------
-     */
-    function confirmClan() {
-      let clanIndex;
-      try {
-        const clanFound = clanList.includes(userClan); // check clan avialabilty
-        clanIndex = clanList.indexOf(userClan); // find clan index
-
-        if (userClan === "") {
-          throw new Error("Please enter The name Of your Clan");
-        } else if (!clanFound) {
-          throw new Error("This Clan does not exist");
-        }
-      } catch (error) {
-        getErrorMessageClan(error);
-      }
-      return clanIndex;
-    } /// end confirmClan fn
-
-    /*-----------------------error check the member availability and empty field--------------------------- */
-    function confirmMember(clanIndex) {
-      let memberValid = false;
-      const [_, clanMembers] = Object.entries(clanData)[clanIndex];
-      const memberList = clanMembers.members; //populate memberList with clan's members array
-
-      try {
-        const memberFound = memberList.includes(userName); //  find if member exits
-
-        if (userName === "") {
-          throw new Error("Please enter your user name ");
-        } else if (!memberFound) {
-          throw new Error("This username does not exist");
-        }
-        memberValid = true;
-      } catch (error) {
-        getErrorMessageUser(error);
-      }
-      return memberValid;
-    } /// end confirmMember fn
-  }; // end validateSignIn fn
+  }
 
   return (
     <>
-    <header class="container signin__header">
+    <header className="container signin__header">
       <img src="/imgs/shop-logo.png" alt=""/>
     </header>
 
     <main className="container signin__main">
-      <form className="signin__form" onSubmit={validateSignIn}>
+      <form className="signin__form" onSubmit={onSumbit}>
+        <div className="input-group">
+          <label htmlFor="clan-name" />
+          <input
+            type="text"
+            id="clan-name"
+            autoComplete="off"
+            placeholder="Clan Name"
+            onChange={(e) => {
+              setInputClanName(e.target.value);
+            }} />
+          <p className="show-error-message">{errorMessageClan}</p>
+        </div>
+
         <div className="input-group">
           <label htmlFor="user-name" />
           <input
@@ -96,45 +189,21 @@ function LogIn(props) {
             placeholder="Your Name"
             autoFocus
             onChange={(e) => {
-              getUserName(e.target.value);
-              getErrorMessageUser(""); // clear error fields
-              getErrorMessageClan(""); // clear error fields
-            }}
-          ></input>
+              setInputMemberName(e.target.value);
+            }} />
           <p className="show-error-message">{errorMessageUser}</p>
-        </div>
-
-        <div className="input-group">
-          <label htmlFor="clan-name" />
-          <input
-            type="text"
-            id="clan-name"
-            autoComplete="off"
-            placeholder="Clan Name"
-            onChange={(e) => {
-              getUserClan(dasherize(e.target.value)); // grabbing user given clan field and dasherize it
-              getErrorMessageUser(""); // clear error fields
-              getErrorMessageClan(""); // clear error fields
-            }}
-          ></input>
-          <p className="show-error-message">{errorMessageClan}</p>
         </div>
 
         <input type="submit" value="Enter Shop" />
       </form>
 
       <div className="signin__guard">
-        <div class="signin__guard-container">
+        <div className="signin__guard-container">
           <img src="/imgs/signin-boss.png" alt="A large orc figure guards the shop entrance."/>
         </div>
-          <p>{randomBouncerPhrase}</p>
+        <p className="bubble bubble-bottom-left">{randomBouncerPhrase}</p>
       </div>
     </main>
     </>
   );
 }
-
-//export default LogIn;
-export default connect((state) => {
-  return { someResult: state };
-})(LogIn);
