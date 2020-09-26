@@ -6,7 +6,7 @@ export default (props) => {
   const productPrice = props.product.price;
 
   const [count, setCount] = useState(1);
-  const [price, setPrice] = useState(100);
+  const [price, setPrice] = useState(productPrice);
 
   const update = (action) => {
     let newCount = 0;
