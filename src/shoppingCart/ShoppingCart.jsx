@@ -1,35 +1,45 @@
 import React, { useState } from "react";
-import { useSelector, connect } from "react-redux";
-import CartItem from "./ShoppingCartItem";
+import { useSelector, connect ,useReducer} from "react-redux";
+import { addToCart } from "./shoppingCartReducer";
+import {removeAll} from "./shoppingCartReducer";
 import "./ShoppingCart.css";
 
 //https://www.robinwieruch.de/javascript-map-array
 //https://www.robinwieruch.de/react-remove-item-from-list
+const initialState = [
+  { id: "king-breaker-bow", quantity: 8 ,price:100 , name:"king breaker bow" , image: "king-breaker-bow.svg" },
+  { id: "sharp-ring", quantity: 5 ,price:100 , name:"Sharp ring" , image: "sharp-ring.svg"},
+  { id: "oxhornhelmet", quantity: 2 ,price:100 ,  name:"ox-horn-helmet" , image: "ox-horn-helmet.png"},
+  { id: "fairy-staff", quantity: 1 ,price:100,  name:"Fairy staff" , image: "fairy-staff.svg"},
+  { id: "sun-cloak", quantity: 1 ,price:100,  name:"sun cloak" , image: "sun-cloak.svg"}
+]
 
-export default () => {
+function ShoppingCart(props) {
   const productsInCart = useSelector((state) => Object.values(state.cart));
-  const allProducts = useSelector((state) => Object.values(state.products));
+ // const allProducts = useSelector((state) => Object.values(state.products));
 
+ 
   let subTotal = 0;
   let cartListArray=[];
   const [cartItemsList, setCartItemsList] = useState(cartListArray);
 
+  console.log(productsInCart);
  
-/*  rpopulate cartlist array because needed to get quantity of the items too */
+/*  calcualting subtotal*/
     for (const element of productsInCart)  {   
-     const c = allProducts.find(xx => xx.id === element.productId);
-      c["quantity"] = element.quantity; 
-      subTotal = (c.price*c.quantity)+subTotal;
-      cartListArray.push(c);
+    // const c = allProducts.find(xx => xx.id === element.productId);
+     subTotal = (element.price* element.quantity)+subTotal;
+    
     }
     
     console.log(cartListArray);
 
 
-
+/* --------on button checkout populating my redux state --------- */
   const CheckOut = (event) => {
     event.preventDefault();
-  
+    props.dispatch(addToCart(initialState)) 
+   // props.dispatch({ type: "ADD", initialState }) 
   }//end checkout fn
 
   const removeSingleItem = (event) => {
@@ -40,10 +50,12 @@ export default () => {
   
   function DeleteProduct (id) {
   
-    console.log(id);
-    const newList = cartListArray.filter((item) => item.id !== id);
+  //  console.log(id);
+  //  const newList = cartListArray.filter((item) => item.id !== id);
  
-    setCartItemsList(newList);
+  //  setCartItemsList(newList);
+console.log(id);
+  props.dispatch(removeAll(id)) 
   
   }//end checkout fn
 
@@ -52,8 +64,8 @@ export default () => {
 
     <h2>Your Cart</h2>
 
-      {cartItemsList.map((cartItem)=>{
-          //  getchangeQuantity(cartItem.quantity)
+      {productsInCart.map((cartItem)=>{
+      //      getchangeQuantity(cartItem.quantity)
 
            return(
 
@@ -91,3 +103,8 @@ export default () => {
     </div>
   );
 };
+
+
+export default connect((state) => {
+  return { someResult: state };
+})(ShoppingCart);

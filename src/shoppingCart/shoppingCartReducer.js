@@ -1,28 +1,41 @@
-const ADD = 'shoppingCart/add'
+// const ADD = 'shoppingCart/add';
+// let REMOVE_All = "";
 
-const initialState = [
-  { productId: "king-breaker-bow", quantity: 8 },
-  { productId: "sharp-ring", quantity: 5 },
-  { productId: "oxhornhelmet", quantity: 2 },
-  { productId: "fairy-staff", quantity: 1 },
-  { productId: "sun-cloak", quantity: 1 }
-]
 
-export default (state=initialState, action) => {
+
+export default (state=[], action) => {
   switch(action.type) {
-    case ADD:
+    case 'ADD':
       return action.payload;
+    case 'REMOVE_All':
+    //  return state.filter((item) => item.id !== action.id);
+
+      const updatedToDoList = state.filter( (item)  => item.id !== action.payload
+    );
+   
+    return updatedToDoList;
 
     default:
       return state;
   }
 }
 
-// Actions
 
-export const addToCart = (data) => {
+
+//actions
+
+  
+export const addToCart = data => {
   return {
-    type: ADD,
+    type: 'ADD',
     payload: data
-  }
+  };
 }
+
+ export const removeAll = id => {
+  return {
+    type: 'REMOVE_All',
+    payload: id
+  };
+}
+
