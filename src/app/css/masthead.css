@@ -1,35 +1,39 @@
-.masthead {
-  min-height: 720px;
+
+
+.masthead-products {
   background-repeat: no-repeat;
+  min-height: 720px;
   background-size: auto 100%;
   background-position-x: -350px;
+  background-image: url('/imgs/masthead-products.png');
 }
 
-.masthead.masthead-products {
+.masthead-product {
+  min-height: 400px;
   background-image: url('/imgs/masthead-products.png');
 }
 
 @media screen and (min-width: 590px) {
-  .masthead {
+  .masthead-products {
     background-position-x: -300px;
   }
 }
 
 
 @media screen and (min-width: 870px) {
-  .masthead {
+  .masthead-products {
     background-position-x: -200px;
   }
 }
 
 @media screen and (min-width: 980px) {
-  .masthead {
+  .masthead-products {
     background-position-x: -100px;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  .masthead {
+  .masthead-products {
     background-position-x: 0;
   }
 }

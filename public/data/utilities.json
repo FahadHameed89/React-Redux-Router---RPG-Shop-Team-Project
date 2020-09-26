@@ -6,12 +6,11 @@
     "category": "consumable",
     "price": 50,
     "name": "Health Potion",
-    "image": "",
-    "quote": "Tastes like strawberries!",
-    "effect": "Restores 25% of your Maximum HP. ",
+    "image": "health-potion.svg",
+    "quote": "Tastes like strawberries! A favorite among rookies and veterans alike!",
+    "effect": "Restores 25% of your Maximum HP.",
     "description": [
-     "Paragragh a",
-     "Paragragh a"
+     "This strawberry flavoured potion glows with a faint pink hue, and is known for healing both minor and serious injuries. The process to make this potion is relatively simple, and thus it has become a symbol for alchemy shops and potion sellers everywhere."
     ],
     "rarity": "Common"
   },
@@ -22,12 +21,11 @@
     "category": "consumable",
     "price": 75,
     "name": "Armor Potion",
-    "image": "",
-    "quote": "I won't bore you with how we managed to make this potion taste like oranges, you'll thank us later.",
+    "image": "armor-potion.svg",
+    "quote": "I won't bore you with how I managed to make this potion taste like blueberries, you'll thank me later.",
     "effect": "Gain 15 Armor. Armor is depleted before HP.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This blueberry flavoured potion glows with a faint blue hue, and is often consumed before and during major battles to give combatants a slight defensive edge."
      ],
     "rarity": "Common"
   },
@@ -38,12 +36,11 @@
     "category": "consumable",
     "price": 100,
     "name": "Mana Potion",
-    "image": "",
-    "quote": "This potion tastes like cloves and salt water. Despite the horrid taste it leaves the user feeling focussed and attentive.",
+    "image": "mana-potion.svg",
+    "quote": "It doesn't look like much, but this is probably my best selling potion, and my most profitable!",
     "effect": "Gain 2MP. MP is used to perform Actions.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This salt water flavoured potion looks like murky blue pond water, but is known for it's ability to recharge magical energy and will bring the user to full attention almost immediately."
      ],
     "rarity": "Common"
   },
@@ -55,12 +52,11 @@
     "category": "consumable",
     "price": 125,
     "name": "Strength Potion",
-    "image": "",
-    "quote": "This cherry flavoured potion glows with a faint red hue, and is said to enhance muscle and bone density in those who drink it regularly.",
+    "image": "strength-potion.svg",
+    "quote": "I drink this potion all the time, but the effects are TEMPORARY. Anyone who tells you otherwise is lying...!",
     "effect": "Temporarily increases ATK and DEF by 5.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This cherry flavoured potion glows with a faint red hue, and is said to enhance muscle and bone density in those who drink it regularly."
      ],
     "rarity": "Common"
   },
@@ -71,12 +67,11 @@
     "category": "consumable",
     "price": 125,
     "name": "Dexterity Potion",
-    "image": "",
-    "quote": "This lime flavoured potion glows with a faint green hue, and is said to enhance vision, hearing, and reflex speed in those who drink it regularly.",
+    "image": "dexterity-potion.svg",
+    "quote": "Ahh, the Dex Potion, my favorite. Drink this and laugh as you run circles around your opponents...!",
     "effect": "Temporarily increases SPD, EVA, and ACC by 5.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This lime flavoured potion glows with a faint green hue, and is said to enhance vision, hearing, and reflex speed in those who drink it regularly."
      ],
     "rarity": "Common"
   },
@@ -87,12 +82,11 @@
     "category": "consumable",
     "price": 150,
     "name": "Spirit Potion",
-    "image": "",
-    "quote": "This berry flavoured potion glows with a faint purple hue, and is said to enhance memory, tighten attention, and enhance cognitive functions in those that drink it regularly.",
+    "image": "spirit-potion.svg",
+    "quote": "I know what it says on the label, but let me assure you that no spirits were harmed in the process of making this potion.",
     "effect": "Temporarily increases MATK and MDEF by 5.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This berry flavoured potion glows with a faint purple hue, and is said to enhance memory, tighten attention, and enhance cognitive functions in those that drink it regularly."
      ],
     "rarity": "Common"
   },
@@ -103,12 +97,11 @@
     "category": "consumable",
     "price": 175,
     "name": "Corrosive Potion",
-    "image": "",
-    "quote": "This dark green flask contains a potent venom designed to burn through metal plating",
+    "image": "corrosive-potion.svg",
+    "quote": "Do not drink this...Do NOT drink this....DO NOT DRINK THIS!...I've said it three times. I'm not liable if you drink it now.",
     "effect": "Cut a target's DEF in half for the duration of combat.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This dark green flask contains a potent venom designed to burn through metal plating. Consuming this potion will apply 10 Poison the fool who drinks it."
      ],
     "rarity": "Common"
   },
@@ -119,12 +112,11 @@
     "category": "consumable",
     "price": 200,
     "name": "Fear Potion",
-    "image": "",
-    "quote": "This dark red flask contains a curious mixture of exotic plants that will cause irrational panic and fear in those who smell it",
+    "image": "fear-potion.svg",
+    "quote": "These get really popular right around the end of October...I wonder why that is?",
     "effect": "Cut a target's ATK in half for the duration of combat",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This dark red flask contains a curious mixture of exotic plants that will cause irrational panic and fear in those who smell it"
      ],
     "rarity": "Common"
   },
@@ -135,12 +127,11 @@
     "category": "consumable",
     "price": 250,
     "name": "Ethereal Potion",
-    "image": "",
+    "image": "ethereal-potion.svg",
     "quote": "Who needs defensive abilities when you can BECOME A GHOST!",
     "effect": "Become ethereal for a short amount of time, gaining immunity from physical (but not magical) attacks",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "The contents of this smoky purple flask are shrouded in mystery. When consumed, it turns the drinker into a ghostly version of themselves for a very short period of time."
      ],
     "rarity": "Uncommon"
   },
@@ -151,12 +142,11 @@
     "category": "consumable",
     "price": 275,
     "name": "Immunity Potion",
-    "image": "",
+    "image": "immunity-potion.svg",
     "quote": "We've developed a potion that prevents people from getting sick. Now we have to convince people to actually use it.",
     "effect": "Gain 2 stacks of Immunity, which prevent debuffs. ",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "The Immunity Potion was an alchemical breakthrough, capable of identifying and preventing incoming status effects, debuffs, and curses before they could impact their victims. The creator released the recipe for all to use for free, making it much more affordable than it could have been."
      ],
     "rarity": "Uncommon"
   },
@@ -167,12 +157,11 @@
     "category": "consumable",
     "price": 300,
     "name": "Angelic Potion",
-    "image": "",
-    "quote": "This bright silver potion is adorned with a pair of decorative wings, and tastes like sugar water.",
+    "image": "angelic-potion.svg",
+    "quote": "Despite it's name and appearance, this potion has a bad reputation in the Duel Arena due to cheaters using their long duration for an unfair advantage.",
     "effect": "Restores 100% of your Max HP over 1 minute.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This bright pink potion is adorned with a pair of decorative wings, and tastes like sugar water. It causes the user to see things just a bit more clearly, and hear things that they would otherwise have missed."
      ],
     "rarity": "Uncommon"
   },
@@ -184,12 +173,11 @@
     "category": "consumable",
     "price": 325,
     "name": "Rose Potion",
-    "image": "",
-    "quote": "I once saw a human drink one of these things and his skin erupted in sharp thorns. Strangely, it didn't seem to slow him down. In fact, he seemed to grow more confident in becoming a human porcupine...",
+    "image": "rose-potion.svg",
+    "quote": "I once saw a person drink one of these things and his skin erupted in sharp thorns. Strangely, it didn't seem to slow him down. In fact, he seemed to grow more confident now that he was a human porcupine...",
     "effect": "Gain 10 stacks of Thorns. Retaliate whenever you are attacked, and lose 1 stack of thorns for each time you are struck.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This dark green potion is made in the shape of a sword, and causes the drinker's skin to erupt in sharp thorns. Despite their appearance, the thorns cause no discomfort to the host, and once they absorb damage they fall off harmlessly. All thorns will naturally shed off after a few minutes however."
      ],
     "rarity": "Uncommon"
   },
@@ -200,14 +188,13 @@
     "category": "consumable",
     "price": 350,
     "name": "Bottled Fairy",
-    "image": "",
+    "image": "bottled-fairy.svg",
     "quote": "We keep them in bottles because they talk too much. And no, fairies don't sacrifice themselves to heal you. That's just an urban legend.",
     "effect": "Whenever you would die, restore 50% of your Max HP and discard this potion. ",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This wide rimmed glass bottle contains a small glowing fairy. It hovers harmlessly and offers advice to those nearby. Fairies will break out of their bottle if their owner is in critical danger, coming to their aid. Fairies often abandon their owners after this event, as healing an entire human takes up most of their magical energy."
      ],
-    "rarity": "Uncommon"
+    "rarity": "Rare"
   },
   {
     "id": "",
@@ -216,12 +203,11 @@
     "category": "consumable",
     "price": 500,
     "name": "Chaos Potion",
-    "image": "",
+    "image": "chaos-potion.svg",
     "quote": "This peculiar potion causes both clarity and confusion, albeit randomly.",
-    "effect": "Randomizes the MP cost of all abilities (Range 0 ~ 3) for the rest of combat.",
+    "effect": "Randomizes the MP cost of all Attacks, Skills, and Spells (Cost: 0 ~ 3) for the rest of combat.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This mysterious potion is made of the venom of a giant snake which is said to cause confusion. It is incredibly fragile, and cannot be thrown at enemies."
      ],
     "rarity": "Rare"
   },
@@ -230,47 +216,44 @@
     "type": "utility",
     "role": "any",
     "category": "consumable",
-    "price": 750,
+    "price": 1750,
     "name": "Mithril Potion",
-    "image": "",
-    "quote": "This exotic potion is made from rare elements and herbs, and is known to be notoriously difficult to concoct.",
-    "effect": "Reduces the MP cost of all abilities by 1 for the rest of combat.",
+    "image": "mithril-potion.svg",
+    "quote": "This is one of my best potions. It basically makes you capable of using more actions, which is amazing no matter who you are.",
+    "effect": "Reduces the MP cost of all Attacks, Skills, and Spells by 1 for the rest of combat.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This exotic potion is made from rare elements and herbs, and is known to be notoriously difficult to concoct. Without getting the formula exactly right, it can easily become a lethal poison."
      ],
-    "rarity": "Rare"
+    "rarity": "Legendary"
   },
   {
     "id": "",
     "type": "utility",
     "role": "any",
     "category": "consumable",
-    "price": 750,
+    "price": 1750,
     "name": "Elixir",
-    "image": "",
+    "image": "elixir.svg",
     "quote": "A miracle in a bottle!",
     "effect": "Immediately restores all lost HP.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "Warmly nicknamed the 'Miracle Potion', the elixir glows with daylight, and can often illuminate rooms or serve as a torch if so desired. The effects of this potion are so great, many adventurers lack the willpower to use them and instead, horde as many aas they can find."
      ],
-    "rarity": "Rare"
+    "rarity": "Legendary"
   },
   {
     "id": "",
     "type": "utility",
     "role": "any",
     "category": "consumable",
-    "price": 750,
+    "price": 1750,
     "name": "Vampiric Potion",
-    "image": "",
+    "image": "vampiric-potion.svg",
     "quote": "Tastes awful at first, but you'll come to crave it...",
     "effect": "Restores 1HP whenever you attack an enemy for the duration of combat.",
     "description": [
-      "Paragragh a",
-      "Paragragh b"
+      "This dark red potion looks, smells, and tastes like blood. When consumed, it causes the drinker to become blood thirsty and heal whenever they are exposed to blood. While the effects of this potion are well regarded, the origins remain a mystery and many clerics refuse to work with those who regularly consume it."
      ],
-    "rarity": "Rare"
+    "rarity": "Legendary"
   }
 ]

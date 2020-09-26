@@ -10,14 +10,14 @@ export default () => {
 
   return (
     <div className="dropdown">
-      <div class="user-account dropdown__button" onClick={() => setIsOpen(true)}>
+      <div className="user-account dropdown__button" onClick={() => setIsOpen(true)}>
         <img src="/imgs/logged-in-user.svg" alt=""/>
       </div>
 
       { isOpen &&
         <div
           onClick={() => setIsOpen(false)}
-          class="dropdown__closer"
+          className="dropdown__closer"
           tabindex="-1"
         ></div>
       }

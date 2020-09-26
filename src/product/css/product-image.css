@@ -2,7 +2,7 @@
   max-width: 500px;
   border: 0px solid;
   background-color: #FFFFFF;
-  border-radius: 9px;
+  border-radius: 9px 9px 0px 0px;
 }
 
 .product__image img {
@@ -13,18 +13,19 @@
 }
 
 .product__image-rarity {
-  height: 40px;
-  max-width: 170px;
-  border-radius: 0px 0px 6px 6px;
-  text-align: center;
   margin: 0 auto;
-}
+  height: 40px;
+  border-radius: 0px 0px 6px 6px;
+  max-width: 160px;
 
-.product__image-rarity p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-top: 8px;
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+  font-weight: var(--font-black);
 }
-
 
 .legendary .product__image-rarity {
   background-color: #C521D3;
@@ -33,4 +34,31 @@
 
 .legendary.product__image {
   border-color: #C521D3;
+}
+
+.rare .product__image-rarity {
+  background-color: #6B46C1;
+  color: white;
+}
+
+.rare.product__image {
+  border-color: #6B46C1;
+}
+
+.uncommon .product__image-rarity {
+  background-color: #2B6CB0;
+  color: white;
+}
+
+.uncommon.product__image {
+  border-color: #2B6CB0;
+}
+
+.common .product__image-rarity {
+  background-color: #2F855A;
+  color: white;
+}
+
+.common.product__image {
+  border-color: #2F855A;
 }

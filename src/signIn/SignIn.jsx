@@ -31,7 +31,7 @@ function LogIn(props) {
       const a = { clan: userClan, member: userName };
 
       props.dispatch(userSignIn(a));
-      window.location.href="../product/ProductList.jsx"
+      props.history.push("/products");
     }
 
     /*----------------------------------error check the clan availability and empty field
@@ -44,9 +44,9 @@ function LogIn(props) {
         clanIndex = clanList.indexOf(userClan); // find clan index
 
         if (userClan === "") {
-          throw "Please enter The name Of your Clan";
+          throw new Error("Please enter The name Of your Clan");
         } else if (!clanFound) {
-          throw "This Clan does not exist";
+          throw new Error("This Clan does not exist");
         }
       } catch (error) {
         getErrorMessageClan(error);
@@ -57,16 +57,16 @@ function LogIn(props) {
     /*-----------------------error check the member availability and empty field--------------------------- */
     function confirmMember(clanIndex) {
       let memberValid = false;
-      const [clansL, clanMembers] = Object.entries(clanData)[clanIndex];
+      const [_, clanMembers] = Object.entries(clanData)[clanIndex];
       const memberList = clanMembers.members; //populate memberList with clan's members array
 
       try {
         const memberFound = memberList.includes(userName); //  find if member exits
 
         if (userName === "") {
-          throw "Please enter your user name ";
+          throw new Error("Please enter your user name ");
         } else if (!memberFound) {
-          throw "This username does not exist";
+          throw new Error("This username does not exist");
         }
         memberValid = true;
       } catch (error) {
@@ -78,7 +78,12 @@ function LogIn(props) {
 
   return (
     <>
-      <form onSubmit={validateSignIn}>
+    <header class="container signin__header">
+      <img src="/imgs/shop-logo.png" alt=""/>
+    </header>
+
+    <main className="container signin__main">
+      <form className="signin__form" onSubmit={validateSignIn}>
         <div className="input-group">
           <label htmlFor="user-name" />
           <input
@@ -93,7 +98,7 @@ function LogIn(props) {
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-          <p>{errorMessageUser}</p>
+          <p className="show-error-message">{errorMessageUser}</p>
         </div>
 
         <div className="input-group">
@@ -102,18 +107,26 @@ function LogIn(props) {
             type="text"
             id="clan-name"
             autoComplete="off"
-            placeholder="Your Clan"
+            placeholder="Clan Name"
             onChange={(e) => {
               getUserClan(dasherize(e.target.value)); // grabbing user given clan field and dasherize it
               getErrorMessageUser(""); // clear error fields
               getErrorMessageClan(""); // clear error fields
             }}
           ></input>
-          <p>{errorMessageClan}</p>
+          <p className="show-error-message">{errorMessageClan}</p>
         </div>
 
-        <input type="submit" value="Login" />
+        <input type="submit" value="Enter Shop" />
       </form>
+
+      <div className="signin__guard">
+        <div class="signin__guard-container">
+          <img src="/imgs/signin-boss.png" alt="A large orc figure guards the shop entrance."/>
+        </div>
+        <p className="bubble bubble-bottom-left">Only clan members on the list can enter.</p>
+      </div>
+    </main>
     </>
   );
 }

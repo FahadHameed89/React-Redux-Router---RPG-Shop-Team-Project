@@ -67,7 +67,7 @@ export default (props) => {
         return (
           <div key={index} className={`${statClassMap[statName]} product-stat`}>
             <p className="product-stat__name">
-              <img src={`/imgs/stat-icons/${iconMap[statName]}`} />
+              <img src={`/imgs/stat-icons/${iconMap[statName]}`} alt="Stat icon" />
               { statMap[statName] }
             </p>
 
