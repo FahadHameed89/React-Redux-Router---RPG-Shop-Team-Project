@@ -1,41 +1,67 @@
-// const ADD = 'shoppingCart/add';
-// let REMOVE_All = "";
+//https://www.thetopsites.net/article/53766463.shtml
 
-
-
-export default (state=[], action) => {
-  switch(action.type) {
-    case 'ADD':
+export default (state = [], action) => {
+  switch (action.type) {
+    case "ADD":
       return action.payload;
-    case 'REMOVE_All':
-    //  return state.filter((item) => item.id !== action.id);
+    case "REMOVE_All":
+      const updatedCart = state.filter(
+        (item) => item.id !== action.payload
+      );
+      return updatedCart;
 
-      const updatedToDoList = state.filter( (item)  => item.id !== action.payload
-    );
-   
-    return updatedToDoList;
+    case "REMOVE_ONE":
+      const removeOneItem = state.map((cartItem)=>{
+        if((cartItem.id === action.payload)&&(cartItem.quantity>0) ){
+            cartItem.quantity = cartItem.quantity-1 ;
+        }
+        return cartItem;
+     });
+      return removeOneItem;
+
+      case "ADD_ONE":
+        const addOneItem = state.map((cartItem)=>{
+          if(cartItem.id === action.payload ){
+              cartItem.quantity = cartItem.quantity+1; 
+          }
+          return cartItem;
+       });
+        return addOneItem;
+
 
     default:
       return state;
   }
-}
+};
 
 
 
 //actions
 
-  
-export const addToCart = data => {
+export const addToCart = (data) => {
   return {
-    type: 'ADD',
-    payload: data
+    type: "ADD",
+    payload: data,
   };
-}
+};
 
- export const removeAll = id => {
+export const removeAll = (id) => {
   return {
-    type: 'REMOVE_All',
-    payload: id
+    type: "REMOVE_All",
+    payload: id,
   };
-}
+};
 
+export const removeOne = (id) => {
+  return {
+    type: "REMOVE_ONE",
+    payload: id,
+  };
+};
+
+export const addOne = (id) => {
+  return {
+    type: "ADD_ONE",
+    payload: id,
+  };
+};

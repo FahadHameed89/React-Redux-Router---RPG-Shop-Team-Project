@@ -105,7 +105,8 @@
 
 #remove-all input[type="button"]{
   border-radius: 8px;
-  
+  width: fit-content;
+  height: 25px;
   background:#3188d9;
   color: #fff;
   border: none;
