@@ -7,6 +7,7 @@ import ProductImage from './ProductImage';
 import ProductStats from './ProductStats';
 import ProductDescription from './ProductDescription';
 import ProductEffect from './ProductEffect';
+import ProductAddToCart from './ProductAddCart';
 
 
 export default () => {
@@ -19,12 +20,12 @@ export default () => {
       <ProductImage rarity={product.rarity} path={product.image} />
       </div>
 
-      <p>Add To Cart Component</p>
-
       <header>
         <h2 className="product__name">{product.name}</h2>
         <p className="product__role">{product.role}</p>
       </header>
+
+      <ProductAddToCart product={product} />
 
       <div className="product__quote">
         <p>{product.quote}</p>

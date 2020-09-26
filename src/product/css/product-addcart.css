@@ -1,78 +1,69 @@
-/* *{outline: 1px solid #FF0000} */
-
-.wrapper {
-    display: flex;
-    padding-left: 0;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-
-
-  .price {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-  }
-
-
-/*Set CSS for the Counter element*/
-
-.counter {
-    display: flex;
-  }
-
-/*Set CSS colors for Add To Cart Button*/
-
-.addToCart {
-  background-color: #3D43C7;
-
-    color: #FFFFFF;
-    border-radius: 12px;
-    display: flex;
-    padding-left: 0;
-    justify-content: space-between;
-    align-items: center;
+.add-cart {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.addToCart img {
+.add-cart__price {
+  margin: 0 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: var(--text-3xl);
+}
+
+.add-cart__price img {
+  width: 35px;
+  margin-right: 4px;
+}
+
+.add-cart__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #46BACA 0%, #3188D9 30.73%, #3D43C7 100%);
+
+  border: 1px solid #211B22;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  padding: 6px 8px;
+}
+
+.add-cart__button:hover {
+  box-shadow: 0 0 7px 0 #2187D3;
+  border: 1px solid #2187D3;
+}
+
+.add-cart__button img {
   max-width: 18px;
   padding: 5px;
   align-items: center;
-
 }
 
-.addToCart button {
-  background-color: #3D43C7;
-  color: white;
-  border-radius: 0px 12px 12px 0px;
-  border: 0px;
+.add-cart__counter {
+  display: flex;
 }
 
-/*Sete CSS colors for Counter*/
-
-.downTick {
+.add-cart__counter--downtick {
     color: #FFFFFF;
     border-radius: 12px 0px 0px 12px;
 }
 
-.upTick {
+.add-cart__counter--uptick {
     color: #FFFFFF;
     border-radius: 0px 12px 12px 0px;
 }
 
-.counter button {
-    background-color: #000000;    
+.add-cart__counter button {
+    background-color: #000000;
     border: 0px;
 }
 
-.counter p {
+.add-cart__counter p {
     background-color: #000000;
     padding: 5px;
-}
-
-.price img {
-  max-width: 18px;
-  padding: 5px;
-
 }
