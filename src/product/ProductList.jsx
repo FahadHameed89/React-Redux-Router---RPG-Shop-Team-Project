@@ -34,7 +34,7 @@ export default () => {
       dispatch(filterBy("warrior", products))
     }
      //Very strange, requirement just to stop an eslint warning
-  }, [dispatch, filteredProducts.length])
+  }, [dispatch, filteredProducts.length, products])
 
   return (
     <main className="products container">
