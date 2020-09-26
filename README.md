@@ -1,6 +1,5 @@
 # Team TheAbsoluteZeros Presents
-![Shop Logo] (https://github.com/TECHCareers-by-Manpower/milestone-2-react-redux-router-project-teamabsolutezero/blob/irwin-branch/public/imgs/shop-logo.png)
-
+![Shop Logo] (/public/imgs/shop-logo.png)
 #
 
 **Trello Link:** https://trello.com/b/KBayyZP2/milestone-2-react-redux-router-project
