@@ -14,9 +14,6 @@ export default () => {
   const filteredProducts = useSelector(state => state.filteredProducts.products);
   const currentFilter = useSelector(state => state.filteredProducts.filter);
 
-  const saleProduct = products[0];
-  const discount = {price: 500, text: "50% off"}
-
   const filterButtons = [
     { filter: 'warrior', icon: 'witch-hat.svg' },
     { filter: 'mage', icon: 'witch-hat.svg' },
@@ -39,7 +36,6 @@ export default () => {
 
   return (
     <main className="products container">
-
       <div className="product-filters">
         {
           filterButtons.map(({filter, icon}) => {
@@ -55,11 +51,6 @@ export default () => {
           })
         }
       </div>
-
-      <aside className="sidebar">
-        <h2>Buy Now!</h2>
-        <ProductCard product={saleProduct} discount={discount} />
-      </aside>
     </main>
   );
 }
