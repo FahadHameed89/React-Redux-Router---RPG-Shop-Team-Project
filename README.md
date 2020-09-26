@@ -1,5 +1,5 @@
 # Team TheAbsoluteZeros Presents
-![Shop Logo] (/public/imgs/shop-logo.png)
+![Shop Logo](/public/imgs/shop-logo.png)
 #
 
 **Trello Link:** https://trello.com/b/KBayyZP2/milestone-2-react-redux-router-project
