@@ -15,11 +15,11 @@ export default () => {
   const currentFilter = useSelector(state => state.filteredProducts.filter);
 
   const filterButtons = [
-    { filter: 'warrior',  icon: 'witch-hat.svg' },
+    { filter: 'warrior',  icon: 'helmet1.svg' },
     { filter: 'mage',     icon: 'witch-hat.svg' },
-    { filter: 'rogue',    icon: 'witch-hat.svg' },
-    { filter: 'trinkets', icon: 'witch-hat.svg' },
-    { filter: 'potions',  icon: 'witch-hat.svg' },
+    { filter: 'rogue',    icon: 'dagger.svg' },
+    { filter: 'trinkets', icon: 'ring.svg' },
+    { filter: 'potions',  icon: 'poison.svg' },
   ]
 
   const filterClicked = (filter) => {
