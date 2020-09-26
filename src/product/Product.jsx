@@ -33,9 +33,10 @@ export default () => {
 
       <div className="flex-row">
         <ProductDescription className="w-50" description={product.description} />
-        <ProductEffect className="w-50" effect={product.effect} />
-
-        <ProductStats className="w-50" stats={product.stats} />
+        <div className="w-50">
+          <ProductEffect effect={product.effect} />
+          <ProductStats stats={product.stats} />
+        </div>
       </div>
     </main>
   );
