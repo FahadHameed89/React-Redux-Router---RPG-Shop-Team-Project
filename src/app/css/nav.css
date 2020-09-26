@@ -1,0 +1,42 @@
+
+.shop-nav {
+    font-size: var(--text-3xl);
+    margin-top: 80px;
+    margin-left: 20px;
+  }
+
+.arrow-container{
+    background: rgba(0, 0, 0, 0.7);
+    width: 115px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-container:hover {
+    color: #a17e25;
+}
+
+.shop-nav a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.arrow {
+    border: solid #FFF;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+}
+
+.arrow:hover {
+    border: solid #a17e25;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
