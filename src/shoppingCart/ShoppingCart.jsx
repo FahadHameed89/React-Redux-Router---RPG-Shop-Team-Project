@@ -46,6 +46,7 @@ const initialState = [
 
 function ShoppingCart(props) {
   const productsInCart = useSelector((state) => Object.values(state.cart));
+  const [notEnoughMoney, setNotEnoughtMoney] = useState("");
 
   let subTotal = 0;
 
@@ -61,6 +62,24 @@ function ShoppingCart(props) {
   }; //end checkout fn
   /* ---------- ---------------------------------------------------*/
 
+  // function to set cap on purchase
+  function AddSingleItem(id) {
+    if (subTotal < 3000) {
+      props.dispatch(addOne(id));
+    } else {
+      setNotEnoughtMoney("You Do Not Have Enough Gold");
+    }
+  }
+
+  function RemoveSingleItem(id) {
+    setNotEnoughtMoney(""); // clear error field
+    props.dispatch(removeOne(id));
+  }
+  function RemoveAllItem(id) {
+    setNotEnoughtMoney(""); // clear error field
+    props.dispatch(removeAll(id));
+  }
+
   return (
     <div id="checkout-page">
       <h2>Your Shopping Cart</h2>
@@ -75,7 +94,7 @@ function ShoppingCart(props) {
               <input
                 type="button"
                 value="-"
-                onClick={() => props.dispatch(removeOne(cartItem.id))}
+                onClick={() => RemoveSingleItem(cartItem.id)}
               ></input>
             </li>
             <li id="quantity-p"> {cartItem.quantity}</li>
@@ -83,7 +102,7 @@ function ShoppingCart(props) {
               <input
                 type="button"
                 value="+"
-                onClick={() => props.dispatch(addOne(cartItem.id))}
+                onClick={() => AddSingleItem(cartItem.id)}
               ></input>
             </li>
             <li id="name-p">{cartItem.name}</li>
@@ -92,13 +111,14 @@ function ShoppingCart(props) {
               <input
                 type="button"
                 value="Remove Item"
-                onClick={() => props.dispatch(removeAll(cartItem.id))}
+                onClick={() => RemoveAllItem(cartItem.id)}
               ></input>
             </li>
           </ul>
         );
       })}
 
+      <p id="no-gold">{notEnoughMoney}</p>
       <ul id="sub-total">
         <li>Subtotal:</li>
         <li>
