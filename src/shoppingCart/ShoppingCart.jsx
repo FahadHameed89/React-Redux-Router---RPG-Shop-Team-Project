@@ -6,6 +6,7 @@ import "./ShoppingCart.css";
 
 //https://www.robinwieruch.de/javascript-map-array
 //https://www.robinwieruch.de/react-remove-item-from-list
+
 const initialState = [
   {
     id: "king-breaker-bow",
