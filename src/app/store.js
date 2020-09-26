@@ -34,19 +34,14 @@ export default () => {
       products);
   }
 
-  const mapSignin = (signin, dataset) => {
-    return dataset.reduce(
-      (state, current) => {
+  const mapClans = (dataset) => {
+    return dataset.map((clan) => {
         // For each clan in the dataset
-        // dasherize the clan name
-        const clanId = dasherize(current.clan);
-
-        // then assign that dasherized name to the
-        // clan object in the redux store.
-        state[clanId] = current;
-        return state;
+        // dasherize the clan name and add it as
+        // the ID
+        clan.clanId = dasherize(clan.clan);
+        return clan;
       },
-      signin
     );
   }
 
@@ -54,11 +49,11 @@ export default () => {
     .all([fetchEquipment, fetchUtilities, fetchClans])
     .then(rawData => {
       let products = {};
-      let clans = {};
+      let clans = [];
 
       products = mapProducts(products, rawData[0]);
       products = mapProducts(products, rawData[1]);
-      clans = mapSignin(clans, rawData[2]);
+      clans = mapClans(rawData[2]);
 
       return {
         clans: clans,
