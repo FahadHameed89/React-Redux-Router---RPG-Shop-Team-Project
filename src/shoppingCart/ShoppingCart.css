@@ -1,0 +1,182 @@
+#checkout-page {
+  display: flex;
+  margin: 7%;
+  flex-direction: column;
+  width: fit-content;
+}
+
+/*--------- your cart heading--------*/
+
+#checkout-page h2 {
+  margin-left: 6%;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+/*---------------Items Listing--------------*/
+.products-listing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #fff;
+  margin: 2%;
+  padding: 3%;
+}
+
+#image-p {
+  flex-basis: 50%;
+  margin-right: 6%;
+}
+#image-p {
+  max-width: 100px;
+  border: 0px solid;
+  background-color: #ffffff;
+  border-radius: 9px;
+}
+
+#image-p img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+#price-p {
+  flex-basis: 30%;
+  text-align: center;
+  padding-right: 2%;
+  border-right: 1px dotted #fff;
+  margin-right: 5%;
+}
+#quantity-p {
+  flex-basis: 10%;
+  margin-left: 3px;
+  text-align: center;
+}
+
+/*remove button*/
+#remove-q #add-q {
+  flex-basis: 10%;
+  margin-left: 5px;
+  text-align: right;
+}
+#remove-q input[type="button"],
+#add-q input[type="button"] {
+  border-radius: 45%;
+  background: #808080;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+#remove-q input[type="button"]:hover,
+#add-q input[type="button"]:hover {
+  background: #201a27;
+  color: #fff;
+}
+#remove-q input[type="button"]:active,
+#add-q input[type="button"]:active {
+  background: #3188d9;
+  color: #fff;
+}
+
+#name-p {
+  flex-basis: 70%;
+  font-size: 18px;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+/* Remove all button*/
+#remove-all {
+  padding-top: 15px;
+  flex-basis: 30%;
+}
+
+#remove-all input[type="button"] {
+  border-radius: 8px;
+  width: fit-content;
+  height: 25px;
+  background: #3188d9;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+#remove-all input[type="button"]:hover {
+  background: #808080;
+  color: #fff;
+}
+#remove-all input[type="button"]:active {
+  background: #201a27;
+  color: #fff;
+}
+
+/*--------- not enough gold error  -------*/
+
+#no-gold {
+  text-align: right;
+  margin: 3% 8% 0% 0%;
+  color: #d05a69;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*-------- Subtotal Section -------*/
+#sub-total {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  padding: 10px;
+  align-items: center;
+}
+
+#sub-total :nth-child(1) {
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+#sub-total input[type="text"] {
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ---------- Checkout button---------*/
+#checkout-page input[type="submit"] {
+  margin-right: 30px;
+  width: 150px;
+}
+
+@media screen and (min-width: 700px) {
+  #checkout-page {
+    margin-left: 15%;
+    margin-top: 4%;
+  }
+  #image-p {
+    max-width: 130px;
+  }
+  #name-p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #checkout-page {
+    margin-left: 20%;
+    margin-top: 3%;
+  }
+  #image-p {
+    max-width: 150px;
+  }
+  #price-p {
+    padding-right: 4%;
+  }
+  #name-p {
+    font-size: 20px;
+  }
+  #remove-all {
+    text-align: center;
+  }
+}

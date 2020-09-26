@@ -1,22 +1,136 @@
 import React, { useState } from "react";
-import { useSelector } from 'react-redux';
+import { useSelector, connect } from "react-redux";
+import { addToCart, removeOne, removeAll, addOne } from "./shoppingCartReducer";
+import "./ShoppingCart.css";
 
-import CartItem from './ShoppingCartItem';
+//https://www.robinwieruch.de/javascript-map-array
+//https://www.robinwieruch.de/react-remove-item-from-list
 
-export default () => {
-  const products = useSelector(state => state.prodcuts);
-  const cart = useSelector(state => state.cart);
+const initialState = [
+  {
+    id: "king-breaker-bow",
+    quantity: 8,
+    price: 100,
+    name: "king breaker bow",
+    image: "king-breaker-bow.svg",
+  },
+  {
+    id: "sharp-ring",
+    quantity: 5,
+    price: 100,
+    name: "Sharp ring",
+    image: "sharp-ring.svg",
+  },
+  {
+    id: "oxhornhelmet",
+    quantity: 2,
+    price: 100,
+    name: "ox-horn-helmet",
+    image: "ox-horn-helmet.png",
+  },
+  {
+    id: "fairy-staff",
+    quantity: 1,
+    price: 100,
+    name: "Fairy staff",
+    image: "fairy-staff.svg",
+  },
+  {
+    id: "sun-cloak",
+    quantity: 1,
+    price: 100,
+    name: "sun cloak",
+    image: "sun-cloak.svg",
+  },
+];
+
+function ShoppingCart(props) {
+  const productsInCart = useSelector((state) => Object.values(state.cart));
+  const [notEnoughMoney, setNotEnoughtMoney] = useState("");
+
+  let subTotal = 0;
+
+  /*  calcualting subtotal*/
+  for (const element of productsInCart) {
+    subTotal = element.price * element.quantity + subTotal;
+  }
+
+  /* --------on button checkout populating my redux state --------- */
+  const CheckOut = (event) => {
+    event.preventDefault();
+    props.dispatch(addToCart(initialState));
+  }; //end checkout fn
+  /* ---------- ---------------------------------------------------*/
+
+  // function to set cap on purchase
+  function AddSingleItem(id) {
+    if (subTotal < 3000) {
+      props.dispatch(addOne(id));
+    } else {
+      setNotEnoughtMoney("You Do Not Have Enough Gold");
+    }
+  }
+
+  function RemoveSingleItem(id) {
+    setNotEnoughtMoney(""); // clear error field
+    props.dispatch(removeOne(id));
+  }
+  function RemoveAllItem(id) {
+    setNotEnoughtMoney(""); // clear error field
+    props.dispatch(removeAll(id));
+  }
 
   return (
-    <main>
-      <table>
-        <tr>
-          <th>Item</th>
-          <th>Qty</th>
-          <th>Remove</th>
-        </tr>
+    <div id="checkout-page">
+      <h2>Your Shopping Cart</h2>
+      {productsInCart.map((cartItem) => {
+        return (
+          <ul className="products-listing">
+            <li id="image-p">
+              <img src={`/imgs/products/${cartItem.image}`} alt="" />
+            </li>
+            <li id="price-p">Unit Price: {cartItem.price}</li>
+            <li id="remove-q">
+              <input
+                type="button"
+                value="-"
+                onClick={() => RemoveSingleItem(cartItem.id)}
+              ></input>
+            </li>
+            <li id="quantity-p"> {cartItem.quantity}</li>
+            <li id="add-q">
+              <input
+                type="button"
+                value="+"
+                onClick={() => AddSingleItem(cartItem.id)}
+              ></input>
+            </li>
+            <li id="name-p">{cartItem.name}</li>
 
-      </table>
-    </main>
-  )
+            <li id="remove-all">
+              <input
+                type="button"
+                value="Remove Item"
+                onClick={() => RemoveAllItem(cartItem.id)}
+              ></input>
+            </li>
+          </ul>
+        );
+      })}
+
+      <p id="no-gold">{notEnoughMoney}</p>
+      <ul id="sub-total">
+        <li>Subtotal:</li>
+        <li>
+          <input type="text" value={`${subTotal} g`} readOnly></input>
+        </li>
+      </ul>
+
+      <input type="submit" value="Checkout" onClick={CheckOut}></input>
+    </div>
+  );
 }
+
+export default connect((state) => {
+  return { someResult: state };
+})(ShoppingCart);
