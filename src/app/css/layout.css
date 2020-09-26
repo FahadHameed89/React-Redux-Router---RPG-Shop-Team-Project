@@ -94,20 +94,3 @@ a:hover {
   padding: 16px;
 }
 
-
-.shop-nav {
-  font-size: var(--text-3xl);
-  color: #FFF;
-  margin-top: 80px;
-  margin-left: 20px;
-}
-
-.shop-nav a {
-  color: #FFF;
-  text-decoration: unset;
-}
-
-.shop-nav img {
-  padding-top: 4px;
-  margin-right: 4px;
-}

@@ -2,7 +2,6 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom';
 
@@ -12,6 +11,7 @@ import ProductList from '../product/ProductList';
 import Product from '../product/Product';
 import SignIn from '../signIn/SignIn';
 import Cart from '../shoppingCart/ShoppingCart';
+import Nav from './Nav';
 
 export default () => {
   return(
@@ -29,12 +29,7 @@ export default () => {
         <Route path="/products/:id">
           <Header />
           <Masthead className="masthead-product">
-            <nav className="shop-nav">
-              <Link to="/products">
-                <img src="/imgs/left-arrow.svg" alt="" role="presentation" />
-                Shop
-              </Link>
-            </nav>
+          <Nav />
           </Masthead>
           <Product/>
         </Route>
