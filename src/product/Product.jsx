@@ -7,6 +7,7 @@ import ProductImage from './ProductImage';
 import ProductStats from './ProductStats';
 import ProductDescription from './ProductDescription';
 import ProductEffect from './ProductEffect';
+import ProductAddToCart from './ProductAddCart';
 
 
 export default () => {
@@ -19,12 +20,12 @@ export default () => {
       <ProductImage rarity={product.rarity} path={product.image} />
       </div>
 
-      <p>Add To Cart Component</p>
-
       <header>
         <h2 className="product__name">{product.name}</h2>
         <p className="product__role">{product.role}</p>
       </header>
+
+      <ProductAddToCart product={product} />
 
       <div className="product__quote">
         <p>{product.quote}</p>
@@ -32,9 +33,10 @@ export default () => {
 
       <div className="flex-row">
         <ProductDescription className="w-50" description={product.description} />
-        <ProductEffect className="w-50" effect={product.effect} />
-
-        <ProductStats className="w-50" stats={product.stats} />
+        <div className="w-50">
+          <ProductEffect effect={product.effect} />
+          <ProductStats stats={product.stats} />
+        </div>
       </div>
     </main>
   );

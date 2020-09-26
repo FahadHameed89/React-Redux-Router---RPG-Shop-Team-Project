@@ -30,7 +30,8 @@
 .product__quote {
   max-width: 500px;
   padding: 20px 16px;
-  margin: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
   border-top: 1px solid #534457;
   border-bottom: 1px solid #534457;
 
@@ -41,10 +42,12 @@
   line-height: 1.625rem;
 }
 
-
-
 .product__description p {
   margin-bottom: 16px;
+}
+
+.product__effect {
+  margin-bottom: 20px;
 }
 
 .flex-row {
@@ -55,7 +58,13 @@
 }
 
 .w-50 {
-  width: 50%;
+  box-sizing: border-box;
+  flex: 1;
+  flex-basis: 300px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 16px;
 }
 
 .product-image-container {

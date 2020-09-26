@@ -11,19 +11,14 @@ function ProductFilter(props) {
   const iconName = props.iconName || '';
   const isActive = props.active && 'active';
 
-  // const path = "/imgs/filter-icons/witch-hat.svg"; //props.path later on
-  // const path1 = "/imgs/filter-icons/witch-hat-yellow.svg";
-  // // const filter = "Wizards"; // props.filter here
-
-
 
   return (
     <div className={`product-filter-container ${isActive}`} onClick={() => { clicked(filter) } }>
       <svg
         className="svg-filter-button"
         viewBox="0 0 80 80"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        xmlns="http://www.w3.org/2000/svg">
+
         <circle className="out-circle" cx="40" cy="40" r="38" />
         <circle className="in-circle" cx="40" cy="40" r="34" />
         <polygon className="up-triangle" points=" 40,13 36,5 44,5 " />
