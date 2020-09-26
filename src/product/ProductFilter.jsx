@@ -24,7 +24,7 @@ function ProductFilter(props) {
         <polygon className="up-triangle" points=" 40,13 36,5 44,5 " />
         <polygon className="up-triangle" points=" 40,67 36,75 44,75 " />
 
-        <image href={`/imgs/filter-icons/${iconName}`} x="15" y="15" height="45px" width="45px" />
+        <image href={`/imgs/filter-icons/${iconName}`} x="17" y="17" height="45px" width="45px" />
       </svg>
 
       <p className="filter-string">{filter}</p>
