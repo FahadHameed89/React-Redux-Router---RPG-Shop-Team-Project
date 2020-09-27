@@ -13,10 +13,12 @@ import Product from '../product/Product';
 import SignIn from '../signIn/SignIn';
 import Cart from '../shoppingCart/ShoppingCart';
 import Nav from './Nav';
+import ScrollToTop from './ScrollToTop';
 
 export default () => {
   return(
     <Router>
+      <ScrollToTop />
       <Switch>
         <ToastProvider placement="top-right">
           <Route exact path="/" component={SignIn} />
