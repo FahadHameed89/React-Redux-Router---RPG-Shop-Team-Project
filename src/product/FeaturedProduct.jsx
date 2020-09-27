@@ -12,7 +12,7 @@ export default () => {
     const featuredProduct2 = products[24];
 
     return (
-        <aside className="featured-items">
+        <div className="featured-items">
         <article className="featured-item">
           <Link to={`/products/${featuredProduct1.id}`}>
               <ProductImage className="featured-item__img" path={featuredProduct1.image} rarity={featuredProduct1.rarity} name={featuredProduct1.name} />
@@ -31,6 +31,6 @@ export default () => {
               </div>
           </Link>
         </article>
-      </aside>
+      </div>
     )
 }
