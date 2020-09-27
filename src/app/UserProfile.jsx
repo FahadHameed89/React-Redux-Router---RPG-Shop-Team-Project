@@ -21,7 +21,7 @@ export default () => {
         <div
           onClick={() => setIsOpen(false)}
           className="dropdown__closer"
-          tabindex="-1"
+          tabIndex="-1"
         ></div>
       }
 
