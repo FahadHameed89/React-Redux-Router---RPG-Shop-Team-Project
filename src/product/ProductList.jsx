@@ -41,7 +41,7 @@ export default () => {
       <div className="product-filters">
         {
           filterButtons.map(({filter, icon}) => {
-            return (<FilterButton filter={filter} clicked={filterClicked} iconName={icon} active={filter === currentFilter} />)
+            return (<FilterButton key={filter} filter={filter} clicked={filterClicked} iconName={icon} active={filter === currentFilter} />)
           })
         }
       </div>

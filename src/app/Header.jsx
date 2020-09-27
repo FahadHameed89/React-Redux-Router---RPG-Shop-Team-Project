@@ -36,7 +36,7 @@ export default () => {
 
       <div className="header-group">
         <div className="total-credit">
-          <img src='/imgs/gold.svg' />
+          <img src='/imgs/gold.svg'alt="Gold Icon"/>
           <p>{credit}</p>
         </div>
         <UserProfile />

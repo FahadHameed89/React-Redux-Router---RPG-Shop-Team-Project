@@ -66,7 +66,6 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   background-color: #2F273C;
   color: #FFF;
@@ -93,4 +92,3 @@ a:hover {
   /* Pull the content away from the page edge */
   padding: 16px;
 }
-
