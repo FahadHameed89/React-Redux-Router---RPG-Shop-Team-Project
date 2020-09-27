@@ -1,9 +1,9 @@
-import React, { useState} from "react";
-import { useSelector, useDispatch} from "react-redux";
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { removeOne, removeAll, addOne } from "./shoppingCartReducer";
 import { deductFunds } from "../signIn/accountReducer";
 import { useHistory } from "react-router-dom";
-import { useToasts } from 'react-toast-notifications'
+import { useToasts } from "react-toast-notifications";
 
 import ProductImage from "../product/ProductImage";
 
@@ -22,12 +22,11 @@ export default () => {
 
   const [notEnoughMoney, setNotEnoughtMoney] = useState("");
 
-
   const findPriceById = (id) => {
-    const item = productsInCart.find(x => x.id === id);
+    const item = productsInCart.find((x) => x.id === id);
 
     return item ? item.price : 0;
-  }
+  };
 
   const calcTotal = () => {
     let total = 0;
@@ -35,8 +34,7 @@ export default () => {
       total += element.price * element.quantity;
     }
     return total;
-  }
-
+  };
 
   const CheckOut = (event) => {
     event.preventDefault();
@@ -45,14 +43,15 @@ export default () => {
 
     if (total > availableFunds) {
       setNotEnoughtMoney("You Do Not Have Enough Gold");
-    }
-    else {
+    } else {
       dispatch(deductFunds(total));
       dispatch(removeAll());
-      addToast("Thank you for your purchase!", {appearance: 'success', autoDismiss: true})
+      addToast("Thank you for your purchase!", {
+        appearance: "success",
+        autoDismiss: true,
+      });
       history.push("/products");
     }
-
   };
 
   // function to set cap on purchase
@@ -74,13 +73,10 @@ export default () => {
     dispatch(removeAll(id));
   }
 
-  if(productsInCart.length === 0) {
+  if (productsInCart.length === 0) {
     return (
       <main className="checkout-page container">
-        <p>
-          Your cart is empty, go back to the shop and
-          continue shopping.
-        </p>
+        <p>Your cart is empty, go back to the shop to continue shopping!</p>
       </main>
     );
   }
@@ -92,33 +88,42 @@ export default () => {
         {productsInCart.map((item) => {
           return (
             <li key={item.id} className="cart-item">
-              <ProductImage className="cart-item__img" rarity={item.rarity} path={item.image} name={item.name} />
+              <ProductImage
+                className="cart-item__img"
+                rarity={item.rarity}
+                path={item.image}
+                name={item.name}
+              />
               <p className="cart-item__name">{item.name}</p>
               <div className="cart-item__controls">
-                <div>
-                  Unit Price: {item.price}
-                </div>
+                <div>Unit Price: {item.price}</div>
                 <div>
                   <div className="add-cart__counter">
-                    <button className="add-cart__counter--downtick"
-                            onClick={() => RemoveSingleItem(item.id)}>
+                    <button
+                      className="add-cart__counter--downtick"
+                      onClick={() => RemoveSingleItem(item.id)}
+                    >
                       -
                     </button>
 
                     <p>{item.quantity}</p>
-                    <button className="add-cart__counter--uptick"
-                            onClick={() => AddSingleItem(item.id)}>
-                        +
+                    <button
+                      className="add-cart__counter--uptick"
+                      onClick={() => AddSingleItem(item.id)}
+                    >
+                      +
                     </button>
                   </div>
                 </div>
-                <input className="add-cart__remove-button"
-                       type="button"
-                       value="Remove Item"
-                       onClick={() => RemoveAllItem(item.id)} />
+                <input
+                  className="add-cart__remove-button"
+                  type="button"
+                  value="Remove Item"
+                  onClick={() => RemoveAllItem(item.id)}
+                />
               </div>
             </li>
-          )
+          );
         })}
       </ul>
 
@@ -133,4 +138,4 @@ export default () => {
       <input type="submit" value="Checkout" onClick={CheckOut}></input>
     </main>
   );
-}
+};
