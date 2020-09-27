@@ -4,6 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import { ToastProvider } from 'react-toast-notifications'
 
 import Header from './Header';
 import Masthead from './Masthead';
@@ -16,31 +17,31 @@ import Nav from './Nav';
 export default () => {
   return(
     <Router>
-
-
       <Switch>
-        <Route exact path="/" component={SignIn} />
-        <Route exact path="/products">
-          <Header />
-          <Masthead className="masthead-products"/>
-          <ProductList />
-        </Route>
+        <ToastProvider placement="top-right">
+          <Route exact path="/" component={SignIn} />
+          <Route exact path="/products">
+            <Header />
+            <Masthead className="masthead-products"/>
+            <ProductList />
+          </Route>
 
-        <Route path="/products/:id">
-          <Header />
-          <Masthead className="masthead-product">
-            <Nav />
-          </Masthead>
-          <Product/>
-        </Route>
+          <Route path="/products/:id">
+            <Header />
+            <Masthead className="masthead-product">
+              <Nav />
+            </Masthead>
+            <Product/>
+          </Route>
 
-        <Route path="/checkout">
-          <Header />
-          <Masthead className="masthead-cart">
-            <Nav />
-          </Masthead>
-          <Cart />
-        </Route>
+          <Route path="/checkout">
+            <Header />
+            <Masthead className="masthead-cart">
+              <Nav />
+            </Masthead>
+            <Cart />
+          </Route>
+        </ToastProvider>
       </Switch>
     </Router>
   )

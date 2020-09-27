@@ -1,9 +1,28 @@
 //https://www.thetopsites.net/article/53766463.shtml
 
+function AddOrMergeCartItem(state, item) {
+  const oldItemIndex = state.findIndex(x => x.id === item.id);
+  const oldItem = state[oldItemIndex];
+
+  let newState;
+  if(oldItemIndex !== -1) {
+    newState = [
+      ...state.slice(0, oldItemIndex),
+      {...item, quantity: oldItem.quantity + item.quantity},
+      ...state.slice(oldItemIndex+1),
+    ]
+  } else {
+    newState = [...state, item];
+  }
+  return newState;
+}
+
+
 export default (state = [], action) => {
   switch (action.type) {
     case "ADD":
-      return action.payload;
+      return AddOrMergeCartItem(state, action.payload);
+
     case "REMOVE_All":
       if(action.payload) {
         const updatedCart = state.filter(

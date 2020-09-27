@@ -2,6 +2,8 @@ import React, { useState} from "react";
 import { useSelector, useDispatch} from "react-redux";
 import { removeOne, removeAll, addOne } from "./shoppingCartReducer";
 import { deductFunds } from "../signIn/accountReducer";
+import { useHistory } from "react-router-dom";
+import { useToasts } from 'react-toast-notifications'
 
 import ProductImage from "../product/ProductImage";
 
@@ -10,76 +12,53 @@ import "./ShoppingCart.css";
 //https://www.robinwieruch.de/javascript-map-array
 //https://www.robinwieruch.de/react-remove-item-from-list
 
-const initialState = [
-  {
-    id: "king-breaker-bow",
-    rarity: "legendary",
-    quantity: 8,
-    price: 100,
-    name: "king breaker bow",
-    image: "king-breaker-bow.svg",
-  },
-  {
-    id: "sharp-ring",
-    rarity: "common",
-    quantity: 5,
-    price: 100,
-    name: "Sharp ring",
-    image: "sharp-ring.svg",
-  },
-  {
-    id: "oxhornhelmet",
-    rarity: "common",
-    quantity: 2,
-    price: 100,
-    name: "ox-horn-helmet",
-    image: "ox-horn-helmet.png",
-  },
-  {
-    id: "fairy-staff",
-    rarity: "common",
-    quantity: 1,
-    price: 100,
-    name: "Fairy staff",
-    image: "fairy-staff.svg",
-  },
-  {
-    id: "sun-cloak",
-    rarity: "common",
-    quantity: 1,
-    price: 100,
-    name: "sun cloak",
-    image: "sun-cloak.svg",
-  },
-];
-
 export default () => {
   const dispatch = useDispatch();
+  const history = useHistory();
+  const { addToast } = useToasts();
+
   const productsInCart = useSelector((state) => Object.values(state.cart));
   const availableFunds = useSelector((state) => state.member.funds);
 
   const [notEnoughMoney, setNotEnoughtMoney] = useState("");
 
-  let subTotal = 0;
-  for (const element of productsInCart) {
-    subTotal = element.price * element.quantity + subTotal;
+
+  const findPriceById = (id) => {
+    const item = productsInCart.find(x => x.id === id);
+
+    return item ? item.price : 0;
   }
 
-  const CheckOut = (event) => {
-    event.preventDefault();
-
+  const calcTotal = () => {
     let total = 0;
     for (const element of productsInCart) {
       total += element.price * element.quantity;
     }
+    return total;
+  }
 
-    dispatch(deductFunds(total));
-    dispatch(removeAll());
+
+  const CheckOut = (event) => {
+    event.preventDefault();
+
+    let total = calcTotal();
+
+    if (total > availableFunds) {
+      setNotEnoughtMoney("You Do Not Have Enough Gold");
+    }
+    else {
+      dispatch(deductFunds(total));
+      dispatch(removeAll());
+      addToast("Thank you for your purchase!", {appearance: 'success', autoDismiss: true})
+      history.push("/products");
+    }
+
   };
 
   // function to set cap on purchase
   function AddSingleItem(id) {
-    if (subTotal < availableFunds) {
+    let total = calcTotal() + findPriceById(id);
+    if (total < availableFunds) {
       dispatch(addOne(id));
     } else {
       setNotEnoughtMoney("You Do Not Have Enough Gold");
@@ -147,7 +126,7 @@ export default () => {
       <ul id="sub-total" className="add-cart__subtotal">
         <li>Subtotal:</li>
         <li>
-          <input type="text" value={`${subTotal} g`} readOnly></input>
+          <input type="text" value={`${calcTotal()} g`} readOnly></input>
         </li>
       </ul>
 
