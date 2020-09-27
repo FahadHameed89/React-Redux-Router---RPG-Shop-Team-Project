@@ -76,7 +76,7 @@ export default () => {
   if (productsInCart.length === 0) {
     return (
       <main className="checkout-page container">
-        <p>Your cart is empty, go back to the shop to continue shopping !</p>
+        <p>Your cart is empty, go back to the shop to continue shopping!</p>
       </main>
     );
   }

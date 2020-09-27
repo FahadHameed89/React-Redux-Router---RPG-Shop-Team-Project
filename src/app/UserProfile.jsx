@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import './css/user-profile.css';
+import { useSelector } from 'react-redux';
 
+import './css/user-profile.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default () => {
+  const profile = useSelector(state => state.member);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const signout = () => {
@@ -14,19 +17,21 @@ export default () => {
   return (
     <div className="dropdown">
       <div className="user-account dropdown__button" onClick={() => setIsOpen(true)}>
-        <img src="/imgs/logged-in-user.svg" alt=""/>
+        <img src={`/imgs/profiles/${profile.profileImg}`} alt="User profile avatar"/>
       </div>
 
       { isOpen &&
         <div
           onClick={() => setIsOpen(false)}
           className="dropdown__closer"
-          tabindex="-1"
+          tabIndex="-1"
         ></div>
       }
 
       { isOpen &&
         <div className="dropdown__menu">
+          <p>{profile.member}</p>
+          <p>{profile.clan}</p>
           <button onClick={() => signout()}>Sign-out <FontAwesomeIcon icon={faSignOutAlt} />
           </button>
         </div>

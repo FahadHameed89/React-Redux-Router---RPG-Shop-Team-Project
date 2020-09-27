@@ -8,7 +8,7 @@ const initialState = {
   clan: "TheAbsoluteZeros",
   member: "Irwin",
   funds: 5000,
-  profileImg: "profile.svg"
+  profileImg: "wizard-avatar.svg"
 };
 
 // const initialState = {};

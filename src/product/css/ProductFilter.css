@@ -23,13 +23,13 @@
 }
 
 .product-filter-container:hover .up-triangle,
-.product-filter-container:hover .out-circle,
-.product-filter-container:hover image {
+.product-filter-container:hover .out-circle {
   fill: #a17e25;
 }
 
-.witch-hat {
-  fill: #a17e25;
+.product-filter-container:hover image {
+  height:43px;
+  width:43px;
 }
 
 .filter-string {

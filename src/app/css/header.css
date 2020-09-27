@@ -1,26 +1,67 @@
 .main-header {
-  min-height: 100px;
+  /* min-height: 100px; */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  gap: 16px;
 }
 
 
 .shop-sign {
-  position: relative;
-  max-width: 250px;
+  /* position: relative; */
+
+  order: 2;
+}
+.shop-sign a {
+  display: block;
+  /* overflow: hidden; */
 }
 
 .shop-sign img {
   display: block;
   width: 100%;
+  margin-bottom: -95px;
 }
 
 .header-group {
   display: flex;
   flex-flow: row;
   align-items: center;
+  gap: 16px;
 }
+
+@media screen and (min-width: 360px) {
+  .main-header {
+
+  }
+  .shop-sign {
+    max-width: 350px;
+  }
+}
+
+
+@media screen and (min-width: 730px) {
+  .main-header {
+    justify-content: center;
+  }
+  .shop-sign {
+    max-width: 250px;
+    order: 0;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .main-header {
+    justify-content: space-between;
+  }
+  .shop-sign {
+    order: 0;
+  }
+}
+
 
 .user-account {
   width: 58px;
@@ -37,17 +78,20 @@
 .total-credit {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 2px 15px;
 
   font-size: var(--text-2xl);
   font-weight: var(--font-bold);
 
-  height: 58px;
-  width: 170px;
+  height: 40px;
+  min-width: 100px;
   background-color: #211B22;
   border-radius: 999px; /*Should remain pill shape regardless of how big we set the height of the pill to.*/
 }
 
-.total-credit img{
+.total-credit img {
+  display: block;
+  width: 24px;
   padding-right: 15px;
 }

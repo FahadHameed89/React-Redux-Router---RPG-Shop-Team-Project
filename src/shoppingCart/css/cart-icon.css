@@ -4,13 +4,28 @@
   padding: 6px;
 }
 
+.cart-icon__container a {
+  display:block;
+  fill: currentColor;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: var(--font-bold);
+}
+
+.cart-icon__container a:hover {
+  color: #a17e25;
+}
+
+.cart-icon__container a > span {
+  display: inline-block;
+  margin-top: 4px;
+}
+
 .cart-icon__quantity {
   display: block;
   position: absolute;
   top: -5px;
   right: 6px;
-
-  /* transform: rotate(45deg); */
   padding: 3px 5px;
 
   border: 2px solid #000;
