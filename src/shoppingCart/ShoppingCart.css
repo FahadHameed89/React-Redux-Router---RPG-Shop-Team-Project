@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-between;
 
-  background-color: #57455D;
+  background-color: #57455d;
 }
 
 .cart-item__img {
@@ -88,10 +88,9 @@
   font-weight: bold;
 }
 
-/* #price-p {
-  flex-basis: 30%;
-  text-align: center;
-  padding-right: 2%;
-  border-right: 1px dotted #fff;
-  margin-right: 5%;
-} */
+/* ------ Empty Cart page setup-------------------*/
+.checkout-page p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 3% auto;
+}
