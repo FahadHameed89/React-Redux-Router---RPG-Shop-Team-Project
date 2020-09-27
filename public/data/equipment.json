@@ -959,12 +959,12 @@
     "role": "any",
     "category": "artifact",
     "price": 800,
-    "name": "Dragon Skull",
+    "name": "Dragon Skull ",
     "image": "dragoon-ring.svg",
     "quote": "Don't tell anyone i'm selling these, I could get in quite a bit of trouble with the dragoons if they found out that i'm selling what they consider holy relics...",
     "effect": "Whenever an enemy is defeated, gain 1MP",
     "description": [
-      "A dark red ring adorned with etchings of a dragon. Whenever an enemy is defeated, the eyes of the dragon begin to glow red. The origins of this ring are shrouded in mystery."
+      "A dark red artifact adorned with etchings of a dragon. Whenever an enemy is defeated, the eyes of the dragon begin to glow red. The origins of this artifact are shrouded in mystery."
      ],
     "rarity": "Rare"
   },

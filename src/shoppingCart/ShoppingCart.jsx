@@ -78,7 +78,7 @@ export default () => {
     return (
       <main className="checkout-page container">
         <p>
-          Your cart is empty, go back to the shop add
+          Your cart is empty, go back to the shop and
           continue shopping.
         </p>
       </main>
