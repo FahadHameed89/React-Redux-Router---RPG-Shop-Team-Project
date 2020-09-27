@@ -41,19 +41,19 @@ To run application:
 <summary>NPM Modules</summary>
 <br>
 
-Toast-Notifcations: https://github.com/jossmac/react-toast-notifications
+**Toast-Notifcations:** https://github.com/jossmac/react-toast-notifications
 
-Font-Awesome: https://fontawesome.com/icons/sign-out-alt?style=solid
+**Font-Awesome:** https://fontawesome.com/icons/sign-out-alt?style=solid
 </details>
 
 <details  open>
 <summary>Code Snippets</summary>
 <br>
 
-Redux Code Snippet (ComponentA):
+**Redux Code Snippet (ComponentA):**
 https://redux.js.org/tutorials/essentials/part-1-overview-concepts#immutability
 
-CSS Chat Bubbles:
+**CSS Chat Bubbles:**
 https://freefrontend.com/css-speech-bubbles/
 </details>
 
@@ -61,12 +61,12 @@ https://freefrontend.com/css-speech-bubbles/
 <summary>Images & Illustrations</summary>
 <br>
 
-Illustrations Created by Shawna Ray
+**Illustrations Created by Shawna Ray**
 - Shop Bouncer, Shop-Logo, & Store-Front
 <br>
 
 
-Warrior Images
+**Warrior Images**
 - warrior shield: https://game-icons.net/1x1/delapouite/viking-shield.- 
 - warrior alkiezer weapon: https://game-icons.net/1x1/lorc/relic-blade.- 
 - warrior helmet: https://game-icons.net/1x1/kier-heyl/elf-helmet.- 
@@ -76,14 +76,14 @@ Warrior Images
 - warrior boots: https://game-icons.net/1x1/delapouite/leg-armor.- 
 <br>
 
-Filter Images
+**Filter Images**
 - Dagger: https://www.flaticon.com/free-icon/dagger_488252?term=dagger&page=1&position=79
 - Potion: https://www.flaticon.com/free-icon/poison_1611587?term=potion&page=8&position=71
 - Ring:https://www.flaticon.com/free-icon/ring_1037037?term=jewel&page=3&position=57
 - Warrior: https://www.flaticon.com/free-icon/roman-helmet_3496628?term=warrior&page=1&position=86
 <br>
 
-Avatar Images
+**Avatar Images**
 
 - Warrior: https://www.flaticon.com/free-icon/helmet_3479950?term=warrior%20avatar&page=1&position=1
 - Wizard: https://www.flaticon.com/free-icon/wizard_2210034?term=wizard%20avatar&page=1&position=2
@@ -94,7 +94,8 @@ Avatar Images
 
 
 <br>
-Product Detail Page
+
+**Product Detail Page**
 
 - Heart SVG: https://www.flaticon.com/authors/those-icons
 - Wand, Coin, Dwarf: http://www.freepik.com/
