@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, connect } from "react-redux";
-import { addToCart, removeOne, removeAll, addOne } from "./shoppingCartReducer";
+import React, { useState} from "react";
+import { useSelector, useDispatch} from "react-redux";
+import { removeOne, removeAll, addOne } from "./shoppingCartReducer";
+import { deductFunds } from "../signIn/accountReducer";
 
-import ShoppingCartItem from './ShoppingCartItem';
 import ProductImage from "../product/ProductImage";
 
 import "./ShoppingCart.css";
@@ -53,32 +53,34 @@ const initialState = [
   },
 ];
 
-function ShoppingCart(props) {
+export default () => {
+  const dispatch = useDispatch();
   const productsInCart = useSelector((state) => Object.values(state.cart));
+  const availableFunds = useSelector((state) => state.member.funds);
+
   const [notEnoughMoney, setNotEnoughtMoney] = useState("");
 
-  useEffect(() => {
-    props.dispatch(addToCart(initialState));
-  }, [])
-
   let subTotal = 0;
-
-  /*  calcualting subtotal*/
   for (const element of productsInCart) {
     subTotal = element.price * element.quantity + subTotal;
   }
 
-  /* --------on button checkout populating my redux state --------- */
   const CheckOut = (event) => {
     event.preventDefault();
-    props.dispatch(addToCart(initialState));
-  }; //end checkout fn
-  /* ---------- ---------------------------------------------------*/
+
+    let total = 0;
+    for (const element of productsInCart) {
+      total += element.price * element.quantity;
+    }
+
+    dispatch(deductFunds(total));
+    dispatch(removeAll());
+  };
 
   // function to set cap on purchase
   function AddSingleItem(id) {
-    if (subTotal < 3000) {
-      props.dispatch(addOne(id));
+    if (subTotal < availableFunds) {
+      dispatch(addOne(id));
     } else {
       setNotEnoughtMoney("You Do Not Have Enough Gold");
     }
@@ -86,58 +88,63 @@ function ShoppingCart(props) {
 
   function RemoveSingleItem(id) {
     setNotEnoughtMoney(""); // clear error field
-    props.dispatch(removeOne(id));
+    dispatch(removeOne(id));
   }
   function RemoveAllItem(id) {
     setNotEnoughtMoney(""); // clear error field
-    props.dispatch(removeAll(id));
+    dispatch(removeAll(id));
   }
 
+  if(productsInCart.length === 0) {
+    return (
+      <main className="checkout-page container">
+        <p>
+          Your cart is empty, go back to the shop add
+          continue shopping.
+        </p>
+      </main>
+    );
+  }
 
   return (
-    <main id="checkout-page" className="container">
-      <h2>Your Shopping Cart</h2>
-      <ul className="cart-items">
-        {productsInCart.map((cartItem) => {
-          return (<ShoppingCartItem key={cartItem.id} item={cartItem} />)
-          // return (
-          //   <ul className="products-listing">
-          //     <li id="image-p">
-          //       <ProductImage rarity={cartItem.rarity} path={cartItem.image} name={cartItem.name} />
+    <main className="checkout-page container">
+      <h2>Order Summary</h2>
+      <ul>
+        {productsInCart.map((item) => {
+          return (
+            <li key={item.id} className="cart-item">
+              <ProductImage className="cart-item__img" rarity={item.rarity} path={item.image} name={item.name} />
+              <p className="cart-item__name">{item.name}</p>
+              <div className="cart-item__controls">
+                <div>
+                  Unit Price: {item.price}
+                </div>
+                <div>
+                  <div className="add-cart__counter">
+                    <button className="add-cart__counter--downtick"
+                            onClick={() => RemoveSingleItem(item.id)}>
+                      -
+                    </button>
 
-          //     </li>
-          //     <li id="price-p">Unit Price: {cartItem.price}</li>
-          //     <li id="remove-q">
-          //       <input
-          //         type="button"
-          //         value="-"
-          //         onClick={() => RemoveSingleItem(cartItem.id)}
-          //       ></input>
-          //     </li>
-          //     <li id="quantity-p"> {cartItem.quantity}</li>
-          //     <li id="add-q">
-          //       <input
-          //         type="button"
-          //         value="+"
-          //         onClick={() => AddSingleItem(cartItem.id)}
-          //       ></input>
-          //     </li>
-          //     <li id="name-p">{cartItem.name}</li>
-
-          //     <li id="remove-all">
-          //       <input
-          //         type="button"
-          //         value="Remove Item"
-          //         onClick={() => RemoveAllItem(cartItem.id)}
-          //       ></input>
-          //     </li>
-          //   </ul>
-          // );
+                    <p>{item.quantity}</p>
+                    <button className="add-cart__counter--uptick"
+                            onClick={() => AddSingleItem(item.id)}>
+                        +
+                    </button>
+                  </div>
+                </div>
+                <input className="add-cart__remove-button"
+                       type="button"
+                       value="Remove Item"
+                       onClick={() => RemoveAllItem(item.id)} />
+              </div>
+            </li>
+          )
         })}
       </ul>
 
       <p id="no-gold">{notEnoughMoney}</p>
-      <ul id="sub-total">
+      <ul id="sub-total" className="add-cart__subtotal">
         <li>Subtotal:</li>
         <li>
           <input type="text" value={`${subTotal} g`} readOnly></input>
@@ -148,7 +155,3 @@ function ShoppingCart(props) {
     </main>
   );
 }
-
-export default connect((state) => {
-  return { someResult: state };
-})(ShoppingCart);

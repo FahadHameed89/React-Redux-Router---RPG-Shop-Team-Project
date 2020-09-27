@@ -5,10 +5,15 @@ export default (state = [], action) => {
     case "ADD":
       return action.payload;
     case "REMOVE_All":
-      const updatedCart = state.filter(
-        (item) => item.id !== action.payload
-      );
-      return updatedCart;
+      if(action.payload) {
+        const updatedCart = state.filter(
+          (item) => item.id !== action.payload
+        );
+        return updatedCart;
+      }else {
+        return [];
+      }
+
 
     case "REMOVE_ONE":
       const removeOneItem = state.map((cartItem)=>{
@@ -22,7 +27,7 @@ export default (state = [], action) => {
       case "ADD_ONE":
         const addOneItem = state.map((cartItem)=>{
           if(cartItem.id === action.payload ){
-              cartItem.quantity ++; 
+              cartItem.quantity ++;
           }
           return cartItem;
        });
