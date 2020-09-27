@@ -14,7 +14,7 @@ export default () => {
   return (
     <div className="dropdown">
       <div className="user-account dropdown__button" onClick={() => setIsOpen(true)}>
-        <img src="/imgs/logged-in-user.svg" alt=""/>
+        <img src="/imgs/warrior-avatar.svg" alt=""/>
       </div>
 
       { isOpen &&
