@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, connect } from "react-redux";
 import { addToCart, removeOne, removeAll, addOne } from "./shoppingCartReducer";
+
+import ShoppingCartItem from './ShoppingCartItem';
+import ProductImage from "../product/ProductImage";
+
 import "./ShoppingCart.css";
 
 //https://www.robinwieruch.de/javascript-map-array
@@ -9,6 +13,7 @@ import "./ShoppingCart.css";
 const initialState = [
   {
     id: "king-breaker-bow",
+    rarity: "legendary",
     quantity: 8,
     price: 100,
     name: "king breaker bow",
@@ -16,6 +21,7 @@ const initialState = [
   },
   {
     id: "sharp-ring",
+    rarity: "common",
     quantity: 5,
     price: 100,
     name: "Sharp ring",
@@ -23,6 +29,7 @@ const initialState = [
   },
   {
     id: "oxhornhelmet",
+    rarity: "common",
     quantity: 2,
     price: 100,
     name: "ox-horn-helmet",
@@ -30,6 +37,7 @@ const initialState = [
   },
   {
     id: "fairy-staff",
+    rarity: "common",
     quantity: 1,
     price: 100,
     name: "Fairy staff",
@@ -37,6 +45,7 @@ const initialState = [
   },
   {
     id: "sun-cloak",
+    rarity: "common",
     quantity: 1,
     price: 100,
     name: "sun cloak",
@@ -47,6 +56,10 @@ const initialState = [
 function ShoppingCart(props) {
   const productsInCart = useSelector((state) => Object.values(state.cart));
   const [notEnoughMoney, setNotEnoughtMoney] = useState("");
+
+  useEffect(() => {
+    props.dispatch(addToCart(initialState));
+  }, [])
 
   let subTotal = 0;
 
@@ -80,43 +93,48 @@ function ShoppingCart(props) {
     props.dispatch(removeAll(id));
   }
 
-  return (
-    <div id="checkout-page">
-      <h2>Your Shopping Cart</h2>
-      {productsInCart.map((cartItem) => {
-        return (
-          <ul className="products-listing">
-            <li id="image-p">
-              <img src={`/imgs/products/${cartItem.image}`} alt="" />
-            </li>
-            <li id="price-p">Unit Price: {cartItem.price}</li>
-            <li id="remove-q">
-              <input
-                type="button"
-                value="-"
-                onClick={() => RemoveSingleItem(cartItem.id)}
-              ></input>
-            </li>
-            <li id="quantity-p"> {cartItem.quantity}</li>
-            <li id="add-q">
-              <input
-                type="button"
-                value="+"
-                onClick={() => AddSingleItem(cartItem.id)}
-              ></input>
-            </li>
-            <li id="name-p">{cartItem.name}</li>
 
-            <li id="remove-all">
-              <input
-                type="button"
-                value="Remove Item"
-                onClick={() => RemoveAllItem(cartItem.id)}
-              ></input>
-            </li>
-          </ul>
-        );
-      })}
+  return (
+    <main id="checkout-page" className="container">
+      <h2>Your Shopping Cart</h2>
+      <ul className="cart-items">
+        {productsInCart.map((cartItem) => {
+          return (<ShoppingCartItem key={cartItem.id} item={cartItem} />)
+          // return (
+          //   <ul className="products-listing">
+          //     <li id="image-p">
+          //       <ProductImage rarity={cartItem.rarity} path={cartItem.image} name={cartItem.name} />
+
+          //     </li>
+          //     <li id="price-p">Unit Price: {cartItem.price}</li>
+          //     <li id="remove-q">
+          //       <input
+          //         type="button"
+          //         value="-"
+          //         onClick={() => RemoveSingleItem(cartItem.id)}
+          //       ></input>
+          //     </li>
+          //     <li id="quantity-p"> {cartItem.quantity}</li>
+          //     <li id="add-q">
+          //       <input
+          //         type="button"
+          //         value="+"
+          //         onClick={() => AddSingleItem(cartItem.id)}
+          //       ></input>
+          //     </li>
+          //     <li id="name-p">{cartItem.name}</li>
+
+          //     <li id="remove-all">
+          //       <input
+          //         type="button"
+          //         value="Remove Item"
+          //         onClick={() => RemoveAllItem(cartItem.id)}
+          //       ></input>
+          //     </li>
+          //   </ul>
+          // );
+        })}
+      </ul>
 
       <p id="no-gold">{notEnoughMoney}</p>
       <ul id="sub-total">
@@ -127,7 +145,7 @@ function ShoppingCart(props) {
       </ul>
 
       <input type="submit" value="Checkout" onClick={CheckOut}></input>
-    </div>
+    </main>
   );
 }
 

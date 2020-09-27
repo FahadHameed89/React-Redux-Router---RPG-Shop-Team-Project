@@ -16,6 +16,7 @@ export default (props) => {
         </div>
       }
         <img src="/imgs/cart.svg" alt="Shopping Cart"/>
+        <span>Cart</span>
       </Link>
     </div>
   )

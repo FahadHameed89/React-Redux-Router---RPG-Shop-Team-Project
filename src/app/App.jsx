@@ -29,12 +29,18 @@ export default () => {
         <Route path="/products/:id">
           <Header />
           <Masthead className="masthead-product">
-          <Nav />
+            <Nav />
           </Masthead>
           <Product/>
         </Route>
 
-        <Route path="/checkout" component={Cart} />
+        <Route path="/checkout">
+          <Header />
+          <Masthead className="masthead-cart">
+            <Nav />
+          </Masthead>
+          <Cart />
+        </Route>
       </Switch>
     </Router>
   )

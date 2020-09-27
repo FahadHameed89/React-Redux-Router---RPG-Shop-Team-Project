@@ -9,8 +9,15 @@
 }
 
 .masthead-product {
+  background-repeat: no-repeat;
   min-height: 400px;
-  background-image: url('/imgs/masthead-products.png');
+  background-image: url('/imgs/masthead-product.png');
+}
+
+.masthead-cart {
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-image: url('/imgs/masthead-checkout.png');
 }
 
 @media screen and (min-width: 590px) {
