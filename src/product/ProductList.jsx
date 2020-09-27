@@ -7,6 +7,9 @@ import ProductCard from './ProductCard';
 
 import './css/product-list.css';
 
+import FeaturedProduct from './FeaturedProduct';
+
+
 export default () => {
   const dispatch = useDispatch();
   const products = useSelector(state => Object.values(state.products));
@@ -36,8 +39,12 @@ export default () => {
      //Very strange, requirement just to stop an eslint warning
   }, [dispatch, filteredProducts.length, products])
 
-  return (
+  return ( 
     <main className="products container">
+      <h1>Featured Items</h1>
+
+      <FeaturedProduct />
+
       <div className="product-filters">
         {
           filterButtons.map(({filter, icon}) => {
@@ -45,7 +52,7 @@ export default () => {
           })
         }
       </div>
-
+      
       <div className="product-list">
         {
           filteredProducts.map((product, index) => {
