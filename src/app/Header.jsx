@@ -7,8 +7,12 @@ import ShoppingCartIcon from '../shoppingCart/ShoppingCartIcon'
 import './css/header.css';
 
 export default () => {
-  const credit = useSelector(state => state.member.funds)
-  const balance = useSelector(state => state.cart.reduce((acc, x)=> acc + (x.price * x.quanity), 0))
+  const credit = useSelector(state => state.member.funds);
+  const cart = useSelector(state => state.cart);
+
+  const balance = cart.reduce((acc, x)=> {
+    return acc + (x.price * x.quantity);
+  }, 0)
 
   return (
     <header className="main-header container">
