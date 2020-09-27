@@ -2,10 +2,10 @@
   {
     "clan": "TheAbsoluteZeros",
     "members": [
-      { "member": "Danish", "funds": 5000, "profileImg": "profile.svg"},
-      { "member": "Fahad",  "funds": 5000, "profileImg": "profile.svg"},
-      { "member": "Irwin",  "funds": 5000, "profileImg": "profile.svg"},
-      { "member": "Aaron",  "funds": 5000, "profileImg": "profile.svg"}
+      { "member": "Danish", "funds": 5000, "profileImg": "ninja-avatar.svg"},
+      { "member": "Fahad",  "funds": 5000, "profileImg": "knight-avatar.svg"},
+      { "member": "Irwin",  "funds": 5000, "profileImg": "warrior-avatar.svg"},
+      { "member": "Aaron",  "funds": 5000, "profileImg": "wizard-avatar.svg"}
     ]
   }
 ]
