@@ -30,6 +30,8 @@ export default () => {
 
       { isOpen &&
         <div className="dropdown__menu">
+          <p>{profile.member}</p>
+          <p>{profile.clan}</p>
           <button onClick={() => signout()}>Sign-out <FontAwesomeIcon icon={faSignOutAlt} />
           </button>
         </div>
