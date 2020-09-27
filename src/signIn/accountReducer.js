@@ -2,22 +2,10 @@ const SIGN_IN = "account/sign-in";
 const SIGN_OUT = "account/sign-out";
 const DEDUCT_FUNDS = "account/deduct-funds";
 
-// TODO: Remove Initial state before launch
-const initialState = {
-  clanId: "the-absolute-zeros",
-  clan: "TheAbsoluteZeros",
-  member: "Irwin",
-  funds: 5000,
-  profileImg: "wizard-avatar.svg"
-};
-
-// const initialState = {};
-
-
 /**
  * Account Reducer
  */
-export default (state=initialState, action) => {
+export default (state={}, action) => {
   switch(action.type) {
 
     case SIGN_IN:
