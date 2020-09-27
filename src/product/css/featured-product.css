@@ -19,15 +19,17 @@
 .featured-item {
   background-color: #57455D;
   border-radius: 9px;
-  margin: -2px;
 }
 
 .featured-item a {
-  display: flex;
+  display: block;
   flex-flow: row nowrap;
   text-decoration: none;
   color: white;
+  height: 100%; 
 }
+
+
 
 .featured-item__img {
   min-width: 200px;
@@ -48,3 +50,13 @@
 .featured-item:hover .featured-item__description {
     background-color: #a17e25;
   } 
+
+  @media screen and (min-width: 600px) {
+    .featured-item a {
+        display: flex;
+        flex-flow: row nowrap;
+        text-decoration: none;
+        color: white;
+        height: 100%; 
+      }
+  }

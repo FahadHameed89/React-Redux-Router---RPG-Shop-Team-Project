@@ -9,7 +9,7 @@ export default () => {
     const products = useSelector(state => Object.values(state.products));
 
     const featuredProduct1 = products[16];
-    const featuredProduct2 = products[29];
+    const featuredProduct2 = products[24];
 
     return (
         <aside className="featured-items">
