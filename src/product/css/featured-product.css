@@ -47,11 +47,11 @@
   font-weight: var(--font-bold);
 }
 
-.featured-item:hover .featured-item__description {
+.featured-item:hover {
     background-color: #a17e25;
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 920px) {
     .featured-item a {
         display: flex;
         flex-flow: row nowrap;
