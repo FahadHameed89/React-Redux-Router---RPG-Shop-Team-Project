@@ -67,6 +67,9 @@ https://freefrontend.com/css-speech-bubbles/
 
 **Illustrations Created by Shawna Ray**
 - Shop Bouncer, Shop-Logo, & Store-Front
+
+**To view more of Shawna Ray's work:** https://www.deviantart.com/dyewind
+
 <br>
 
 
