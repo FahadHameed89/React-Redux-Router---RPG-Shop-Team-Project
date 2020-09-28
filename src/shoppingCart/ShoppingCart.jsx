@@ -129,7 +129,7 @@ export default () => {
 
       <p id="no-gold">{notEnoughMoney}</p>
       <ul id="sub-total" className="add-cart__subtotal">
-        <li>Subtotal:</li>
+        <li>Total:</li>
         <li>
           <input type="text" value={`${calcTotal()} g`} readOnly></input>
         </li>
