@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import { ToastProvider } from 'react-toast-notifications'
 
+import Authorized from './Authorised';
 import Header from './Header';
 import Masthead from './Masthead';
 import ProductList from '../product/ProductList';
@@ -23,12 +24,14 @@ export default () => {
         <ToastProvider placement="top-right">
           <Route exact path="/" component={SignIn} />
           <Route exact path="/products">
+            <Authorized />
             <Header />
             <Masthead className="masthead-products"/>
             <ProductList />
           </Route>
 
           <Route path="/products/:id">
+            <Authorized />
             <Header />
             <Masthead className="masthead-product">
               <Nav />
@@ -37,6 +40,7 @@ export default () => {
           </Route>
 
           <Route path="/checkout">
+            <Authorized />
             <Header />
             <Masthead className="masthead-cart">
               <Nav />
