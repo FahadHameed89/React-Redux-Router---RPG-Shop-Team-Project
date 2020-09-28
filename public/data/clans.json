@@ -7,5 +7,14 @@
       { "member": "Irwin",  "funds": 5000, "profileImg": "warrior-avatar.svg"},
       { "member": "Aaron",  "funds": 5000, "profileImg": "wizard-avatar.svg"}
     ]
+  },
+  {
+    "clan": "TheMasters",
+    "members": [
+      { "member": "Warren", "funds": 8000, "profileImg": "master-avatar.svg"},
+      { "member": "James",  "funds": 8000, "profileImg": "samurai-avatar.svg"},
+      { "member": "Tammy",  "funds": 8000, "profileImg": "viking-avatar.svg"},
+      { "member": "Aaron",  "funds": 8000, "profileImg": "dwarf-avatar.svg"}
+    ]
   }
 ]

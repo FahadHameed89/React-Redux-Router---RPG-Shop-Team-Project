@@ -66,7 +66,7 @@ export default (props) => {
   /**
    * Validates that the user gave us some kind of input
    *
-   * @returns {boo]} True when input is valid otherwise false.
+   * @returns {bool} True when input is valid otherwise false.
    */
   const validateUserInput = () => {
     let result = true;
