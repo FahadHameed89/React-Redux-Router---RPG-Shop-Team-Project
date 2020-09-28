@@ -13,7 +13,7 @@ export default () => {
     if(!member || Object.keys(member).length === 0) {
       history.push("/");
     }
-  }, [member]);
+  }, [member, history]);
 
   return null;
 }
