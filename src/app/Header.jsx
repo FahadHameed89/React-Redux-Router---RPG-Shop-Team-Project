@@ -30,7 +30,7 @@ export default () => {
         */}
       <h1 className="shop-sign">
         <Link to="/products">
-          <img src="/imgs/shop-logo.png" alt="Grimburg's Shop of Armour :amp; Potions"/>
+          <img src="/imgs/shop-logo.png" alt="Grimburg's Shop of Armour &amp; Potions"/>
         </Link>
       </h1>
 

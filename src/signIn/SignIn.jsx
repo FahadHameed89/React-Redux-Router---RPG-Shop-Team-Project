@@ -163,7 +163,7 @@ export default (props) => {
     <>
     <header className="container signin__header">
       <h1>
-        <img src="/imgs/shop-logo.png" alt="Grimburg's Armour :amp; Potions"/>
+        <img src="/imgs/shop-logo.png" alt="Grimburg's Armour &amp; Potions"/>
       </h1>
     </header>
 
