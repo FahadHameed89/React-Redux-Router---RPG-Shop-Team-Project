@@ -5,16 +5,24 @@
     margin-left: 20px;
   }
 
-.arrow-container{
+.arrow-container {
     background: rgba(0, 0, 0, 0.7);
     width: 115px;
-    height: 40px;
     display: flex;
     justify-content: center;
+    padding: 10px 6px;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
 }
 
-.arrow-container:hover {
+.arrow-container:hover p {
     color: #a17e25;
+}
+
+.arrow-container:hover .arrow {
+    border: solid #a17e25;
+    border-width: 0 7px 7px 0;
+    padding: 7px;
 }
 
 .shop-nav a {
@@ -24,13 +32,6 @@
 
 .arrow {
     border: solid #FFF;
-    border-width: 0 7px 7px 0;
-    display: inline-block;
-    padding: 7px;
-}
-
-.arrow:hover {
-    border: solid #a17e25;
     border-width: 0 7px 7px 0;
     display: inline-block;
     padding: 7px;
