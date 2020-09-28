@@ -11,18 +11,28 @@
 .masthead-product {
   background-repeat: no-repeat;
   min-height: 400px;
+  background-position-x: -400px;
   background-image: url('/imgs/masthead-product.png');
 }
 
 .masthead-cart {
   background-repeat: no-repeat;
   min-height: 400px;
+  background-position-x: -400px;
   background-image: url('/imgs/masthead-checkout.png');
 }
 
 @media screen and (min-width: 590px) {
   .masthead-products {
     background-position-x: -300px;
+  }
+
+  .masthead-product {
+    background-position-x: -300px;
+  }
+
+  .masthead-cart {
+    background-position-x: -370px;
   }
 }
 
@@ -31,16 +41,40 @@
   .masthead-products {
     background-position-x: -200px;
   }
+
+  .masthead-product {
+    background-position-x: -200px;
+  }
+
+  .masthead-cart {
+    background-position-x: -200px;
+  }
 }
 
 @media screen and (min-width: 980px) {
   .masthead-products {
     background-position-x: -100px;
   }
+
+  .masthead-product {
+    background-position-x: -100px;
+  }
+
+  .masthead-cart {
+    background-position-x: -100px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
   .masthead-products {
+    background-position-x: 0;
+  }
+
+  .masthead-product {
+    background-position-x: 0;
+  }
+
+  .masthead-cart {
     background-position-x: 0;
   }
 }
