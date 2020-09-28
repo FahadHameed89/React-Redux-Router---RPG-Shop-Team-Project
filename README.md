@@ -27,7 +27,11 @@ This application required the demonstration of the following:
 
 # Basic Installation Instruction
 
-To install the current release:
+**SYSTEM REQUIREMENTS: node.js (latest stable version)**
+<br>
+**Download Here:** https://nodejs.org/en/
+
+To install the current release of this application:
 
 `$ npm install`
 
