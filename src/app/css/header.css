@@ -1,5 +1,4 @@
 .main-header {
-  /* min-height: 100px; */
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
@@ -9,15 +8,11 @@
   gap: 16px;
 }
 
-
 .shop-sign {
-  /* position: relative; */
-
   order: 2;
 }
 .shop-sign a {
   display: block;
-  /* overflow: hidden; */
 }
 
 .shop-sign img {
@@ -32,36 +27,6 @@
   align-items: center;
   gap: 16px;
 }
-
-@media screen and (min-width: 360px) {
-  .main-header {
-
-  }
-  .shop-sign {
-    max-width: 350px;
-  }
-}
-
-
-@media screen and (min-width: 730px) {
-  .main-header {
-    justify-content: center;
-  }
-  .shop-sign {
-    max-width: 250px;
-    order: 0;
-  }
-}
-
-@media screen and (min-width: 780px) {
-  .main-header {
-    justify-content: space-between;
-  }
-  .shop-sign {
-    order: 0;
-  }
-}
-
 
 .user-account {
   width: 58px;
@@ -94,4 +59,26 @@
   display: block;
   width: 24px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 360px) {
+  .shop-sign {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .main-header {
+    justify-content: center;
+  }
+  .shop-sign {
+    max-width: 250px;
+    order: 0;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .main-header {
+    justify-content: space-between;
+  }
 }

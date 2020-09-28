@@ -49,6 +49,6 @@
   background: none;
 }
 
-.dropdown__menu button:hover{
-  text-decoration: underline 2px;
+.dropdown__menu button:hover {
+  text-decoration: underline;
 }

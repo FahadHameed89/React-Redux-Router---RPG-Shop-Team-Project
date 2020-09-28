@@ -14,7 +14,7 @@ export default (props) => {
         <Link to={`/products/${product.id}`}>
             <ProductImage path={product.image} rarity={product.rarity} name={product.name} />
             <div className="item-name">
-              <p>{product.name}</p>
+              <h2>{product.name}</h2>
             </div>
         </Link>
       </article>

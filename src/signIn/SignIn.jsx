@@ -22,7 +22,7 @@ export default (props) => {
   const [inputClanName, setInputClanName] = useState("");
   const [errorMessageUser, setMemberNameError] = useState("");
   const [errorMessageClan, setClanNameError] = useState("");
-  
+
   const bouncerPhrase = ["Clan members only...", "You on the list?", "No mask, no flask", "You got the coin?", "Beat it Tombdweller", "Get lost Sapblood", "Keep on walking halfling", "Take a hike Ankle-biter"]
   const randomBouncerPhrase = bouncerPhrase[Math.floor(Math.random() * bouncerPhrase.length)];
 
@@ -132,7 +132,7 @@ export default (props) => {
 
     return { clanId: clan.clanId, clan: clan.clan, ...memberProfile }
   }
-  
+
   /**
    * Validates the inputed user credentials and
    * if the user can "sign-in", create the account object
@@ -162,7 +162,9 @@ export default (props) => {
   return (
     <>
     <header className="container signin__header">
-      <img src="/imgs/shop-logo.png" alt=""/>
+      <h1>
+        <img src="/imgs/shop-logo.png" alt="Grimburg's Armour :amp; Potions"/>
+      </h1>
     </header>
 
     <main className="container signin__main">

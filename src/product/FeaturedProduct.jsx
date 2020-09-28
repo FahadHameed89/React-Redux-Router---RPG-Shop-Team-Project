@@ -17,7 +17,7 @@ export default () => {
           <Link to={`/products/${featuredProduct1.id}`}>
               <ProductImage className="featured-item__img" path={featuredProduct1.image} rarity={featuredProduct1.rarity} name={featuredProduct1.name} />
               <div className="featured-item__description">
-                <p>{featuredProduct1.name}</p>
+                <h2>{featuredProduct1.name}</h2>
                 <p>{featuredProduct1.description}</p>
               </div>
           </Link>
@@ -26,7 +26,7 @@ export default () => {
           <Link to={`/products/${featuredProduct2.id}`}>
               <ProductImage className="featured-item__img" path={featuredProduct2.image} rarity={featuredProduct2.rarity} name={featuredProduct2.name} />
               <div className="featured-item__description">
-                <p>{featuredProduct2.name}</p>
+                <h2>{featuredProduct2.name}</h2>
                 <p>{featuredProduct2.description}</p>
               </div>
           </Link>

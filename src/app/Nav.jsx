@@ -14,5 +14,3 @@ export default () => {
     </nav>
     )
 }
-
-//<img src="/imgs/left-arrow.svg" alt="" role="presentation" />

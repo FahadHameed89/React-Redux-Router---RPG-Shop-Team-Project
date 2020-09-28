@@ -26,7 +26,7 @@
   flex-flow: row nowrap;
   text-decoration: none;
   color: white;
-  height: 100%; 
+  height: 100%;
 }
 
 .featured-item__img {
@@ -37,17 +37,19 @@
   padding: 15px;
 }
 
-.featured-item__description p{
+.featured-item__description h2,
+.featured-item__description p {
     margin-bottom: 15px;
+
   }
 
-.featured-item__description p:nth-child(1){
-    font-weight: bolder;
-  }
+.featured-item__description h2{
+  font-weight: var(--font-bold);
+}
 
 .featured-item:hover .featured-item__description {
     background-color: #a17e25;
-  } 
+  }
 
   @media screen and (min-width: 800px) {
     .featured-item a {
@@ -56,6 +58,6 @@
         word-wrap: break-word;
         text-decoration: none;
         color: white;
-        height: 100%; 
+        height: 100%;
       }
   }
